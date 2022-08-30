@@ -302,7 +302,6 @@ header {
     height: 110px;
     left: 9px;
     top: 0px;
-
     background: #FFFCFC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -313,7 +312,6 @@ header {
     height: 28px;
     left: 83px;
     top: 19px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -330,7 +328,6 @@ header {
     height: 28px;
     left: 135px;
     top: 67px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -344,8 +341,24 @@ header {
 .your-question {
     width: 1208px;
     height: 441px;
-
     background: #A9D2FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1363DF;
+    color: white;
+    height: 300px;
+}
+
+.sub-item-footer {
+    padding-top: 20px;
+}
+
+.item-footer {
+    padding-top: 30px;
 }
