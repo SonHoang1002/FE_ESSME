@@ -7,84 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .card {
-            position: absolute;
-            width: 440px;
-            height: 176px;
-            left: 45px;
-            top: 56px;
-
-            background: #FFFCFC;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
+        .wrapper-card {
+            padding:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 180px;
+            background-color: blueviolet
         }
 
-        .title {
-            position: absolute;
-            width: 239px;
-            height: 26px;
-            left: 11px;
-            top: 11px;
+        .card-related {
+            display: flex;
+            background-color: blue;
+            width: 380px;
+            height: 160px;
+        }
 
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 26px;
-            /* identical to box height */
+        .info-related {
+            flex: 7;
+            padding-left: 15px;
+            padding-top: 20px;
 
+        }
+
+        .name-related {
             display: flex;
             align-items: center;
-
-            color: #33425B;
-        }
-
-        img {
-            position: absolute;
-            width: 164px;
-            height: 117px;
-            left: 11px;
-            top: 47px;
-
-            border-radius: 5px;
-        }
-
-        .description {
-            position: absolute;
-            width: 130px;
-            height: 51px;
-            left: 198px;
-            top: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
             font-family: 'Roboto';
             font-style: normal;
-            font-weight: 300;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            padding: 15px;
+        }
+
+        .job-related {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
             font-size: 18px;
             line-height: 21px;
-            color: #33425B;
-            max-lines: 5;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            padding-bottom:10px;
         }
 
-        .time {
-            position: absolute;
-            width: 71px;
-            height: 16px;
-            left: 263px;
-            top: 14px;
+        .location-related {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
             font-family: 'Roboto';
             font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 16px;
-            display: flex;
-            align-items: flex-end;
-            text-align: right;
-            color: #33425B;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: capitalize;
+        }
+
+        .img-realated {
+            flex: 3;
         }
     </style>
 </head>
 
 <body>
-    
+    <div class="wrapper-card">
+        <div class="card-related">
+            <div class="info-related">
+                <div class="name-related">name</div>
+                <div class="job-related"> job</div>
+                <div class="location-related">location</div>
+            </div>
+            <div class="img-realated"> <img src="../assets/bgImg.png" alt="" style="width: 120px;
+                    height: 100%;"></div>
+        </div>
+    </div>
 </body>
 
 </html>
