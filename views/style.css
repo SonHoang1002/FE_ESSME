@@ -6,10 +6,10 @@ body {
 .navbar {
     width: 100%;
     height: 700px;
-    background-image: url("../assets/bgImg.png");
-    background-repeat: none;
-    object-fit: fill;
-
+    background-image: url("../../assets/bgImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .imgLogo {
@@ -59,7 +59,7 @@ nav {
 .sub-menu {
     position: absolute;
     background-color: whitesmoke;
-    padding: 15px 0px;
+    padding: 10px 0px;
     list-style: none;
     width: 150px;
     text-decoration: none;
