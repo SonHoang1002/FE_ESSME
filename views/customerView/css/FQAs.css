@@ -1,0 +1,267 @@
+body {
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.navbar-essme {
+    width: 100%;
+    height: 700px;
+    background-image: url("../../../assets/bgImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgLogo {
+    width: 50px;
+    height: 50px;
+    padding: auto;
+}
+
+.container-essme {
+    width: 1400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: black transparent;
+    /* opacity: 50%; */
+}
+
+.logo {
+    display: flex;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#main-menu li a {
+    padding: 10px 20px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+    list-style: none;
+    width: 170px;
+    text-decoration: none;
+    top: 40px;
+    display: none;
+    color: black;
+}
+
+.sub-menu li:hover {
+    background-color: black;
+}
+
+.sub-menu li:hover a {
+    color: white;
+}
+
+.sub-menu ul a {
+    padding: 0px;
+}
+
+#main-menu li:hover ul {
+    display: block;
+}
+
+li {
+    padding: 10px;
+}
+
+
+.bread-crumb {
+    padding-top: 15px;
+}
+
+.detail-body {
+    height: 1300px;
+    width: 1240px;
+    margin: auto;
+}
+
+.icon-home {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.line {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 2px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1363DF;
+}
+
+.searchForm {
+    position: absolute;
+    width: 1208px;
+    height: 126px;
+    background: #A9D2FF;
+}
+
+input {
+    border-radius: 20px;
+}
+
+.searchByField {
+    position: absolute;
+    width: 509px;
+    height: 50px;
+    left: 29px;
+    top: 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.searchByLocation {
+    position: absolute;
+    width: 491px;
+    height: 50px;
+    left: 549px;
+    top: 38px;
+    padding: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.searchButton {
+    position: absolute;
+    width: 124px;
+    height: 53px;
+    left: 1063px;
+    top: 35px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter-field {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+
+}
+
+.field {
+    display: inline-flex;
+    background-color: #A9D2FF;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    border-radius: 15px;
+}
+
+.icon-filter {
+    padding-left: 10px;
+}
+
+.question-FQAs {
+    background-color: #A9D2FF;
+    height: 600px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.title-FQAs {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.question-answer-card {
+    padding: 20px;
+    margin: 20px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.question-field{
+
+}
+.answer-field {
+    padding: 20px;
+}
+.see-more-FQAs{
+    margin-top: 120px;
+    text-align: center;
+}
+
+
+.your-question {
+    padding: 20px;
+    background-color: #A9D2FF;
+    height: 310px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1363DF;
+    color: white;
+    height: 300px;
+}
+
+.sub-item-footer {
+    padding-top: 20px;
+}
+
+.item-footer {
+    padding-top: 30px;
+}
