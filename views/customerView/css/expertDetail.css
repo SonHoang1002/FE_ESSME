@@ -344,3 +344,114 @@ button {
 .item-footer {
     padding-top: 30px;
 }
+
+
+
+/*_________________________EXPERTS____________________________________________*/
+.searchForm {
+    position: absolute;
+    width: 1208px;
+    height: 126px;
+    background: #A9D2FF;
+}
+
+
+.searchByField {
+    position: absolute;
+    width: 509px;
+    height: 50px;
+    left: 29px;
+    top: 38px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.searchByLocation {
+
+    position: absolute;
+    width: 491px;
+    height: 50px;
+    left: 549px;
+    top: 38px;
+    padding: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.searchButton {
+    position: absolute;
+    width: 124px;
+    height: 53px;
+    left: 1063px;
+    top: 35px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.experts-body{
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.leading-experts-container{
+    display: flex;
+    flex-direction: row;
+}
+.leading-list{
+    flex-grow: 5;
+    background: #A9D2FF;
+    padding: 10px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.fields-container{
+    flex-grow: 1;
+    background: #A9D2FF;
+    flex-direction: column;
+}
+.leading-experts-title {
+    padding-top: 150px;
+    font-family: 'Brygada 1918';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 75px;
+}
+
+.sub-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.events-body{
+    background: #A9D2FF;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.news-body{
+    background: #A9D2FF;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.map{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
