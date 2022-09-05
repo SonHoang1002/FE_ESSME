@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/field-result.css">
+</head>
+
+<body>
+    <div class="navbar-essme">
+        <div class="header-essme">
+            <div class="container-essme">
+                <a href="#">
+                    <div class="logo">
+                        <img class="imgLogo" src="https://img.vn/uploads/thuvien/singa-png-20220719150401Tdj1WAJFQr.png"
+                            alt="img">
+                    </div>
+                </a>
+                <ul id="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Experts</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">FQAs </a></li>
+                            <li><a href="#">Order Expert</a></li>
+                            <li><a href="#">Response</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Language</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Vietnamese</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Icon</a></li>
+                    <li><a href="#">Login</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Profile Setting</a></li>
+                            <li><a href="#">Oder History</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-body">
+        <div class="bread-crumb">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <div class="icon-home"><i class="fa fa-home"></i></div>
+                    <li class="breadcrumb-item"><a href="#"><span style="color:black">Home</span></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><span style="color:black">Expert</span></li>
+                    <li class="breadcrumb-item "><a href="#"><span style="color:black">Trinh Van Quyet</span></a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="line"></div>
+        <div style="width: 100%; display: flex;justify-content: center;padding-top: 40px;padding-bottom: 150px;">
+            <div class="searchForm">
+                <div>
+                    <input class="searchByField" placeholder="Search By Fields" />
+                    <input class="searchByLocation" placeholder="Search By Locations" />
+                    <div class="searchButton">
+                        <img style="width: 25px;height: 25px;" src="../../assets/icon/search-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <img src="../../assets/map.png" alt="">
+        </div>
+        <div>
+            <div>
+                <span class="title-field-result">RESULT</span>
+            </div>
+            <div class="list-result">
+                <div class="list-item-result">
+                    <div class="item-result">
+                        <div class="img-result">
+                            <img style="width: 100px;height: 80px;" src="../../assets/icon/search-icon.png" alt="">
+                        </div>
+                        <div class="detail-result">
+                            <div class="title-detail-result">
+                                <span>Order Name</span><br>
+                                <span>Position</span><br>
+                                <span>Field</span><br>
+                                <span>Address</span>
+                            </div>
+                            <div class="button-detail-result"><button
+                                    style=" border-radius: 20px;height: 40px;width: 100px;background-color: #BE4E4E; color:white">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-result">
+                        <div class="img-result">
+                            <img style="width: 100px;height: 80px;" src="../../assets/icon/search-icon.png" alt="">
+                        </div>
+                        <div class="detail-result">
+                            <div class="title-detail-result">
+                                <span>Order Name</span><br>
+                                <span>Position</span><br>
+                                <span>Field</span><br>
+                                <span>Address</span>
+                            </div>
+                            <div class="button-detail-result"><button
+                                    style=" border-radius: 20px;height: 40px;width: 100px;background-color: #BE4E4E; color:white">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- event -->
+        <div class="events">
+            <span class="title-field-result">Events</span>
+            <div class="body-events">
+                <div class="previous-next-events">
+                            <img style="width: 100px;height: 80px;" src="../../assets/icon/previous.png" alt="">
+                </div>
+                <div class="item-events">
+                    <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                    </div>
+                    <div class="title-events">
+                        Title
+                    </div>
+                    <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                    </div>
+                    <div class="detail-events">
+                        <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                        <span>location</span>
+                    </div>
+                </div>
+                <div class="item-events">
+                    <div class="img-events">
+                        <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                    </div>
+                    <div class="title-events">
+                        Title
+                    </div>
+                    <div class="detail-events">
+                        <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                        <span>Time of events</span>
+                    </div>
+                    <div class="detail-events">
+                        <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                        <span>location</span>
+                    </div>
+                </div>
+                <div class="item-events">
+                    <div class="img-events">
+                        <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                    </div>
+                    <div class="title-events">
+                        Title
+                    </div>
+                    <div class="detail-events">
+                        <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                        <span>Time of events</span>
+                    </div>
+                    <div class="detail-events">
+                        <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                        <span>location</span>
+                    </div>
+                </div>
+                <div class="previous-next-events">
+                            <img style="width: 100px;height: 80px;" src="../../assets/icon/next.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <span class="title-field-result">
+            NEWS
+        </span>
+        <div class="news">
+
+            <div class="body-news">
+                <div class="list-item-news">
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-news">
+                        <div class="title-item-news"><span>this is title of the news</span></div>
+                        <div class="detail-item-news">
+                            <img class="img-news" src="../../assets/bgImg.png" alt="">
+                            <div class="sub-detail-item-news">
+                                <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
+                                <div class="time-item-news"><span>03/11/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-news">
+                <span>Show More</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="item-footer">
+            <div><span>Feature</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Find an Expert</span></div><br>
+                <span>Find Events</span><br>
+            </div>
+        </div>
+        <div class="item-footer">
+            <div><span>Discover</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Security</span></div><br>
+                <div></div><span>Sponsor</span><br>
+            </div>
+        </div>
+        <div class="item-footer">
+            <div><span>Information</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Rules</span></div><br>
+                <span>About us</span><br>
+            </div>
+        </div>
+        <div class="item-footer">
+            <div><span>Community</span></div><br>
+            <div class="sub-item-footer">
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Facebook</span></div><br>
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Twitter</span></div><br>
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Linkedln</span></div><br>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
