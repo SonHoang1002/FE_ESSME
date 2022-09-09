@@ -10,50 +10,81 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./navbar-footer.css">
 </head>
 
 <body>
-    <div class="navbar-essme">
-        <div class="header-essme">
-            <div class="container-essme">
-                <a href="#">
-                    <div class="logo">
-                        <img class="imgLogo" src="https://img.vn/uploads/thuvien/singa-png-20220719150401Tdj1WAJFQr.png"
-                            alt="img">
+    <div style="position: fixed; width:100%">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid " style="margin-left:50px;margin-right:50px">
+                <a class="navbar-brand" href="#">ESSME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Experts
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">FQAs</a></li>
+                                    <li><a class="dropdown-item" href="#">Order Experts</a></li>
+                                    <li><a class="dropdown-item" href="#">Response</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Language
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img class="imgLogo" src="../assets/eventimg.png" alt="">
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img class="imgLogo" style="border-radius:30px" src="../assets/eventimg.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:80px" >
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <ul id="main-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Experts</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">FQAs </a></li>
-                            <li><a href="#">Order Expert</a></li>
-                            <li><a href="#">Response</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Language</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Vietnamese</a></li>
-                            <li><a href="#">English</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Icon</a></li>
-                    <li><a href="#">Login</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Profile Setting</a></li>
-                            <li><a href="#">Oder History</a></li>
-                            <li><a href="#">Log out</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                </div>
+                <div style=" margin-right:10px"></div>
             </div>
-        </div>
+        </nav>
     </div>
-
+    
     <div class="detail-body">
         <div class="bread-crumb">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
