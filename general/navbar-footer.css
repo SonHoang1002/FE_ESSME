@@ -6,7 +6,14 @@ a {
     text-decoration: none;
     color: blue;
 }
-
+.expert-navbar {
+    background: rgba(6, 40, 61, 0.3);
+    height: 90px;
+}
+.nav-active {
+    background: rgba(205, 35, 35, 0.67);
+    height: 80px;
+}
 .header-essme {
     display: flex;
     width: 1800px;
@@ -193,3 +200,4 @@ input {
 .item-footer {
     padding-top: 30px;
 }
+
