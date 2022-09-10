@@ -10,6 +10,11 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../plugin/slick-master/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../../plugin/slick-master/slick-master/slick/slick-theme.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/expertDetail.css">
     <style>
         a {
@@ -19,39 +24,84 @@
 </head>
 
 <body>
-<div class="navbar-essme">
-    <div class="header-essme">
-        <div class="container-essme">
-            <a href="#">
-                <div class="logo">
-                    <img class="imgLogo" src="https://img.vn/uploads/thuvien/singa-png-20220719150401Tdj1WAJFQr.png"
-                         alt="img">
+<div class="expert-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid " style="margin-left:50px;margin-right:50px">
+            <a class="navbar-brand" href="#">ESSME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Experts
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">FQAs</a></li>
+                                <li><a class="dropdown-item" href="#">Order Experts</a></li>
+                                <li><a class="dropdown-item" href="#">Response</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img class="imgLogo" src="../assets/eventimg.png" alt="">
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img class="imgLogo" style="border-radius:30px" src="../assets/eventimg.png" alt="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:80px" >
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <ul id="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Experts</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">FQAs </a></li>
-                        <li><a href="#">Order Expert</a></li>
-                        <li><a href="#">Response</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Icon</a></li>
-                <li><a href="#">Login</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Profile Setting</a></li>
-                        <li><a href="#">Oder History</a></li>
-                        <li><a href="#">Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
+            </div>
+            <div style=" margin-right:10px"></div>
         </div>
-    </div>
+    </nav>
+</div>
+<script>
+    const navbar = document.querySelector('.expert-navbar');
+    window.onscroll = () => {
+        if (window.scrollY > 10) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
+</script>
+<div class="header-background">
 </div>
 
 <div class="experts-body">
@@ -66,7 +116,7 @@
     </div>
     <div class="line"></div>
 
-    <div style="width: 100%; display: flex;justify-content: center;padding-top: 70px;">
+    <div style="width: 100%; display: flex;justify-content: center;padding-top: 20px;">
         <div class="searchForm">
             <div>
                 <input class="form-control searchByField" placeholder="Search By Fields" />
@@ -343,78 +393,124 @@
     </div>
     <div class="events-container">
         <div class="sub-title">Events</div>
-        <div class="body-events">
-            <div class="previous-next-events">
-                <img style="width: 100px;height: 80px;" src="../../assets/icon/previous.png" alt="">
-            </div>
-            <div class="item-events">
-                <div class="img-events">
-                    <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+        <div class="events">
+            <div class="event-list uneven">
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="title-events">
-                    Title
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
-                    <span>Time of events</span>
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
-                    <span>location</span>
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item-events">
-                <div class="img-events">
-                    <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="title-events">
-                    Title
+                <div>
+                    <div class="item-events">
+                        <div class="img-events">
+                            <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
+                        </div>
+                        <div class="title-events">
+                            Title
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                            <span>Time of events</span>
+                        </div>
+                        <div class="detail-events">
+                            <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                            <span>location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
-                    <span>Time of events</span>
-                </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
-                    <span>location</span>
-                </div>
-            </div>
-            <div class="item-events">
-                <div class="img-events">
-                    <img style="width: 260px;height: 180px;border-radius: 20px;" src="../../assets/bgImg.png" alt="">
-                </div>
-                <div class="title-events">
-                    Title
-                </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
-                    <span>Time of events</span>
-                </div>
-                <div class="detail-events">
-                    <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
-                    <span>location</span>
-                </div>
-            </div>
-            <div class="previous-next-events">
-                <img style="width: 100px;height: 80px;" src="../../assets/icon/next.png" alt="">
-            </div>
 
+            </div>
         </div>
     </div>
     <div class="news-container">
         <div class="sub-title">News</div>
         <div class="body-news">
             <div class="list-item-news">
-                <div class="item-news">
-                    <div class="title-item-news"><span>this is title of the news</span></div>
-                    <div class="detail-item-news">
-                        <img class="img-news" src="../../assets/bgImg.png" alt="">
-                        <div class="sub-detail-item-news">
-                            <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
-                            <div class="time-item-news"><span>03/11/2021</span></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="item-news">
                     <div class="title-item-news"><span>this is title of the news</span></div>
                     <div class="detail-item-news">
@@ -579,6 +675,22 @@
 
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+<script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.uneven').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // prev arrow
+            prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
+
+            // next arrow
+            nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
+
+        });
+    });
+</script>
 </body>
 
 </html>
