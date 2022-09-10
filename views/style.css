@@ -29,7 +29,7 @@ a {
     z-index: 0;
 }
 .nav-active {
-    background: rgba(205, 35, 35, 0.67);
+    background: rgba(205, 35, 35, 0.75);
     height: 70px;
 }
 .header-essme {
