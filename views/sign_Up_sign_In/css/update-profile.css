@@ -1,0 +1,306 @@
+body {
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.header-essme {
+    display: flex;
+    width: 1800px;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+}
+
+.navbar-essme {
+    height: 700px;
+    background-image: url("../../../assets/bgImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+}
+
+.imgLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.container-essme {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    /* opacity: 50%; */
+}
+
+.logo {
+    display: flex;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#main-menu li a {
+    padding: 10px 20px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+    list-style: none;
+    width: 170px;
+    text-decoration: none;
+    top: 40px;
+    display: none;
+    color: black;
+}
+
+.sub-menu li:hover {
+    background-color: black;
+}
+
+.sub-menu li:hover a {
+    color: white;
+}
+
+.sub-menu ul a {
+    padding: 0px;
+}
+
+#main-menu li:hover ul {
+    display: block;
+}
+
+li {
+    padding: 10px;
+}
+
+
+.bread-crumb {
+    padding-top: 15px;
+}
+
+.detail-body {
+    height: 1300px;
+    width: 1240px;
+    margin: auto;
+}
+
+.icon-home {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.line {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 2px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1363DF;
+}
+
+.body-update-profile {
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.body-update-profile form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.body-update-profile form button {
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.wrap-update-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-update-profile {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: grey;
+    height: 40px;
+}
+
+.role-update-profile {
+    padding-left: 20px;
+    align-items: center;
+    width: 900px;
+    background-color: grey;
+    height: 40px;
+    display: flex;
+}
+
+.choose-role-update-profile {
+    flex: 4;
+}
+
+.title-role-update-profile {
+    flex: 3;
+}
+
+.info-update-profile {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.photo-update-profile {
+    flex: 4;
+    padding: 37px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#upload-button {
+    background-color: aliceblue;
+    color: black;
+    margin-top: 20px;
+    width: 150px;
+
+}
+
+.info-expert-update-profile {
+    flex: 6;
+}
+
+.field-input-info {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.field-input-info input {
+    width: 400px;
+}
+
+.field-input-info label {
+    padding-top: 5px;
+    width: 70px;
+}
+
+.degree-update-profile {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+.field-input-degree {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    display: flex;
+
+}
+
+.field-input-degree input {
+    flex: 15
+}
+
+.field-input-degree label {
+    flex: 5;
+}
+
+.field-input-degree textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.media-update-profile {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.field-input-degree label {
+    padding-top: 5px;
+    width: 70px;
+}
+
+.field-input-media {
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.field-input-media input {
+    width: 330px;
+}
+
+.field-input-media label {
+    padding-top: 5px;
+    width: 70px;
+}
+
+
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1363DF;
+    color: white;
+    height: 300px;
+}
+
+.sub-item-footer {
+    padding-top: 20px;
+}
+
+.item-footer {
+    padding-top: 30px;
+}
