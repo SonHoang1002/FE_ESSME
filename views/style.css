@@ -359,11 +359,12 @@ header {
 
 .questions {
     position: static;
-    height: 500px;
-    background-color: white;
+    width: 70%;
+    margin:auto;
 }
 
 .question-title {
+    margin: 20px;
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 700;
@@ -376,68 +377,60 @@ header {
     color: #1363DF;
 }
 
-.question-list {
-    width: 505px;
-    height: 596px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background: #A9D2FF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.question-FQAs {
+    background-color: #A9D2FF;
+    height: 600px;
+    margin-top: 30px;
+    padding: 30px;
     border-radius: 20px;
-
 }
 
-.number-question {
-    width: 1100px;
-    height: 110px;
-    left: 9px;
-    top: 0px;
-    background: #FFFCFC;
+.title-FQAs {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.question-answer-card {
+    padding: 20px;
+    margin: 20px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+}
+.question-field{
+
+}
+.answer-field {
+    padding: 20px;
+}
+.see-more-FQAs{
+    margin-top: 120px;
+    text-align: center;
 }
 
-.number-question-title {
-    width: 113px;
-    height: 28px;
-    left: 83px;
-    top: 19px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-}
-
-.number-question-answer {
-    width: 103px;
-    height: 28px;
-    left: 135px;
-    top: 67px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
 
 .your-question {
-    width: 1208px;
-    height: 441px;
-    background: #A9D2FF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    padding: 40px;
+    background-color: #A9D2FF;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 15px;
 }
 
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    height: 40px;
+
+}
 
 .footer {
     display: flex;
