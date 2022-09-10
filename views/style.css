@@ -1,46 +1,76 @@
 body {
-    height: 4000px;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
+}
+.essme {
+    position: static;
+    width: 385px;
+    height: 97px;
+    padding-left: 450px;
+    padding-top: 200px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 124px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #67d1ff;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+.expert-navbar {
+    background: rgba(0, 29, 70, 0.4);
+    height: 90px;
+    z-index: 0;
+}
+.nav-active {
+    background: rgba(205, 35, 35, 0.75);
+    height: 70px;
+}
+.header-essme {
+    display: flex;
+    width: 1800px;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
 }
 
-
-.navbar {
-    width: 100%;
-    height: 700px;
-    background-image: url("../../assets/bgImg.png");
-    background-position: center;
+.header-background {
+    height: 640px;
+    background-image: url("../assets/homepage-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: black; */
 }
 
 .imgLogo {
-    width: 50px;
-    height: 50px;
-    padding: auto;
+    width: 30px;
+    height:30px;
 }
 
-.container {
-    min-width: 1400px;
-    max-height: 60px;
+.container-essme {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    position: fixed;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    background-color: black transparent;
+    /* background-color: rgb(0, 0, 0); */
     /* opacity: 50%; */
 }
 
 .logo {
     display: flex;
 }
-
-
 
 #main-menu {
     display: flex;
@@ -54,11 +84,11 @@ nav {
 }
 
 #main-menu li {
-    position: relative;
+    position: static;
 }
 
 .sub-menu {
-    position: absolute;
+    position: static;
     background-color: whitesmoke;
     padding: 10px 0px;
     list-style: none;
@@ -94,59 +124,68 @@ header {
 
 
 .searchForm {
-    position: absolute;
+    position: static;
+    margin-top: 230px;
     width: 1208px;
-    height: 126px;
+    height: 110px;
     background: rgba(19, 99, 223, 0.75);
+    display: flex;
+    flex-direction: row;
 }
 
 .searchByField {
-    position: absolute;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 10px;
     width: 509px;
     height: 50px;
-    left: 29px;
-    top: 38px;
-
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .searchByLocation {
-
-    position: absolute;
+    margin: auto;
     width: 491px;
     height: 50px;
-    left: 549px;
-    top: 38px;
-    padding: auto;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.form-control::placeholder{
+    color: rgba(128, 128, 128, 0.75);
+}
 
 .searchButton {
-    position: absolute;
-    width: 124px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 270px;
     height: 53px;
     left: 1063px;
     top: 35px;
-    background: #051367;
-    border-radius: 10px;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 15px;
+}
+.searchButton:hover{
+     background: #d0e6ff;
+     border-color: #5eaaff;
+ }
+.searchButton:focus{
 }
 
 .expertsTitle {
-    position: absolute;
+    position: static;
+    padding-top: 28px;
     width: 100%;
-    font-family: 'Merriweather';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 56px;
     line-height: 80px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-
     color: #1A2849;
 }
 
@@ -172,7 +211,7 @@ header {
     height: 70px;
     display: flex;
     overflow: hidden;
-    position: absolute;
+    position: static;
     box-sizing: border-box;
     align-items: flex-start;
     flex-shrink: 0;
@@ -182,7 +221,7 @@ header {
 }
 .leading-experts-title {
     font-size: 30px;
-    position: absolute;
+    position: static;
     left: -40px;
     width: 400px;
     height: 120px;
@@ -197,8 +236,12 @@ header {
 }
 
 .intro-before-field {
-    height: 385px;
-    background: #0B4FB8;
+    background-image: url("../assets/become-expert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -70px;
+    position: static;
+    height: 395px;
     padding-top: 50px;
 }
 
@@ -211,7 +254,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
 }
 
 .become-experts-button {
@@ -221,12 +264,34 @@ header {
     width: 300px;
     height: 70px;
     padding: 0;
-    color: red;
     background: #FFFFFF;
     border: 3px solid #DA5050;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+}
+.become-experts-button:hover{
+    width: 303px;
+    height: 73px;
+    background: #ea5656;
+    border-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 29px;
+}
+.become-experts-button:focus{
+    width: 303px;
+    height: 73px;
+    background: #ea5656;
+    margin-top: 29px;
+    border: 3px groove #A9D2FF;
+}
+.become-experts-button:hover > span{
+    color: #FFFFFF;
+    font-size: 32.5px;
+}
+.become-experts-button:focus > span{
+    color: #FFFFFF;
+    font-size: 32.5px;
 }
 .become-experts-button > span{
     font-family: 'Roboto';
@@ -293,6 +358,7 @@ header {
 }
 
 .questions {
+    position: static;
     height: 500px;
     background-color: white;
 }
@@ -388,3 +454,4 @@ header {
 .item-footer {
     padding-top: 30px;
 }
+

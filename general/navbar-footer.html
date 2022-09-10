@@ -18,7 +18,7 @@
 
 <body>
     <div style="position: fixed; width:100%">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="expert-navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid " style="margin-left:50px;margin-right:50px">
                 <a class="navbar-brand" href="#">ESSME</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -84,7 +84,18 @@
             </div>
         </nav>
     </div>
-    
+    <script>
+        const navbar = document.querySelector('.expert-navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+    </script>
+
+
     <div class="detail-body">
         <div class="bread-crumb">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
