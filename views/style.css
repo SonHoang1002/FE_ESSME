@@ -1,7 +1,12 @@
 body {
     background-color: #FFFFFF;
 }
-
+input:hover{
+    box-shadow: 0px 1px 4px rgb(255, 255, 255);
+}
+textarea:hover{
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 11px;
@@ -9,7 +14,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    /* box-shadow: inset 0 0 5px transparent; */
+    box-shadow: inset 0 0 5px transparent;
     border-radius: 10px;
 }
 
@@ -24,6 +29,9 @@ body {
     background: gray;
 }
 
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 
 .essme {
     position: static;
@@ -68,7 +76,7 @@ a {
 
 .header-background {
     height: 640px;
-    background-image: url("../../../assets/homepage-bg.jpg");
+    background-image: url("../assets/homepage-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
@@ -174,7 +182,7 @@ header {
     width: 491px;
     height: 50px;
     background: #FFFFFF;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .form-control::placeholder{
     color: rgba(128, 128, 128, 0.75);
@@ -471,7 +479,7 @@ header {
 
 .fields-events {
     width: 100%;
-    background-color: #EBF6FF;
+    background-color: #dcefff;
 }
 
 .fields-title{
@@ -486,44 +494,41 @@ header {
 
     color: #1363DF;
     margin-left: 30px;
+    padding-top: 20px;
 }
 .fields-list{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 .field-item {
+    width: fit-content;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .field-images{
-    width: 300px;
+    width: 350px;
     height: 200px;
     border-radius: 20px;
 }
 .field-name{
     width: 100%;
-    display: flex;
-    align-items: center;
-    margin: auto;
 }
-.field-name > span {
+.field-name > div {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
-    line-height: 30px;
-
     color: #000000;
-    padding: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
 }
 .events {
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .event-title{
     font-family: 'Merriweather';
@@ -552,7 +557,7 @@ header {
     height: 330px;
     width: 300px;
     background-color: white;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
@@ -566,6 +571,12 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+.img-events > img{
+    width: 260px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: contain;
 }
 
 .title-events {
@@ -603,9 +614,9 @@ header {
 } */
 
 .news {
-    background: #FFEAEE;
-    margin-bottom: 50px;
-    border-radius: 20px;
+    background: #f0e7ff;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
 }
 
 .news-title {
@@ -649,7 +660,7 @@ header {
     margin: 10px;
     padding: 10px;
     background-color: white;
-   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .item-news:hover{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
@@ -666,7 +677,7 @@ header {
 
 .img-news {
     width: 120px;
-    height: 90px;
+    max-height: 90px;
 }
 
 .sub-detail-item-news {
@@ -688,13 +699,16 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 30px;
     display: flex;
     padding-bottom: 40px;
     text-decoration-line: underline;
 
     color: #000000;
+}
+.footer-news:hover{
+    color: #2498ff;
 }
 .footer-news>span{
     margin: auto;
@@ -758,7 +772,7 @@ header {
     height: 100px;
     background-color: white;
     border-radius: 20px;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .question-answer-card:hover{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
@@ -770,8 +784,20 @@ header {
     padding: 20px;
 }
 .see-more-FQAs{
-    margin-top: 30px;
-    text-align: center;
+    width: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-decoration-line: underline;
+    margin: auto;
+    padding-top: 20px;
+
+    color: #000000;
+}
+.see-more-FQAs:hover{
+    color: #2498ff;
 }
 
 
@@ -791,7 +817,7 @@ button {
     border-radius: 10px;
     border: none;
     width: 150px;
-    height: 50px;
+    height: 55px;
 }
 
 .footer {
@@ -809,4 +835,3 @@ button {
 .item-footer {
     padding-top: 30px;
 }
-

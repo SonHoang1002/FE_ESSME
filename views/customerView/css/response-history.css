@@ -131,7 +131,9 @@ nav {
     top: 40px;
     display: none;
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 .sub-menu li:hover {
     background-color: black;
 }
