@@ -69,7 +69,9 @@ nav {
     display: none;
     color: black;
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 .sub-menu li:hover {
     background-color: black;
 }

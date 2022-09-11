@@ -38,7 +38,9 @@ nav {
     background-color: black transparent;
     /* opacity: 50%; */
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 .logo {
     display: flex;
 }

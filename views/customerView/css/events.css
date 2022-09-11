@@ -30,7 +30,9 @@ a {
     justify-items: center;
     position: fixed;
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 nav {
     display: flex;
     justify-content: space-between;
