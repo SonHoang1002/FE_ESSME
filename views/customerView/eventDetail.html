@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../plugin/slick-master/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../plugin/slick-master/slick-master/slick/slick-theme.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/expertDetail.css">
     <style>
         a {
@@ -19,166 +26,246 @@
 </head>
 
 <body>
-<div class="navbar-essme">
-    <div class="header-essme">
-        <div class="container-essme">
-            <a href="#">
-                <div class="logo">
-                    <img class="imgLogo" src="https://img.vn/uploads/thuvien/singa-png-20220719150401Tdj1WAJFQr.png"
-                         alt="img">
-                </div>
-            </a>
-            <ul id="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Experts</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">FQAs </a></li>
-                        <li><a href="#">Order Expert</a></li>
-                        <li><a href="#">Response</a></li>
-                        <li><a href="#">News</a></li>
+    <div class="expert-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid " style="margin-left:50px;margin-right:50px">
+                <a class="navbar-brand" href="#">ESSME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
-                </li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Icon</a></li>
-                <li><a href="#">Login</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Profile Setting</a></li>
-                        <li><a href="#">Oder History</a></li>
-                        <li><a href="#">Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Experts
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">FQAs</a></li>
+                                    <li><a class="dropdown-item" href="#">Order Experts</a></li>
+                                    <li><a class="dropdown-item" href="#">Response</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Language
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="imgLogo" src="../../../assets/eventimg.png" alt="">
+                                </a>
 
-<div class="event-detail-container">
-    <div class="bread-crumb">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <div class="icon-home"><i class="fa fa-home"></i></div>
-                <li class="breadcrumb-item"><a href="#"><span style="color:black">Home</span></a></li>
-                <li class="breadcrumb-item" aria-current="page"><span style="color:black">Events</span></li>
-                <li class="breadcrumb-item" aria-current="page"><span style="color:black">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span></li>
-            </ol>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="imgLogo" style="border-radius:30px" src="../../../assets/eventimg.png"
+                                        alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:80px">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style=" margin-right:10px"></div>
+            </div>
         </nav>
-        <div class="line"></div>
     </div>
-
-    <div class="map">
-        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1200&amp;height=500&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedmapgenerator.com/">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:1200px;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:1200px;height:500px;}.gmap_iframe {width:1200px!important;height:500px!important;}</style></div>
-    </div>
-    <div class="event-d-image">
-        <img src="../../assets/eventimg.png" alt="Yes">
-    </div >
-    <div class="event-d-tags">
-        <div>
-            <span class="event-title">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span>
+    <script>
+        const navbar = document.querySelector('.expert-navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+    </script>
+    <div class="header-background"></div>
+    <div class="event-detail-container">
+        <div class="bread-crumb">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <div class="icon-home"><i class="fa fa-home"></i></div>
+                    <li class="breadcrumb-item"><a href="#"><span style="color:black">Home</span></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><span style="color:black">Events</span></li>
+                    <li class="breadcrumb-item" aria-current="page"><span style="color:black">OPEN INNOVATION: UNLOCK
+                            HIDDEN OPPORTUNITIES</span></li>
+                </ol>
+            </nav>
+            <div class="line"></div>
         </div>
-        <div style="margin: 20px">
-            <div class="date-tag">
-                <span>
-                    <span style="font-weight: 500;font-size: 25px; margin: 10px 20px">
-                        January
-                    </span>
-                    <span style="font-weight: 500;font-size: 40px; margin: 10px">
-                        02
-                    </span>
-                </span>
+
+        <div class="map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0"
+                        src="https://maps.google.com/maps?width=1200&amp;height=500&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://embedmapgenerator.com/">embed google maps in website</a></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        width: 1200px;
+                        height: 500px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 1200px;
+                        height: 500px;
+                    }
+
+                    .gmap_iframe {
+                        width: 1200px !important;
+                        height: 500px !important;
+                    }
+                </style>
             </div>
-            <div class="tag-items">
-                <div>
-                    <span>Scientist</span>
-                    <span>Conference</span>
-                    <span>Other Events</span>
+        </div>
+        <div class="event-d-image">
+            <img src="../../assets/eventimg.png" alt="Yes">
+        </div>
+        <div class="event-d-tags">
+            <div>
+                <span class="event-title">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span>
+            </div>
+            <div style="margin: 20px">
+                <div class="date-tag">
+                    <span>
+                        <span style="font-weight: 500;font-size: 25px; margin: 10px 20px">
+                            January
+                        </span>
+                        <span style="font-weight: 500;font-size: 40px; margin: 10px">
+                            02
+                        </span>
+                    </span>
                 </div>
-                <div>
-                    <span>Care</span>
-                    <span>Will Participate</span>
+                <div class="tag-items">
+                    <div>
+                        <span>Scientist</span>
+                        <span>Conference</span>
+                        <span>Other Events</span>
+                    </div>
+                    <div>
+                        <span>Care</span>
+                        <span>Will Participate</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="event-d-time-place">
-        <div class="event-space">
-            <svg width="30" height="38" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.4584 37.2333C2.10703 21.6 0 19.9955 0 14.25C0 6.37992 6.7157 0 15 0C23.2843 0 30 6.37992 30 14.25C30 19.9955 27.893 21.6 16.5416 37.2333C15.7966 38.2556 14.2033 38.2555 13.4584 37.2333ZM15 20.1875C18.4518 20.1875 21.25 17.5292 21.25 14.25C21.25 10.9708 18.4518 8.3125 15 8.3125C11.5482 8.3125 8.75 10.9708 8.75 14.25C8.75 17.5292 11.5482 20.1875 15 20.1875Z" fill="black"/>
-            </svg>
-            1310 A1, 207 Giai Phong, Hai Ba Trung, Ha Noi
+        <div class="event-d-time-place">
+            <div class="event-space">
+                <svg width="30" height="38" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.4584 37.2333C2.10703 21.6 0 19.9955 0 14.25C0 6.37992 6.7157 0 15 0C23.2843 0 30 6.37992 30 14.25C30 19.9955 27.893 21.6 16.5416 37.2333C15.7966 38.2556 14.2033 38.2555 13.4584 37.2333ZM15 20.1875C18.4518 20.1875 21.25 17.5292 21.25 14.25C21.25 10.9708 18.4518 8.3125 15 8.3125C11.5482 8.3125 8.75 10.9708 8.75 14.25C8.75 17.5292 11.5482 20.1875 15 20.1875Z"
+                        fill="black" />
+                </svg>
+                1310 A1, 207 Giai Phong, Hai Ba Trung, Ha Noi
+            </div>
+            <div class="event-time">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_753_116)">
+                        <path
+                            d="M17.5 0.546875C8.13477 0.546875 0.546875 8.13477 0.546875 17.5C0.546875 26.8652 8.13477 34.4531 17.5 34.4531C26.8652 34.4531 34.4531 26.8652 34.4531 17.5C34.4531 8.13477 26.8652 0.546875 17.5 0.546875ZM23.8226 21.9434L22.4554 23.6523C22.3656 23.7645 22.2547 23.8579 22.1289 23.9272C22.0031 23.9965 21.8648 24.0404 21.7221 24.0562C21.5793 24.0721 21.4348 24.0597 21.2968 24.0197C21.1589 23.9797 21.0301 23.913 20.918 23.8232L16.3379 20.4244C16.0179 20.1682 15.7596 19.8433 15.5821 19.4738C15.4046 19.1042 15.3124 18.6995 15.3125 18.2896V7.65625C15.3125 7.36617 15.4277 7.08797 15.6329 6.88285C15.838 6.67773 16.1162 6.5625 16.4062 6.5625H18.5938C18.8838 6.5625 19.162 6.67773 19.3671 6.88285C19.5723 7.08797 19.6875 7.36617 19.6875 7.65625V17.5L23.6523 20.4053C23.7646 20.4951 23.858 20.6061 23.9273 20.732C23.9966 20.8579 24.0404 20.9962 24.0562 21.139C24.072 21.2819 24.0595 21.4264 24.0194 21.5645C23.9793 21.7025 23.9124 21.8312 23.8226 21.9434Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_753_116">
+                            <rect width="35" height="35" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                23:15PM, Tuesday, 2nd Junuary 2022
+            </div>
+            <div class="event-contact">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_753_118)">
+                        <path
+                            d="M17.0363 10.135L5.83326 20.5153V31.7188C5.83326 32.0088 5.93569 32.287 6.11802 32.4922C6.30035 32.6973 6.54763 32.8125 6.80548 32.8125L13.6147 32.7927C13.8717 32.7912 14.1177 32.6754 14.299 32.4704C14.4803 32.2654 14.582 31.9881 14.582 31.6989V25.1563C14.582 24.8662 14.6845 24.588 14.8668 24.3829C15.0491 24.1777 15.2964 24.0625 15.5543 24.0625H19.4431C19.701 24.0625 19.9483 24.1777 20.1306 24.3829C20.3129 24.588 20.4154 24.8662 20.4154 25.1563V31.6942C20.415 31.8381 20.4398 31.9807 20.4885 32.1138C20.5372 32.2469 20.6087 32.3678 20.699 32.4698C20.7894 32.5717 20.8967 32.6526 21.0148 32.7077C21.133 32.7629 21.2597 32.7913 21.3876 32.7913L28.1944 32.8125C28.4522 32.8125 28.6995 32.6973 28.8818 32.4922C29.0641 32.287 29.1666 32.0088 29.1666 31.7188V20.5078L17.966 10.135C17.8343 10.0156 17.6703 9.95044 17.5011 9.95044C17.332 9.95044 17.168 10.0156 17.0363 10.135ZM34.7325 17.1903L29.6527 12.4797V3.01123C29.6527 2.79367 29.5759 2.58502 29.4391 2.43118C29.3024 2.27734 29.1169 2.19092 28.9235 2.19092H25.5207C25.3274 2.19092 25.1419 2.27734 25.0051 2.43118C24.8684 2.58502 24.7916 2.79367 24.7916 3.01123V7.97481L19.3514 2.93945C18.8293 2.45614 18.1742 2.19188 17.4981 2.19188C16.822 2.19188 16.1669 2.45614 15.6448 2.93945L0.263649 17.1903C0.189814 17.259 0.128726 17.3433 0.0838776 17.4386C0.0390291 17.5338 0.0112982 17.638 0.00226954 17.7453C-0.00675912 17.8526 0.00309137 17.9608 0.0312582 18.0638C0.059425 18.1668 0.105356 18.2626 0.166427 18.3456L1.7159 20.4648C1.77681 20.5481 1.85172 20.617 1.93635 20.6678C2.02099 20.7185 2.11368 20.7499 2.20912 20.7602C2.30456 20.7706 2.40088 20.7596 2.49256 20.7281C2.58425 20.6965 2.66949 20.6449 2.74342 20.5762L17.0363 7.33223C17.168 7.21282 17.332 7.14771 17.5011 7.14771C17.6703 7.14771 17.8343 7.21282 17.966 7.33223L32.2595 20.5762C32.3333 20.6449 32.4184 20.6966 32.5099 20.7282C32.6015 20.7599 32.6977 20.771 32.7931 20.7609C32.8884 20.7507 32.9811 20.7195 33.0657 20.669C33.1504 20.6186 33.2253 20.5499 33.2864 20.4668L34.8358 18.3477C34.8968 18.2642 34.9426 18.1679 34.9704 18.0645C34.9983 17.961 35.0076 17.8524 34.998 17.7448C34.9884 17.6373 34.96 17.5329 34.9145 17.4378C34.8689 17.3426 34.8071 17.2585 34.7325 17.1903Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_753_118">
+                            <rect width="35" height="35" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <span>Facebook</span>
+                <span>Twitter</span>
+            </div>
         </div>
-        <div class="event-time">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_753_116)">
-                    <path d="M17.5 0.546875C8.13477 0.546875 0.546875 8.13477 0.546875 17.5C0.546875 26.8652 8.13477 34.4531 17.5 34.4531C26.8652 34.4531 34.4531 26.8652 34.4531 17.5C34.4531 8.13477 26.8652 0.546875 17.5 0.546875ZM23.8226 21.9434L22.4554 23.6523C22.3656 23.7645 22.2547 23.8579 22.1289 23.9272C22.0031 23.9965 21.8648 24.0404 21.7221 24.0562C21.5793 24.0721 21.4348 24.0597 21.2968 24.0197C21.1589 23.9797 21.0301 23.913 20.918 23.8232L16.3379 20.4244C16.0179 20.1682 15.7596 19.8433 15.5821 19.4738C15.4046 19.1042 15.3124 18.6995 15.3125 18.2896V7.65625C15.3125 7.36617 15.4277 7.08797 15.6329 6.88285C15.838 6.67773 16.1162 6.5625 16.4062 6.5625H18.5938C18.8838 6.5625 19.162 6.67773 19.3671 6.88285C19.5723 7.08797 19.6875 7.36617 19.6875 7.65625V17.5L23.6523 20.4053C23.7646 20.4951 23.858 20.6061 23.9273 20.732C23.9966 20.8579 24.0404 20.9962 24.0562 21.139C24.072 21.2819 24.0595 21.4264 24.0194 21.5645C23.9793 21.7025 23.9124 21.8312 23.8226 21.9434Z" fill="black"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_753_116">
-                        <rect width="35" height="35" fill="white"/>
-                    </clipPath>
-                </defs>
-            </svg>
-            23:15PM, Tuesday, 2nd Junuary 2022
-        </div>
-        <div class="event-contact">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_753_118)">
-                    <path d="M17.0363 10.135L5.83326 20.5153V31.7188C5.83326 32.0088 5.93569 32.287 6.11802 32.4922C6.30035 32.6973 6.54763 32.8125 6.80548 32.8125L13.6147 32.7927C13.8717 32.7912 14.1177 32.6754 14.299 32.4704C14.4803 32.2654 14.582 31.9881 14.582 31.6989V25.1563C14.582 24.8662 14.6845 24.588 14.8668 24.3829C15.0491 24.1777 15.2964 24.0625 15.5543 24.0625H19.4431C19.701 24.0625 19.9483 24.1777 20.1306 24.3829C20.3129 24.588 20.4154 24.8662 20.4154 25.1563V31.6942C20.415 31.8381 20.4398 31.9807 20.4885 32.1138C20.5372 32.2469 20.6087 32.3678 20.699 32.4698C20.7894 32.5717 20.8967 32.6526 21.0148 32.7077C21.133 32.7629 21.2597 32.7913 21.3876 32.7913L28.1944 32.8125C28.4522 32.8125 28.6995 32.6973 28.8818 32.4922C29.0641 32.287 29.1666 32.0088 29.1666 31.7188V20.5078L17.966 10.135C17.8343 10.0156 17.6703 9.95044 17.5011 9.95044C17.332 9.95044 17.168 10.0156 17.0363 10.135ZM34.7325 17.1903L29.6527 12.4797V3.01123C29.6527 2.79367 29.5759 2.58502 29.4391 2.43118C29.3024 2.27734 29.1169 2.19092 28.9235 2.19092H25.5207C25.3274 2.19092 25.1419 2.27734 25.0051 2.43118C24.8684 2.58502 24.7916 2.79367 24.7916 3.01123V7.97481L19.3514 2.93945C18.8293 2.45614 18.1742 2.19188 17.4981 2.19188C16.822 2.19188 16.1669 2.45614 15.6448 2.93945L0.263649 17.1903C0.189814 17.259 0.128726 17.3433 0.0838776 17.4386C0.0390291 17.5338 0.0112982 17.638 0.00226954 17.7453C-0.00675912 17.8526 0.00309137 17.9608 0.0312582 18.0638C0.059425 18.1668 0.105356 18.2626 0.166427 18.3456L1.7159 20.4648C1.77681 20.5481 1.85172 20.617 1.93635 20.6678C2.02099 20.7185 2.11368 20.7499 2.20912 20.7602C2.30456 20.7706 2.40088 20.7596 2.49256 20.7281C2.58425 20.6965 2.66949 20.6449 2.74342 20.5762L17.0363 7.33223C17.168 7.21282 17.332 7.14771 17.5011 7.14771C17.6703 7.14771 17.8343 7.21282 17.966 7.33223L32.2595 20.5762C32.3333 20.6449 32.4184 20.6966 32.5099 20.7282C32.6015 20.7599 32.6977 20.771 32.7931 20.7609C32.8884 20.7507 32.9811 20.7195 33.0657 20.669C33.1504 20.6186 33.2253 20.5499 33.2864 20.4668L34.8358 18.3477C34.8968 18.2642 34.9426 18.1679 34.9704 18.0645C34.9983 17.961 35.0076 17.8524 34.998 17.7448C34.9884 17.6373 34.96 17.5329 34.9145 17.4378C34.8689 17.3426 34.8071 17.2585 34.7325 17.1903Z" fill="black"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_753_118">
-                        <rect width="35" height="35" fill="white"/>
-                    </clipPath>
-                </defs>
-            </svg>
-            <span>Facebook</span>
-            <span>Twitter</span>
+        <div class="event-d-detail">
+            &emsp;Detail
+            <hr class="my-4">
+            Nhằm thúc đẩy các hoạt động đổi mới sáng tạo, kết nối nguồn lực trong và ngoài nước, cùng đóng góp vào sự
+            phát triển của khoa học công nghệ, Hỗ trợ hệ sinh thái khởi nghiệp sáng tạo quốc gia - Bộ Khoa học & Công
+            nghệ phối hợp với Tổng công ty đầu tư và kinh doanh vốn nhà nước SCIC , Ủy ban quản lý vốn nhà nước tổ chức
+            hội nghị. Với sự tham gia của Lãnh đạo Bộ/ngành, các Cơ quan nhà nước, tập đoàn, các doanh nghiệp lớn, phiên
+            Tọa đàm Đổi mới sáng tạo mở sẽ là nơi doanh nghiệp lớn đặt bài toán cho startup giải quyết.
         </div>
     </div>
-    <div class="event-d-detail">
-        &emsp;Detail
-        <hr class="my-4">
-        Nhằm thúc đẩy các hoạt động đổi mới sáng tạo, kết nối nguồn lực trong và ngoài nước, cùng đóng góp vào sự phát triển của khoa học công nghệ, Hỗ trợ hệ sinh thái khởi nghiệp sáng tạo quốc gia - Bộ Khoa học & Công nghệ phối hợp với Tổng công ty đầu tư và kinh doanh vốn nhà nước SCIC , Ủy ban quản lý vốn nhà nước tổ chức hội nghị. Với sự tham gia của Lãnh đạo Bộ/ngành, các Cơ quan nhà nước, tập đoàn, các doanh nghiệp lớn, phiên Tọa đàm Đổi mới sáng tạo mở sẽ là nơi doanh nghiệp lớn đặt bài toán cho startup giải quyết.
-    </div>
-</div>
 
-<div class="footer" style="margin-top: 70px">
-    <div class="item-footer">
-        <div><span>Feature</span></div><br>
-        <div class="sub-item-footer">
-            <div><span>Find an Expert</span></div><br>
-            <span>Find Events</span><br>
+    <div class="footer" style="margin-top: 70px">
+        <div class="item-footer">
+            <div><span>Feature</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Find an Expert</span></div><br>
+                <span>Find Events</span><br>
+            </div>
         </div>
-    </div>
-    <div class="item-footer">
-        <div><span>Discover</span></div><br>
-        <div class="sub-item-footer">
-            <div><span>Security</span></div><br>
-            <div></div><span>Sponsor</span><br>
+        <div class="item-footer">
+            <div><span>Discover</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Security</span></div><br>
+                <div></div><span>Sponsor</span><br>
+            </div>
         </div>
-    </div>
-    <div class="item-footer">
-        <div><span>Information</span></div><br>
-        <div class="sub-item-footer">
-            <div><span>Rules</span></div><br>
-            <span>About us</span><br>
+        <div class="item-footer">
+            <div><span>Information</span></div><br>
+            <div class="sub-item-footer">
+                <div><span>Rules</span></div><br>
+                <span>About us</span><br>
+            </div>
         </div>
-    </div>
-    <div class="item-footer">
-        <div><span>Community</span></div><br>
-        <div class="sub-item-footer">
-            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt=""> <span
-                    style="padding-right:5px"></span></i><span>Facebook</span></div><br>
-            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt=""> <span
-                    style="padding-right:5px"></span></i><span>Twitter</span></div><br>
-            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt=""> <span
-                    style="padding-right:5px"></span></i><span>Linkedln</span></div><br>
-        </div>
+        <div class="item-footer">
+            <div><span>Community</span></div><br>
+            <div class="sub-item-footer">
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Facebook</span></div><br>
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Twitter</span></div><br>
+                <div><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt=""> <span
+                        style="padding-right:5px"></span></i><span>Linkedln</span></div><br>
+            </div>
 
+        </div>
     </div>
-</div>
 </body>
 
 </html>
-
