@@ -485,7 +485,7 @@ header {
 .fields-title{
     font-family: 'Merriweather';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 56px;
     line-height: 70px;
     display: flex;
@@ -494,7 +494,8 @@ header {
 
     color: #1363DF;
     margin-left: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 .fields-list{
     width: 85%;
@@ -533,7 +534,7 @@ header {
 .event-title{
     font-family: 'Merriweather';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 56px;
     line-height: 70px;
     display: flex;
@@ -621,8 +622,8 @@ header {
 
 .news-title {
     padding-top: 40px;
-    padding-left: 80px;
-    width: 720px;
+    padding-left: 40px;
+    width: fit-content;
     height: 80px;
 
     font-family: 'Merriweather';
@@ -717,7 +718,7 @@ header {
 .behind-title{
     font-family: 'Merriweather';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 64px;
     line-height: 80px;
     display: flex;
@@ -738,9 +739,9 @@ header {
 
 .question-title {
     margin: 20px;
-    font-family: 'Merriweather';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 64px;
     display: flex;
     align-items: center;
@@ -761,7 +762,7 @@ header {
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
 }
