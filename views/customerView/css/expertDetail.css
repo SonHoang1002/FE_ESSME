@@ -73,6 +73,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.header-background-news{
+    height: 640px;
+    background-image: url("../../../assets/news-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #main-menu {
     display: flex;
@@ -146,7 +152,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #1363DF;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .profile {
@@ -407,7 +413,23 @@ button {
 
     color: rgb(80, 80, 80);
 }
+.essme-new {
+    position: static;
+    width: fit-content;
+    height: 97px;
+    padding-left: 60px;
+    padding-top: 312px;
 
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 124px;
+    display: flex;
+    align-items: center;
+
+    color: rgb(11, 206, 206);
+}
 .searchByField {
     position: absolute;
     width: 509px;
@@ -462,7 +484,6 @@ button {
     width: fit-content;
     height: fit-content;
     margin: auto;
-    margin-top: 40px;
     border-radius: 10px;
 }
 .o-title-container > p{
@@ -889,6 +910,12 @@ button {
     display: flex;
     flex-direction: column;
 }
+.new-page-body{
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 .leading-experts-container{
     display: flex;
@@ -1069,7 +1096,6 @@ button {
     flex-grow: 5;
     background: transparent;
     padding: 10px;
-    margin-right: 20px;
     flex-direction: row;
 }
 .hot-news {
@@ -1094,8 +1120,8 @@ button {
 }
 .news-fields-container {
     margin-top: 30px;
-    width: 240px;
-    height: 650px;
+    width: 300px;
+    height: 595px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -1105,6 +1131,7 @@ button {
 .searchNews{
     display: flex;
     flex-direction: row;
+    height: 34px;
 }
 .news-fields-container > span{
     font-family: 'Roboto';
@@ -1416,8 +1443,10 @@ button {
 }
 
 .searchNewButton {
-    background: #FFFFFF;
-    border-color: #A9D2FF;
+    background: #b9e1ff;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
 }
 .searchNewButton:hover{
     background: #5eaaff;

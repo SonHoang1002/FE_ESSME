@@ -479,7 +479,7 @@ header {
 
 .fields-events {
     width: 100%;
-    background-color: #EBF6FF;
+    background-color: #dcefff;
 }
 
 .fields-title{
@@ -497,7 +497,7 @@ header {
     padding-top: 20px;
 }
 .fields-list{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -506,7 +506,7 @@ header {
     margin: auto;
 }
 .field-images{
-    width: 300px;
+    width: 350px;
     height: 200px;
     border-radius: 20px;
 }
@@ -614,8 +614,9 @@ header {
 } */
 
 .news {
-    background: #FFEAEE;
+    background: #f0e7ff;
     margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
 }
 
 .news-title {
@@ -783,8 +784,20 @@ header {
     padding: 20px;
 }
 .see-more-FQAs{
-    margin-top: 30px;
-    text-align: center;
+    width: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-decoration-line: underline;
+    margin: auto;
+    padding-top: 20px;
+
+    color: #000000;
+}
+.see-more-FQAs:hover{
+    color: #2498ff;
 }
 
 
