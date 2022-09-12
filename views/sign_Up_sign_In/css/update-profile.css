@@ -59,6 +59,10 @@ a {
     background: rgba(205, 35, 35, 0.75);
     height: 70px;
 }
+.imgLogo {
+    width: 30px;
+    height: 30px;
+}
 .header-essme {
     display: flex;
     width: 1800px;
