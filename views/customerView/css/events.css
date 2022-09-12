@@ -22,7 +22,7 @@
 
 .header-background {
     height: 640px;
-    background-image: url("../../../assets/homepage-bg.jpg");
+    background-image: url("../../../assets/event-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
@@ -30,7 +30,7 @@
 
 .essme {
     position: static;
-    width: 385px;
+    width: fit-content;
     height: 97px;
     padding-left: 450px;
     padding-top: 200px;
@@ -44,7 +44,7 @@
     align-items: center;
     text-align: center;
 
-    color: #67d1ff;
+    color: #cce3ff;
 }
 
 a {
@@ -181,8 +181,8 @@ header {
     position: absolute;
     width: 1208px;
     height: 126px;
-    background: #A9D2FF;
-    margin-top: 400px;
+    background: rgba(0, 0, 255, 0.42);
+    margin-top: 250px;
 }
 
 
