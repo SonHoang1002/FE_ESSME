@@ -8,10 +8,10 @@ input:hover,textarea:hover{
     border-color: rgb(56, 156, 255);
 }
 .event-detail-body{
-    background-color: #f1f2f5;
+    background-color: #E5E5E5;
 }
 .news-body{
-    background-color: #f1f2f5;
+    background-color: #E5E5E5;
 }
 /* width */
 ::-webkit-scrollbar {
