@@ -168,6 +168,14 @@ li {
     background-color: #FFFFFF;
     width: 100%;
     margin: 20px;
+    padding: 20px;
+}
+.pro-title {
+    font-family: "Segoe UI";
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
 }
 .body-update-profile {
     width: 1000px;
@@ -196,7 +204,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .title-update-profile {
@@ -232,7 +239,6 @@ li {
     height: 400px;
     width: 100%;
     background-color: transparent;
-    /* border: 0.5px solid rgba(0, 0, 0, 0.45); */
 }
 
 .photo-update-profile {
@@ -282,7 +288,8 @@ li {
     height: 400px;
     width: 100%;
     background-color: white;
-    /* border: 0.5px solid rgba(0, 0, 0, 0.45); */
+    margin-bottom: 20px;
+     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .field-input-degree {
@@ -313,7 +320,7 @@ li {
     height: 400px;
     width: 100%;
     background-color: white;
-    /* border: 0.5px solid rgba(0, 0, 0, 0.45); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .field-input-degree label {
