@@ -286,7 +286,7 @@ header {
     height: 100%;
     position: static;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: #D3E5FF;
 }
 .leading-list{
@@ -835,4 +835,22 @@ button {
 
 .item-footer {
     padding-top: 30px;
+}
+
+.more-expert {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #2498ff;
+    color: #2498ff;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.htitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
