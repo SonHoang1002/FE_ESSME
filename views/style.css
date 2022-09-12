@@ -711,7 +711,7 @@ header {
 .footer-news:hover{
     color: #2498ff;
 }
-.footer-news>span{
+.footer-news > a{
     margin: auto;
 }
 
@@ -845,8 +845,11 @@ button {
     border: 2px solid #2498ff;
     color: #2498ff;
     background-color: transparent;
+}
+.morelink{
     margin-left: auto;
     margin-right: 50px;
+    text-decoration: none
 }
 
 .htitle {
