@@ -22,7 +22,8 @@
 
 .header-background {
     height: 640px;
-    background-image: url("../../../assets/event-back.jpg");
+    background-image: url("../../../assets/event-bg.jpg");
+    background-position: 0px -150px;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
@@ -32,8 +33,8 @@
     position: static;
     width: fit-content;
     height: 97px;
-    padding-left: 450px;
-    padding-top: 200px;
+    padding-left: 440px;
+    padding-top: 250px;
 
     font-family: 'Segoe UI';
     font-style: normal;
@@ -44,7 +45,7 @@
     align-items: center;
     text-align: center;
 
-    color: #cce3ff;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 a {
@@ -181,8 +182,7 @@ header {
     position: absolute;
     width: 1208px;
     height: 126px;
-    background: rgba(0, 0, 255, 0.42);
-    margin-top: 250px;
+    background-color: #A9D2FF;
 }
 
 
