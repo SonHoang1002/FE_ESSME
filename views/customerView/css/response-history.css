@@ -170,7 +170,7 @@ li {
 .detail-body {
     width: 1240px;
     margin: auto;
-
+    padding-top: 90px;
 }
 
 .icon-home {

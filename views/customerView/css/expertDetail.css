@@ -1,5 +1,5 @@
 body {
-    background-color: #f8fdff;
+    background-color: #E5E5E5;
 }
 
 /* width */
@@ -243,6 +243,7 @@ li {
     height: 1300px;
     width: 1240px;
     margin: auto;
+    padding-top: 90px;
 }
 
 
@@ -267,8 +268,8 @@ li {
 .image-profile {
     width: 400px;
     margin: 10px;
-    /* border-radius: 15px; */
-    background-color: #A9D2FF;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: white;
 }
 
 .img-item-profile {
@@ -316,9 +317,9 @@ li {
 }
 
 .intro-social-profile {
-    background-color: #A9D2FF;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: white;
     margin: 10px;
-    width:100%;
     /* border-radius: 15px; */
     display: flex;
 }
@@ -377,7 +378,8 @@ li {
 
 
 .order-profile {
-    background-color: #A9D2FF;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
     height: 290px;
     margin: 10px;
 }
@@ -399,7 +401,8 @@ button {
 }
 
 .related-experts {
-    background-color: #A9D2FF;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.1);
     height: 400px;
     margin:10px;
 }
@@ -425,7 +428,9 @@ button {
     align-items: center;
     width: 330px;
     height: 160px;
-    background-color: white
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 5px;
 }
 
 .card-related {
@@ -502,6 +507,7 @@ button {
     background-color: #1363DF;
     color: white;
     height: 300px;
+    margin-top: 150px;
 }
 
 .sub-item-footer {
