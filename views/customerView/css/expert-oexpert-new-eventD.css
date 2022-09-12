@@ -1151,27 +1151,11 @@ button {
     flex-direction: column;
     overflow: auto;
 }
-.field-items > span{
-    margin-top: 8px;
-    margin-left: 10px;
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #24604C;
-    width: fit-content;
-    font-family: 'Roboto';
-    font-style: normal;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #24604C;
-    border-radius: 5px;
-}
 
-.field-items > span:hover{
-    border: 2px solid #47be97;
-    color: #47be97;
+.fields-choose-events {
+    margin-left: 7px;
+    margin-top: 5px;
+    display: flex;
 }
 
 .expert-hotnew {
