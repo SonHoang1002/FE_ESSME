@@ -76,14 +76,6 @@ input:hover{
     position: fixed;
 }
 
-.header-background {
-    height: 640px;
-    background-image: url("../../../assets/homepage-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: black; */
-}
-
 .imgLogo {
     width: 30px;
     height: 30px;
@@ -190,6 +182,7 @@ header {
     width: 1208px;
     height: 126px;
     background: #A9D2FF;
+    margin-top: 400px;
 }
 
 
