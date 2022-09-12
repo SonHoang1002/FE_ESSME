@@ -4,7 +4,7 @@ body {
 .form-control::placeholder{
     color: rgba(128, 128, 128, 0.75);
 }
-input:hover{
+input:hover,textarea:hover{
     border-color: rgb(56, 156, 255);
 }
 .event-detail-body{
