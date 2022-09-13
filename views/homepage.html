@@ -343,8 +343,8 @@ git push -->
     <div class="item-footer">
       <div><span>Feature</span></div><br>
       <div class="sub-item-footer">
-        <div><span>Find an Expert</span></div><br>
-        <span>Find Events</span><br>
+        <div type="button" onclick="window.location='customerView/experts.html'"><span>Find an Expert</span></div><br>
+        <span type="button" onclick="window.location='customerView/events.html'">Find Events</span><br>
       </div>
     </div>
     <div class="item-footer">
@@ -364,15 +364,15 @@ git push -->
     <div class="item-footer">
       <div><span>Community</span></div><br>
       <div class="sub-item-footer">
-        <div><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt="">
+        <div id="facebook"><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt="">
           <span style="padding-right:5px"></span>
           <span>Facebook</span>
         </div><br>
-        <div><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt="">
+        <div id="twitter"><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt="">
           <span style="padding-right:5px"></span>
           <span>Twitter</span>
         </div><br>
-        <div><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt="">
+        <div id="linkedin"><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt="">
           <span style="padding-right:5px"></span>
           <span>Linkedln</span>
         </div><br>
@@ -474,8 +474,12 @@ git push -->
                     "              <span>"+v.location+"</span>\n" +
                     "            </div>\n" +
                     "          </div>\n" +
-                    "        </div>")
+                    "        </div>");
           });
+          //__________Footer
+          $("#facebook").wrap("<a href='"+footer.facebook+"' style='text-decoration: none; color: white;'></a>");
+          $("#twitter").wrap("<a href='"+footer.twitter+"' style='text-decoration: none; color: white;'></a>");
+          $("#linkedin").wrap("<a href='"+footer.linkedin+"' style='text-decoration: none; color: white;'></a>");
         }).fail(function (xhr, status, errorThrown) {
         }).always(function (xhr, status) {
           console.log("The request is complete!")
