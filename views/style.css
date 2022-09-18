@@ -37,7 +37,7 @@ textarea:hover{
     position: static;
     width: 385px;
     height: 97px;
-    padding-left: 450px;
+    margin: auto;
     padding-top: 200px;
 
     font-family: 'Segoe UI';
@@ -225,7 +225,7 @@ header {
 
 .introTitle {
     height: 80px;
-    font-family: 'League Spartan';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 120px;
@@ -234,7 +234,7 @@ header {
 
 .introSubTitle {
     padding-top: 60px;
-    font-family: 'League Spartan';
+    font-family: 'Segoe UI';
     font-style: italic;
     font-weight: 700;
     font-size: 30px;
@@ -265,7 +265,7 @@ header {
     background-color: #D3E5FF;
 }
 .leading-experts-title > span{
-    font-family: 'Brygada 1918';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -344,9 +344,8 @@ header {
     position: absolute;
     font-size: 18px;
     align-self: auto;
-    font-style: SemiBold;
     text-align: left;
-    font-family: Roboto;
+    font-family: Segoe UI;
     font-weight: 600;
     line-height: normal;
     font-stretch: normal;
@@ -363,9 +362,8 @@ header {
     position: absolute;
     font-size: 14px;
     align-self: auto;
-    font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: Segoe UI;
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -382,9 +380,8 @@ header {
     position: absolute;
     font-size: 14px;
     align-self: auto;
-    font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: Segoe UI;
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -405,7 +402,7 @@ header {
 
 .become-experts-title {
     height: 80px;
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-size: 64px;
     display: flex;
@@ -453,7 +450,7 @@ header {
     font-size: 32.5px;
 }
 .become-experts-button > span{
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -467,7 +464,7 @@ header {
 
 .become-experts-sub-title {
     height: 80px;
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-size: 45px;
     display: flex;
@@ -484,7 +481,7 @@ header {
 }
 
 .fields-title{
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
@@ -516,7 +513,7 @@ header {
     width: 100%;
 }
 .field-name > div {
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
@@ -533,7 +530,7 @@ header {
     padding-bottom: 20px;
 }
 .event-title{
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
@@ -633,7 +630,7 @@ header {
     width: fit-content;
     height: 80px;
 
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -719,7 +716,7 @@ header {
 }
 
 .footer-news {
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -738,7 +735,7 @@ header {
 }
 
 .behind-title{
-    font-family: 'Merriweather';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -761,7 +758,7 @@ header {
 
 .question-title {
     margin: 20px;
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -782,7 +779,7 @@ header {
 
 .title-FQAs {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -819,7 +816,7 @@ header {
 }
 .see-more-FQAs{
     width: fit-content;
-    font-family: 'Roboto';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
