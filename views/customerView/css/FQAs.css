@@ -1,5 +1,5 @@
 body {
-    background-color: #f8fdff;
+    background-color: #f1f2f5;
 }
 
 /* width */
@@ -23,12 +23,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: gray;
 }
-
-
-body {
-    background-color: #E5E5E5;
-}
-
 .essme {
     position: static;
     width: 385px;
@@ -101,7 +95,9 @@ nav {
     /* background-color: rgb(0, 0, 0); */
     /* opacity: 50%; */
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 .logo {
     display: flex;
 }
@@ -168,7 +164,7 @@ li {
 .detail-body {
     width: 1240px;
     margin: auto;
-
+    padding-top: 90px;
 }
 
 .icon-home {

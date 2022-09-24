@@ -25,75 +25,76 @@
 </head>
 
 <body>
-    <div class="expert-navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid " style="margin-left:50px;margin-right:50px">
-                <a class="navbar-brand" href="#">ESSME</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="expert-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid " style="margin-left:50px;margin-right:50px">
+            <a class="navbar-brand" href="#">ESSME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Experts
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="experts.html">Experts</a></li>
+                                <li><a class="dropdown-item" href="FQAs.html">FQAs</a></li>
+                                <li><a class="dropdown-item" href="order_expert.html">Order Experts</a></li>
+                                <li><a class="dropdown-item" href="../expertView/Response_History.html">Response</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9215 26C14.4846 26 15.7635 24.8427 15.7635 23.4283H10.0795C10.0795 24.8427 11.3584 26 12.9215 26ZM22.158 18.2849V11.2128C22.158 7.22669 19.1739 4.01209 15.053 3.112V2.21191C15.053 1.18323 14.0583 0.283142 12.9215 0.283142C11.7847 0.283142 10.79 1.18323 10.79 2.21191V3.112C6.66911 4.01209 3.68502 7.22669 3.68502 11.2128V18.2849L0.843018 20.8566V22.1425H25V20.8566L22.158 18.2849Z" fill="white"/>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img class="imgLogo" style="border-radius:30px" src="../../assets/expertimg.png" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="width:80px;" >
+                                <li><a class="dropdown-item" href="../sign_Up_sign_In/update-profile.html">Update profile</a></li>
+                                <li><a class="dropdown-item" href="../expertView/Chat_With_Master.html">Chat with Master</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <div class="d-flex">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Experts
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">FQAs</a></li>
-                                    <li><a class="dropdown-item" href="#">Order Experts</a></li>
-                                    <li><a class="dropdown-item" href="#">Response</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">News</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Language
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img class="imgLogo" src="../../../assets/eventimg.png" alt="">
-                                </a>
-    
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img class="imgLogo" style="border-radius:30px" src="../../../assets/eventimg.png"
-                                        alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width:80px">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-                <div style=" margin-right:10px"></div>
             </div>
-        </nav>
-    </div>
+            <div style=" margin-right:10px"></div>
+        </div>
+    </nav>
+</div>
     <script>
         const navbar = document.querySelector('.expert-navbar');
         window.onscroll = () => {
@@ -104,7 +105,6 @@
             }
         };
     </script>
-<div class="header-background"></div>
 
 
     <div class="detail-body">
@@ -112,9 +112,10 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <div class="icon-home"><i class="fa fa-home"></i></div>
-                    <li class="breadcrumb-item"><a href="#"><span style="color:black">Home</span></a></li>
-                    <li class="breadcrumb-item" aria-current="page"><span style="color:black">Expert</span></li>
-                    <li class="breadcrumb-item "><a href="#"><span style="color:black">Responese History</span></a></li>
+                    <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="experts.html"><span style="color:black">Expert</span></a></li>
+                    <li class="breadcrumb-item "><a href="../expertView/Response_History.html"><span style="color:black">Responese History</span></a></li>
+                    <li class="breadcrumb-item "><span style="color:black">Detail</span></li>
                 </ol>
             </nav>
         </div>

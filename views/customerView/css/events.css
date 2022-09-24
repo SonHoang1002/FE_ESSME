@@ -22,7 +22,8 @@
 
 .header-background {
     height: 640px;
-    background-image: url("../../../assets/homepage-bg.jpg");
+    background-image: url("../../../assets/event-bg.jpg");
+    background-position: 0px -150px;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
@@ -30,10 +31,10 @@
 
 .essme {
     position: static;
-    width: 385px;
+    width: fit-content;
     height: 97px;
-    padding-left: 450px;
-    padding-top: 200px;
+    padding-left: 440px;
+    padding-top: 250px;
 
     font-family: 'Segoe UI';
     font-style: normal;
@@ -44,7 +45,7 @@
     align-items: center;
     text-align: center;
 
-    color: #67d1ff;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 a {
@@ -76,14 +77,6 @@ input:hover{
     position: fixed;
 }
 
-.header-background {
-    height: 640px;
-    background-image: url("../../../assets/homepage-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: black; */
-}
-
 .imgLogo {
     width: 30px;
     height: 30px;
@@ -95,7 +88,9 @@ input:hover{
     justify-content: space-between;
     justify-items: center;
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -187,7 +182,7 @@ header {
     position: absolute;
     width: 1208px;
     height: 126px;
-    background: #A9D2FF;
+    background-color: #A9D2FF;
 }
 
 

@@ -22,7 +22,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: gray;
 }
-
+.expert-navbar > nav > div > div > div > ul > li:hover{
+    text-decoration: underline;
+}
 
 body {
     background-color: #E5E5E5;
@@ -165,7 +167,7 @@ li {
 .detail-body {
     width: 1240px;
     margin: auto;
-   
+   padding-top: 80px;
 }
 
 .icon-home {
