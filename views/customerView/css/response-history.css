@@ -86,6 +86,10 @@ a {
     width: 30px;
     height: 30px;
 }
+.imgLogo1 {
+    width: 40px;
+    height: 40px;
+}
 
 .container-essme {
     height: 60px;
@@ -168,7 +172,6 @@ li {
 }
 
 .detail-body {
-    width: 1240px;
     margin: auto;
     padding-top: 90px;
 }
@@ -207,8 +210,13 @@ li {
     padding: 5px;
     background-color: white;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
+    margin-bottom: 20px;
+    color: #f8fdff;
+}
+.message:hover{
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
 }
 
 .question-message {
@@ -226,20 +234,20 @@ li {
         align-items: center;
 }
 
-.avatar {
+/* .avatar {
     flex: 1;
     width: 40px;
     height: 40px;
     border-radius: 30px;
     background-color: aqua;
 
-}
+} */
 
 .content-question-message {
     height: 40px;
     flex: 24;
     margin-left: 5px;
-    padding-left: 10px;
+    padding-left: 5px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -255,8 +263,9 @@ li {
     padding-right: 10px;
     text-align: end;
     border-radius: 20px;
-    /* background-color: cornflowerblue; */
     align-items: center;
+
+    
 }
 
 .answer-message span {
@@ -267,8 +276,8 @@ li {
     padding: 15px;
     display: flex;
     align-items: center;
+    margin-right:10px;
 }
-
 
 
 .footer {
@@ -286,4 +295,8 @@ li {
 
 .item-footer {
     padding-top: 30px;
+}
+
+.sub-item-footer span i {
+    margin-right: 15px;
 }

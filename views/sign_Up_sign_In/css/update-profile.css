@@ -7,18 +7,23 @@ a {
     color: blue;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: rgba(128, 128, 128, 0.75);
 }
-input:hover,textarea:hover{
+
+input:hover,
+textarea:hover {
     border-color: rgb(56, 156, 255);
 }
-.event-detail-body{
+
+.event-detail-body {
     background-color: #f1f2f5;
 }
-.news-body{
+
+.news-body {
     background-color: #f1f2f5;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 11px;
@@ -45,6 +50,7 @@ a {
     text-decoration: none;
     color: blue;
 }
+
 .expert-navbar {
     position: fixed;
     width: 100%;
@@ -52,17 +58,21 @@ a {
     height: 90px;
     z-index: 99;
 }
-.expert-navbar > nav > div > div > div > ul > li:hover{
+
+.expert-navbar>nav>div>div>div>ul>li:hover {
     text-decoration: underline;
 }
+
 .nav-active {
     background: rgba(205, 35, 35, 0.75);
     height: 70px;
 }
+
 .imgLogo {
     width: 30px;
     height: 30px;
 }
+
 .header-essme {
     display: flex;
     width: 1800px;
@@ -70,6 +80,7 @@ a {
     background-color: black;
     position: fixed;
 }
+
 .header-background {
     height: 640px;
     background-image: url("../../../assets/homepage-bg.jpg");
@@ -77,13 +88,15 @@ a {
     background-size: cover;
     /* background-color: black; */
 }
-.header-background-experts{
+
+.header-background-experts {
     height: 640px;
     background-image: url("../../../assets/expert-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header-background-news{
+
+.header-background-news {
     height: 640px;
     background-image: url("../../../assets/news-back.jpg");
     background-repeat: no-repeat;
@@ -124,7 +137,8 @@ a {
 .sub-menu li:hover a {
     color: white;
 }
-.sub-menu ul a{
+
+.sub-menu ul a {
     padding: 0px;
 }
 
@@ -137,20 +151,14 @@ li {
 }
 
 
-.icon-home {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
 
 .bread-crumb {
     padding-top: 15px;
 }
 
 .detail-body {
-    height: 1300px;
-    width: 1240px;
     margin: auto;
+    display: flex;
 }
 
 .icon-home {
@@ -168,21 +176,26 @@ li {
     justify-content: center;
     background-color: #1363DF;
 }
+
 .form-update {
     background-color: #FFFFFF;
     width: 100%;
-    margin: 20px;
+    /* min-width: 1300px; */
+    margin-top: 20px;
     padding: 20px;
 }
+
 .pro-title {
     font-family: "Segoe UI";
     font-weight: 500;
     font-size: 20px;
     margin-left: 80px;
     margin-bottom: 10px;
+            font-size: 40px;
 }
+
 .body-update-profile {
-    width: 1000px;
+    width: 95%;
     padding-top: 100px;
     margin: auto;
     align-items: center;
@@ -205,6 +218,7 @@ li {
 }
 
 .wrap-update-profile {
+    margin-top:20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,10 +236,12 @@ li {
 .role-update-profile {
     padding-left: 20px;
     align-items: center;
-    width: 900px;
+    width: 80%;
     background-color: white;
     height: 40px;
     display: flex;
+    justify-content: space-between;
+
 }
 
 .choose-role-update-profile {
@@ -233,13 +249,14 @@ li {
 }
 
 .title-role-update-profile {
-    flex: 3;
+    flex: 4;
 }
 
 .info-update-profile {
     display: flex;
     padding: 20px;
-
+    /* justify-content: center; */
+    /* align-items: center; */
     height: 400px;
     width: 100%;
     background-color: transparent;
@@ -247,7 +264,9 @@ li {
 
 .photo-update-profile {
     flex: 4;
-    padding: 37px;
+    /* padding: 37px; */
+    padding-top: 20px;
+    ;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -259,7 +278,8 @@ li {
     margin-top: 20px;
     width: 150px;
 }
-#upload-button:hover{
+
+#upload-button:hover {
     background-color: #2e7cf5;
     color: white;
     border-color: transparent;
@@ -293,7 +313,7 @@ li {
     width: 100%;
     background-color: white;
     margin-bottom: 20px;
-     border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .field-input-degree {
@@ -321,8 +341,9 @@ li {
     flex-direction: column;
     display: flex;
     padding: 20px;
-    height: 400px;
+    min-height: 370px;
     width: 100%;
+
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -332,6 +353,10 @@ li {
     width: 70px;
 }
 
+.label-input-media {
+    display: flex;
+}
+
 .field-input-media {
     margin-left: 30px;
     margin-top: 20px;
@@ -339,17 +364,18 @@ li {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
+
 }
 
 .field-input-media input {
-    width: 330px;
+    width: 249px;
+    /* max-width: 330px; */
 }
 
 .field-input-media label {
     padding-top: 5px;
     width: 70px;
 }
-
 
 
 .footer {
@@ -369,3 +395,64 @@ li {
     padding-top: 30px;
 }
 
+.sub-item-footer span i {
+    margin-right: 15px;
+}
+
+
+@media only screen and (max-width: 870px) {
+
+    /* .item-footer {
+        padding-top: 30px;
+        width: 500px;
+    }
+    .footer {
+        padding-top: 30px;
+        display: grid;
+        grid-column: 2;
+        background-color: #1363DF;
+        color: white;
+        height: 900px;
+    } */
+    .info-update-profile {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .field-input-media input {
+        width: 300px;
+        max-width: 330px;
+    }
+
+    .label-input-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-expert-update-profile {
+        flex: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .field-input-info {
+        margin-left: 0px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+        .pro-title {
+            font-family: "Segoe UI";
+            font-weight: 500;
+            font-size: 40px;
+            margin:auto;
+        }
+}
