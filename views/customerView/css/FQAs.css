@@ -253,7 +253,7 @@ li {
     background-color: #A9D2FF;
     justify-content: center;
     align-items: center;
-    width: 140px;
+    width: 130px;
     /* border-radius: 15px; */
 }
 
@@ -262,8 +262,8 @@ li {
 }
 
 .question-FQAs {
-    background-color: #A9D2FF;
-    height: 600px;
+    /* background-color: #A9D2FF; */
+    /* height: 600px; */
     margin-top: 20px;
     padding: 30px;
     /* border-radius: 20px; */
@@ -271,11 +271,12 @@ li {
 
 .title-FQAs {
     text-align: center;
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 40px;
+    /* color:blue; */
+    /* line-height: 42px; */
 }
 
 .question-answer-card {
@@ -283,28 +284,64 @@ li {
     margin: 20px;
     height: 100px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-.question-field {}
+.question-field {
+    /* display: flex; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 
 .answer-field {
     padding: 20px;
 }
 
 .see-more-FQAs {
-    margin-top: 120px;
+    margin-top: 20px;
+    font-size: 20px;
     text-align: center;
+}
+.see-more-FQAs :hover{
+    text-decoration: underline;
+    color: blue;
+    /* font-size: 25px; */
+    font-weight: 600;
 }
 
 
 .your-question {
-    padding: 20px;
-    background-color: #A9D2FF;
-    margin-top: 30px;
+    /* padding: 20px; */
+    /* background-color: #A9D2FF; */
+    margin-top: 10px;
     margin-bottom: 10px;
     /* border-radius: 15px; */
+}
+
+.describe-input {
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.choose-input {
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin:auto;
+    margin-top: 20px;
 }
 
 button {
@@ -344,21 +381,21 @@ button {
 
 
 @media only screen and (max-width: 770px) {
-   
+
 
     .filter-field {
-        display:flexbox;
+        display: flexbox;
         justify-content: space-evenly;
         height: 40px;
 
     }
 
     .field {
-        background-color: #A9D2FF;
+        /* background-color: #A9D2FF; */
         justify-content: center;
         align-items: center;
         width: 30%;
-        
+
         /* border-radius: 15px; */
     }
 
