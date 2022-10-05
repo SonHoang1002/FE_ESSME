@@ -169,6 +169,7 @@ li {
 
 .bread-crumb {
     padding-top: 15px;
+    margin-left:10px;
 }
 
 .detail-body {
@@ -182,6 +183,7 @@ li {
 }
 
 .line {
+    margin-left:10px;
     padding-right: 30px;
     padding-left: 30px;
     height: 2px;
