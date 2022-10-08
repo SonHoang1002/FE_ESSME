@@ -205,7 +205,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -260,7 +260,7 @@ a {
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 5px;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
@@ -298,7 +298,7 @@ button {
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 70px;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
@@ -338,7 +338,7 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -351,7 +351,7 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -367,7 +367,7 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -524,7 +524,7 @@ button {
     background: white;
     width: 100%;
     height: 100%;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -545,7 +545,7 @@ button {
     background: white;
     width: 100%;
     height: 100%;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -647,7 +647,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -656,7 +656,7 @@ button {
 }
 
 .event-title {
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -679,7 +679,7 @@ button {
     flex-direction: column;
     border: 2px solid #24604C;
     width: fit-content;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     line-height: 29px;
     display: flex;
@@ -705,7 +705,7 @@ button {
 .tag-items > div > span{
     border: 2px solid #24604C;
     width: fit-content;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -730,7 +730,7 @@ button {
     margin-right: 20px;
 }
 .event-space {
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -738,7 +738,7 @@ button {
 }
 
 .event-time {
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -748,7 +748,7 @@ button {
 .event-contact > span{
     border: 2px solid #24604C;
     width: fit-content;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -822,7 +822,7 @@ button {
 }
 
 .footer-news {
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -970,7 +970,7 @@ button {
     flex-direction: column;
     border: 2px solid #24604C;
     width: fit-content;
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     line-height: 29px;
     display: flex;
@@ -993,7 +993,7 @@ button {
 }
 
 .sub-title{
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -1050,7 +1050,7 @@ button {
     align-self: auto;
     font-style: SemiBold;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 600;
     line-height: normal;
     font-stretch: normal;
@@ -1069,7 +1069,7 @@ button {
     align-self: auto;
     font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -1088,7 +1088,7 @@ button {
     align-self: auto;
     font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -1146,7 +1146,7 @@ button {
     height: 34px;
 }
 .news-fields-container > span{
-    font-family: 'Roboto';
+    font-family: ''Segoe UI'';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -1243,7 +1243,7 @@ button {
     align-self: auto;
     font-style: Bold;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 700;
     line-height: normal;
     font-stretch: normal;
@@ -1262,7 +1262,7 @@ button {
     align-self: auto;
     font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -1314,7 +1314,7 @@ button {
     align-self: auto;
     font-style: Bold;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 800;
     line-height: normal;
     font-stretch: normal;
@@ -1333,7 +1333,7 @@ button {
     align-self: auto;
     font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -1379,7 +1379,7 @@ button {
     align-self: auto;
     font-style: Thin;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 100;
     line-height: normal;
     font-stretch: normal;
@@ -1410,7 +1410,7 @@ button {
     align-self: auto;
     font-style: Bold;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 700;
     line-height: normal;
     font-stretch: normal;
@@ -1429,7 +1429,7 @@ button {
     align-self: auto;
     font-style: Light;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Segoe UI';
     font-weight: 300;
     line-height: normal;
     font-stretch: normal;
