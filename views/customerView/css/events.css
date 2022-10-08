@@ -46,7 +46,7 @@
     align-items: center;
     text-align: center;
 
-    color: rgba(255, 255, 255, 0.85);
+    color: rgb(255, 255, 255);
 }
 
 a {
@@ -67,7 +67,7 @@ input:hover {
 }
 
 .nav-active {
-    background: rgba(19, 99, 223, 0.92);
+    background: rgb(19, 99, 223);
     height: 70px;
 }
 
