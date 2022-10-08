@@ -60,7 +60,7 @@ a {
 }
 
 .nav-active {
-    background: rgba(19, 99, 223, 0.92);
+    background: rgb(19, 99, 223);
     height: 70px;
 }
 
