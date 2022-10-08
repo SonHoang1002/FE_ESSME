@@ -290,6 +290,9 @@ header {
     justify-content: center;
     margin-bottom: 10px;
 }
+.img-events > img{
+    object-fit: contain;
+}
 
 .img-events img {
     width: 100%;
