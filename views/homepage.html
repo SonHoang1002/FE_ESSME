@@ -218,16 +218,16 @@ git push -->
     </div>
     <div class="fields-container">
       <div class="fields-list uneven">
-        <div>
-          <div class="field-item" type="button" onclick='window.location="customerView/field-result.html"'>
-            <div>
-              <img src="../assets/business.png" class="field-images" alt="">
-            </div>
-            <div class="field-name">
-              <div>Business</div>
-            </div>
-          </div>
-        </div>
+<!--        <div>-->
+<!--          <div class="field-item" type="button" onclick='window.location="customerView/field-result.html"'>-->
+<!--            <div>-->
+<!--              <img src="../assets/business.png" class="field-images" alt="">-->
+<!--            </div>-->
+<!--            <div class="field-name">-->
+<!--              <div>Business</div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
     <div class="htitle">
@@ -438,8 +438,8 @@ git push -->
           });
 
           //______________Field
-          console.log(fields[0]);
-          $(".fields-list").empty();
+          console.log(fields);
+          // $(".fields-list").empty();
           $.each(fields, function( i, v ) {
               $(".fields-list").append("<div>\n" +
                       "          <div class=\"field-item\" type=\"button\" onclick='window.location=\"customerView/field-result.html\"'>\n" +
@@ -547,6 +547,7 @@ git push -->
         }).always(function (xhr, status) {
           console.log("The request is complete!")
         });
+
       });
     </script>
   
