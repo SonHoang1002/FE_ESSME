@@ -980,6 +980,7 @@ button {
     font-weight: 500;
     font-size: 36px;
     line-height: 75px;
+    color: #1363DF;
 }
 
 .sub-title{
@@ -988,7 +989,7 @@ button {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    color: #000000;
+    color: #1363DF;
     margin-top: 20px;
     margin-bottom: 25px;
 }
