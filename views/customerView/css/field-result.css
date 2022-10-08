@@ -68,7 +68,15 @@ a {
     background: rgb(19, 99, 223);
     height: 70px;
 }
-
+.navbar-brand{
+    margin-top: -5px;
+}
+.navbar-brand > span{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
 .header-essme {
     display: flex;
     width: 1800px;
