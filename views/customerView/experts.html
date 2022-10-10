@@ -330,108 +330,104 @@
         </div>
         <div></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
-    <script>
-        function imgErr(e, num) {
-            if (num == 0)
-                e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
-            else if (num == 1)
-                e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
-            else if (num == 2)
-                e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
-            e.onerror = null;
-        }
-        function fieldexperts(ele) {
-            let field = ele.innerText.split(" (")[0]
-            console.log(field);
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/experts/suggest?field=" + field + "&limit=200",
-                type: "GET"
-            }).done(function (data) {
-                topexperts = data;
-                //______________EXPERT
-                console.log(topexperts[0]);
-                $(".leading-list").empty();
-                $.each(topexperts, function (i, v) {
-                    let research_area = "";
-                    $.each(v.research_area, function (i, v) {
-                        research_area += ", " + v;
-                    })
-                    $(".leading-list").append("\n<div>\n" +
-                        "                <a href=\"expertDetail.html\">\n" +
-                        "                <div>\n" +
-                        "                  <div class=\"expert-item\">\n" +
-                        "                        <span class=\"expert-experts-item-title-text\">\n" +
-                        "                          <span>" + v.name + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-position-text\">\n" +
-                        "                          <span>" + v.degree + research_area + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-work-space-text\">\n" +
-                        "                          <span>" + v.company + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <img\n" +
-                        "                            alt=\"image42056\"\n" +
-                        "                            src=\"" + v.img + "\"\n" +
-                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                        "                    />\n" +
-                        "                  </div>\n" +
-                        "                </div>\n" +
-                        "                </a>\n" +
-                        "            </div>")
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+<script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
+<script>
+    function imgErr(e,num){
+        if(num==0)
+            e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
+        else if(num==1)
+            e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
+        else if(num==2)
+            e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
+        e.onerror = null;
+    }
+    function fieldexperts(ele){
+        let field = ele.innerText.split(" (")[0]
+        console.log(field);
+        $.ajax({
+            url: "http://fe.luanbt.live:8007/api/experts/suggest?field="+field+"&limit=200",
+            type: "GET"
+        }).done(function (data) {
+            topexperts = data;
+            //______________EXPERT
+            console.log(topexperts[0]);
+            $(".leading-list").empty();
+            $.each(topexperts, function( i, v ) {
+                let research_area = "";
+                $.each(v.research_area, function(i,v){
+                    research_area += ", "+v;
+                })
+                $(".leading-list").append("\n<div>\n" +
+                    "                <a href=\"expertDetail.html?id=" + v._id+"\">\n"+
+                    "                <div>\n" +
+                    "                  <div class=\"expert-item\">\n" +
+                    "                        <span class=\"expert-experts-item-title-text\">\n" +
+                    "                          <span>"+v.name+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <span class=\"expert-experts-position-text\">\n" +
+                    "                          <span>"+v.degree+research_area+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <span class=\"expert-experts-work-space-text\">\n" +
+                    "                          <span>"+v.company+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <img\n" +
+                    "                            alt=\"image42056\"\n" +
+                    "                            src=\""+v.img+"\"\n" +
+                    "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
+                    "                    />\n" +
+                    "                  </div>\n" +
+                    "                </div>\n" +
+                    "                </a>\n" +
+                    "            </div>")
             });
-        }
-        function searchExpert() {
-            let what = $(".searchByField").val();
-            let where = $(".searchByLocation").val();
-            console.log("http://fe.luanbt.live:8007/api/experts/search?what=" + what + "&where=" + where + "&size=20&asc=true")
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/experts/search?what=" + what + "&where=" + where + "&size=20&asc=true",
-                type: "GET"
-            }).done(function (data) {
-                topexperts = data.content;
-                //______________EXPERT
-                console.log(topexperts[0]);
-                $(".leading-list").empty();
-                $.each(topexperts, function (i, v) {
-                    let research_area = "";
-                    $.each(v.research_area, function (i, v) {
-                        research_area += ", " + v;
-                    })
-                    $(".leading-list").append("\n<div>\n" +
-                        "                <a href=\"expertDetail.html\">\n" +
-                        "                <div>\n" +
-                        "                  <div class=\"expert-item\">\n" +
-                        "                        <span class=\"expert-experts-item-title-text\">\n" +
-                        "                          <span>" + v.name + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-position-text\">\n" +
-                        "                          <span>" + v.degree + research_area + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-work-space-text\">\n" +
-                        "                          <span>" + v.company + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <img\n" +
-                        "                            alt=\"image42056\"\n" +
-                        "                            src=\"" + v.img + "\"\n" +
-                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                        "                    />\n" +
-                        "                  </div>\n" +
-                        "                </div>\n" +
-                        "                </a>\n" +
-                        "            </div>")
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
+        }).fail(function (xhr, status, errorThrown) {
+            $("#title").html("Sorry, there was a problem!")
+        }).always(function (xhr, status) {
+            console.log("The request is complete!")
+        });
+    }
+    function searchExpert(){
+        let what = $(".searchByField").val();
+        let where = $(".searchByLocation").val();
+        console.log("http://fe.luanbt.live:8007/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true")
+        $.ajax({
+            url: "http://fe.luanbt.live:8007/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true",
+            type: "GET"
+        }).done(function (data) {
+            topexperts = data.content;
+            //______________EXPERT
+            console.log(topexperts[0]);
+            $(".leading-list").empty();
+            $.each(topexperts, function( i, v ) {
+                let research_area = "";
+                $.each(v.research_area, function(i,v){
+                    research_area += ", "+v;
+                })
+                $(".leading-list").append("\n<div>\n" +
+                    "                <a href=\"expertDetail.html?id=" + v._id+"\">\n"+
+                    "                <div>\n" +
+                    "                  <div class=\"expert-item\">\n" +
+                    "                        <span class=\"expert-experts-item-title-text\">\n" +
+                    "                          <span>"+v.name+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <span class=\"expert-experts-position-text\">\n" +
+                    "                          <span>"+v.degree+research_area+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <span class=\"expert-experts-work-space-text\">\n" +
+                    "                          <span>"+v.company+"</span>\n" +
+                    "                        </span>\n" +
+                    "                    <img\n" +
+                    "                            alt=\"image42056\"\n" +
+                    "                            src=\""+v.img+"\"\n" +
+                    "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
+                    "                    />\n" +
+                    "                  </div>\n" +
+                    "                </div>\n" +
+                    "                </a>\n" +
+                    "            </div>")
             });
         }
         $(document).ready(function () {
@@ -501,9 +497,10 @@
                     $.each(v.research_area, function (i, v) {
                         research_area += ", " + v;
                     })
-                    $(".leading-list").append(
-                        "\n<div style=\" display:flex;width:100%;flex:5;\">\n" +
-                        "                <a href=\"expertDetail.html\">\n" +
+
+                    $(".leading-list").append("\n<div>\n" +
+                        "                <a href=\"expertDetail.html?id=" + v._id+"\">\n"+
+                        "                <div>\n" +
                         "                  <div class=\"expert-item\">\n" +
                         "<div class=\"content-expert-item\">" +
                         "                        <span class=\"expert-experts-item-title-text\">\n" +
