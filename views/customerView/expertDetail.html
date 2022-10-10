@@ -145,7 +145,7 @@
                     </li>
                     <li class="breadcrumb-item" aria-current="page"><a href="experts.html"><span
                                 style="color:black">Expert</span></a></li>
-                    <li class="breadcrumb-item "><span style="color:black">Trinh Van Quyet</span></li>
+                    <li class="breadcrumb-item detail-bread"><span style="color:black">Trinh Van Quyet</span></li>
                 </ol>
             </nav>
         </div>
@@ -170,7 +170,7 @@
                             fill="black" />
                     </svg>
 
-                    <span style=" padding-left:10px">Professor</span>
+                    <span style=" padding-left:10px" class="professor">Professor</span>
                 </div>
                 <div class="professor-location-email-item-profile">
                     <!-- <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png" alt=""> <span
@@ -193,13 +193,13 @@
                             fill="black" />
                     </svg>
 
-                    <span style="padding-left:10px">Professor@gmail.com</span>
+                    <span style="padding-left:10px" class="gmail">Professor@gmail.com</span>
                 </div>
 
             </div>
             <div class="detail-profile">
                 <div class="intro-social-profile">
-                    <div class="button-intro-profile" onclick="window.location='expertDetail.html'" type="button">
+                    <div class="button-intro-profile" onclick="console.log('Back')" type="button">
                         <img src="../../assets/icon/back.png" alt="">
                     </div>
                     <div>
@@ -211,7 +211,7 @@
                                 <div class="sub-title-intro-profile">
                                     <span>Appelation</span>
                                 </div>
-                                <div class="sub-content-intro-profile">
+                                <div class="sub-content-intro-profile appelation">
                                     <span>Research assistant professor of computer</span>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                                 <div class="sub-title-intro-profile">
                                     <span>Position</span>
                                 </div>
-                                <div class="sub-content-intro-profile">
+                                <div class="sub-content-intro-profile position">
                                     <span>Assistant Professor</span>
                                 </div>
                             </div>
@@ -227,7 +227,7 @@
                                 <div class="sub-title-intro-profile">
                                     <span>Affliate</span>
                                 </div>
-                                <div class="sub-content-intro-profile">
+                                <div class="sub-content-intro-profile affliate">
                                     <span>New York University</span>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@
                                 <div class="sub-title-intro-profile">
                                     <span>Expertise</span>
                                 </div>
-                                <div class="sub-content-intro-profile">
+                                <div class="sub-content-intro-profile expertise">
                                     <span>Researcher</span>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@
 
                                         <span style="padding-right:5px">
                                     </div>
-                                    <span>Research assistant professor of computer</span>
+                                    <span>Website</span>
                                 </div>
                             </div>
                             <div class="detail-social-profile">
@@ -276,7 +276,7 @@
                                             alt="">
                                         <span style="padding-right:5px">
                                     </div>
-                                    <span>Assistant Professor</span>
+                                    <span>Facebook</span>
                                 </div>
                             </div>
                             <div class="detail-social-profile">
@@ -286,22 +286,22 @@
                                             alt="">
                                         <span style="padding-right:5px">
                                     </div>
-                                    <span>Assistant Professor</span>
+                                    <span>Twitter</span>
                                 </div>
                             </div>
-                            <div class="detail-social-profile">
+                            <div class="detail-social-profile info-link">
                                 <div class="sub-content-social-profile">
                                     <div style="width:35px">
                                         <img style="width: 25px;height: 25px; " src="../../assets/icon/linkedin.png"
                                             alt="">
                                         <span style="padding-right:5px">
                                     </div>
-                                    <span>Assistant Professor</span>
+                                    <span>Info</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="button-intro-profile" onclick="window.location='expertDetail.html'" type="button">
+                    <div class="button-intro-profile" onclick="console.log('Next')" type="button">
                         <img src="../../assets/icon/next.png" alt="">
                     </div>
                 </div>
@@ -326,7 +326,7 @@
             </div>
             <div class="list-related-experts">
                 <div class="card-wrapper">
-                    <div class="card-related" onclick="window.location='expertDetail.html'" type="button">
+                    <div class="card-related" onclick="window.location='#'" type="button">
                         <div class="info-related">
                             <div class="name-related">name</div>
                             <div class="job-related"> job</div>
@@ -385,168 +385,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
-    <script>
-        function imgErr(e, num) {
-            if (num == 0)
-                e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
-            else if (num == 1)
-                e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
-            else if (num == 2)
-                e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
-            e.onerror = null;
-        }
-
-        $(document).ready(function () {
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/homepage",
-                type: "GET"
-            }).done(function (data) {
-                console.log(data);
-                let topexperts = data.top_experts;
-                let topevents = data.top_events;
-                let topnews = data.top_news;
-                let fields = data.fields;
-                let footer = data.footer;
-
-                //______________EXPERT
-                console.log(topexperts[0]);
-                $(".leading-list").empty();
-                $.each(topexperts, function (i, v) {
-                    let research_area = "";
-                    $.each(v.research_area, function (i, v) {
-                        research_area += ", " + v;
-                    })
-                    $(".leading-list").append("\n<div>\n" +
-                        "                <a href=\"customerView/expertDetail.html\">\n" +
-                        "                <div>\n" +
-                        "                  <div class=\"expert-item\">\n" +
-                        "                        <span class=\"expert-experts-item-title-text\">\n" +
-                        "                          <span>" + v.name + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-position-text\">\n" +
-                        "                          <span>" + v.degree + research_area + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-work-space-text\">\n" +
-                        "                          <span>" + v.company + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <img\n" +
-                        "                            alt=\"image42056\"\n" +
-                        "                            src=\"" + v.img + "\"\n" +
-                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                        "                    />\n" +
-                        "                  </div>\n" +
-                        "                </div>\n" +
-                        "                </a>\n" +
-                        "            </div>")
-                });
-
-
-
-                //__________Footer
-                $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
-                $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
-                $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
-            }).fail(function (xhr, status, errorThrown) {
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-                $('.uneven').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // prev arrow
-                    prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
-
-                    // next arrow
-                    nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
-                });
-            });
-
-
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/experts?limit=3",
-                type: "GET"
-
-            }).done(function (data) {
-                $(".list-related-experts").empty();
-
-                $.each(data, function (i, v) {
-                    $(".list-related-experts").append("\n<div class=\"card-wrapper\">\n" +
-                        "           <div class=\"card-related\" onclick=\"window.location = 'expertDetail.html'\" type=\"button\">\n" +
-                        "          <div class=\"info-related\">\n" +
-                        "        <div class=\"name-related\">" + v.name + "</div>\n" +
-                        "        <div class=\"job-related\">" + v.research_area[0] + "</div>\n" +
-                        "        <div class=\"location-related\">" + v.company + "</div>\n" +
-                        "          </div>\n" + "  <div class=\"img-related\"> <img src='" + v.img + "' ></div>\n" +
-                        "     </div>\n" + "</div>\n"
-                    );
-
-
-
-                });
-
-            }).fail(function (xhr, status, errorThrown) {
-                $(".list-related-experts").html("Sorry, there was a problem!")
-
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/news?limit=15",
-                type: "GET"
-            }).done(function (data) {
-                //___________New
-                console.log(data[0]);
-                $(".list-item-news").empty();
-                $.each(data, function (i, v) {
-                    $(".list-item-news").append("<a style=\"text-decoration: none;color: black\" href=\"" + v.url + "\">\n" +
-                        "          <div class=\"item-news\">\n" +
-                        "            <div class=\"title-item-news\"><span>" + v.title + "</span></div>\n" +
-                        "            <div class=\"detail-item-news\">\n" +
-                        "              <img class=\"img-news\" src=\"" + v.img + "\" alt=\"\">\n" +
-                        "              <div class=\"sub-detail-item-news\">\n" +
-                        "                <div class=\"sub-title-item-news\"><span>" + v.content + "</span></div>\n" +
-                        "                <div class=\"time-item-news\"><span>" + v.tag + "</span></div>\n" +
-                        "              </div>\n" +
-                        "            </div>\n" +
-                        "          </div>\n" +
-                        "          </a>")
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/questions?limit=3&sort=createdAt&desc=false",
-                type: "GET"
-            }).done(function (data) {
-                //___________Question
-                console.log(data[0]);
-                $(".questions-list").empty();
-                $.each(data, function (i, v) {
-                    $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='expertView/Answer_Question.html'\" type=\"button\">\n" +
-                        "        <div class=\"question-field\">\n" +
-                        "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                        "          <span>" + v.Description + "</span>\n" +
-                        "        </div>\n" +
-                        "        <div class=\"answer-field\">\n" +
-                        "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                        "          <span>" + v.answers[0].answer + "</span>\n" +
-                        "        </div>\n" +
-                        "      </div>");
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-        });
-    </script>
+    <script src="js/expert-detail.js"></script>
 </body>
 
 </html>
