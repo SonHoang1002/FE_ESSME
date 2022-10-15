@@ -125,7 +125,7 @@
                 <div class="icon-home"><i class="fa fa-home"></i></div>
                 <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a></li>
                 <li class="breadcrumb-item" aria-current="page"><a href="events.html"><span style="color:black">Events</span></a></li>
-                <li class="breadcrumb-item" aria-current="page"><span style="color:black">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span></li>
+                <li class="breadcrumb-item detail-bread" aria-current="page"><span style="color:black">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span></li>
             </ol>
         </nav>
         <div class="line"></div>
@@ -142,23 +142,13 @@
             <span class="event-title">OPEN INNOVATION: UNLOCK HIDDEN OPPORTUNITIES</span>
         </div>
         <div style="margin: 20px">
-            <div class="date-tag" onclick="window.location='events.html'" type="button">
-                <span>
-                    <span style="font-weight: 500;font-size: 25px; margin: 10px 20px">
-                        January
-                    </span>
-                    <span style="font-weight: 500;font-size: 40px; margin: 10px">
-                        02
-                    </span>
-                </span>
-            </div>
             <div class="tag-items">
-                <div>
+                <div class="tags">
                     <span onclick="window.location='events.html'" type="button">Scientist</span>
                     <span onclick="window.location='events.html'" type="button">Conference</span>
                     <span onclick="window.location='events.html'" type="button">Other Events</span>
                 </div>
-                <div>
+                <div class="types">
                     <span onclick="window.location='events.html'" type="button">Care</span>
                     <span onclick="window.location='events.html'" type="button">Will Participate</span>
                 </div>
@@ -170,7 +160,7 @@
             <svg width="30" height="38" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.4584 37.2333C2.10703 21.6 0 19.9955 0 14.25C0 6.37992 6.7157 0 15 0C23.2843 0 30 6.37992 30 14.25C30 19.9955 27.893 21.6 16.5416 37.2333C15.7966 38.2556 14.2033 38.2555 13.4584 37.2333ZM15 20.1875C18.4518 20.1875 21.25 17.5292 21.25 14.25C21.25 10.9708 18.4518 8.3125 15 8.3125C11.5482 8.3125 8.75 10.9708 8.75 14.25C8.75 17.5292 11.5482 20.1875 15 20.1875Z" fill="black"/>
             </svg>
-            1310 A1, 207 Giai Phong, Hai Ba Trung, Ha Noi
+            <span>1310 A1, 207 Giai Phong, Hai Ba Trung, Ha Noi</span>
         </div>
         <div class="event-time">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +173,7 @@
                     </clipPath>
                 </defs>
             </svg>
-            23:15PM, Tuesday, 2nd Junuary 2022
+            <span>23:15PM, Tuesday, 2nd Junuary 2022</span>
         </div>
         <div class="event-contact">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,8 +186,7 @@
                     </clipPath>
                 </defs>
             </svg>
-            <span onclick="window.location='https://www.facebook.com/'" type="button">Facebook</span>
-            <span onclick="window.location='https://www.facebook.com/'" type="button">Twitter</span>
+            <span type="button">Website</span>
         </div>
     </div>
     <div class="event-d-detail">
@@ -242,6 +231,9 @@
 
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/event-detail.js"></script>
 </body>
 
 </html>

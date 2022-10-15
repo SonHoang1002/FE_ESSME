@@ -466,7 +466,7 @@ git push -->
           $(".event-list").empty();
           $.each(topevents, function( i, v ) {
             $(".event-list").append("<div>\n" +
-                    "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html\"'>\n" +
+                    "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html?id="+v._id+"\"'>\n" +
                     "            <div class=\"img-events\">\n" +
                     "              <img src=\""+v.img+"\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                     "            </div>\n" +

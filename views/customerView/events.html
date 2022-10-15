@@ -312,7 +312,7 @@
                 $(".list-events").empty();
                 $.each(data.content, function (i, v) {
                     $(".list-events").append("<div>\n" +
-                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html\"'>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html?id="+v._id+"\"'>\n" +
                         "            <div class=\"img-events\">\n" +
                         "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                         "            </div>\n" +
@@ -346,7 +346,7 @@
                 $(".list-events").empty();
                 $.each(data, function (i, v) {
                     $(".list-events").append("<div>\n" +
-                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html\"'>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html?id="+v._id+"\"'>\n" +
                         "            <div class=\"img-events\">\n" +
                         "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                         "            </div>\n" +
@@ -383,7 +383,7 @@
                 $(".list-events").empty();
                 $.each(data.content, function (i, v) {
                     $(".list-events").append("<div>\n" +
-                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html\"'>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html?id="+v._id+"\"'>\n" +
                         "            <div class=\"img-events\">\n" +
                         "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                         "            </div>\n" +
