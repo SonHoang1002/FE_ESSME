@@ -720,6 +720,7 @@ button {
     color: #24604C;
     border-radius: 5px;
     padding: 5px;
+    margin: 4px;
 }
 
 .tag-items>div>span:hover {
