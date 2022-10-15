@@ -1,0 +1,215 @@
+body {
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.form-control::placeholder {
+    color: rgba(128, 128, 128, 0.75);
+}
+
+input:hover,
+textarea:hover {
+    border-color: rgb(56, 156, 255);
+}
+
+.event-detail-body {
+    background-color: #f1f2f5;
+}
+
+.news-body {
+    background-color: #f1f2f5;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.expert-navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 29, 70, 0.4);
+    height: 90px;
+    z-index: 99;
+}
+
+.expert-navbar>nav>div>div>div>ul>li:hover {
+    text-decoration: underline;
+}
+
+.nav-active {
+    background: rgba(205, 35, 35, 0.75);
+    height: 70px;
+}
+
+.imgLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.header-essme {
+    display: flex;
+    width: 1800px;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+}
+
+.header-background {
+    height: 640px;
+    background-image: url("../../../assets/homepage-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+}
+
+
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#main-menu li a {
+    padding: 10px 20px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+    list-style: none;
+    width: 150px;
+    text-decoration: none;
+    top: 40px;
+    display: none;
+    color: black;
+}
+
+.sub-menu li:hover {
+    background-color: black;
+}
+
+.sub-menu li:hover a {
+    color: white;
+}
+
+.sub-menu ul a {
+    padding: 0px;
+}
+
+#main-menu li:hover ul {
+    display: block;
+}
+
+li {
+    padding: 10px;
+}
+
+
+
+.bread-crumb {
+    padding-top: 15px;
+}
+
+.detail-body {
+    margin: auto;
+    display: flex;
+}
+
+.icon-home {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sign-up-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top:200px; */
+    height: 700px;
+top:60px;
+    background-color: green;
+}
+
+.content-modal{
+    width:350px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;flex-direction: column;
+}
+.content-modal>span{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.method-login{
+    margin-top:10px;
+    width:80%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px black;
+}
+.method-login div{
+    width:50px;
+}
+.method-login span{
+    /* text-align:right; */
+    font-size: 19px;
+}
+.google{
+    background-color: rgb(126, 135, 144);
+    color: white;
+}
+.facebook{
+    background-color: rgb(17, 156, 202);
+    color: white;
+
+}
+.email{
+    background-color: rgb(201, 27, 27);
+    color: white;
+    
+}
+.phone{
+    background-color: black;
+    color: white;
+
+}
