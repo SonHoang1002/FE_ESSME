@@ -1,6 +1,4 @@
-body {
-    background-color: #f8fdff;
-}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -65,15 +63,18 @@ a {
     background: rgb(19, 99, 223);
     height: 70px;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-top: -5px;
 }
-.navbar-brand > span{
+
+.navbar-brand>span {
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
 }
+
 .header-essme {
     display: flex;
     width: 1800px;
@@ -94,6 +95,7 @@ a {
     width: 30px;
     height: 30px;
 }
+
 .imgLogo1 {
     width: 40px;
     height: 40px;
@@ -143,9 +145,11 @@ nav {
     top: 40px;
     display: none;
 }
-.expert-navbar > nav > div > div > div > ul > li:hover{
+
+.expert-navbar>nav>div>div>div>ul>li:hover {
     text-decoration: underline;
 }
+
 .sub-menu li:hover {
     background-color: black;
 }
@@ -177,7 +181,7 @@ li {
 
 .bread-crumb {
     padding-top: 15px;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .detail-body {
@@ -191,7 +195,7 @@ li {
 }
 
 .line {
-    margin-left:10px;
+    margin-left: 10px;
     padding-right: 30px;
     padding-left: 30px;
     height: 2px;
@@ -204,7 +208,7 @@ li {
 
 .body-response-history {
     margin-top: 20px;
-    height: 700px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,20 +216,21 @@ li {
 }
 
 .list-message {
-    height: 600px;
+    height: fit-content;
     width: 90%;
 }
 
 .message {
     padding: 5px;
     background-color: white;
-    height: 150px;
+    height: fit-content;
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 20px;
     color: #f8fdff;
 }
-.message:hover{
+
+.message:hover {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
 }
 
@@ -234,14 +239,15 @@ li {
     justify-content: flex-start;
     padding: 15px;
 }
-.question-message span{
+
+.question-message span {
     background-color: cornflowerblue;
-        height: 40px;
-        text-align: end;
-        border-radius: 20px;
-        padding: 15px;
-        display: flex;
-        align-items: center;
+    height: 40px;
+    text-align: end;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
 }
 
 /* .avatar {
@@ -275,7 +281,7 @@ li {
     border-radius: 20px;
     align-items: center;
 
-    
+
 }
 
 .answer-message span {
@@ -286,9 +292,23 @@ li {
     padding: 15px;
     display: flex;
     align-items: center;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
+
+.down-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+.down-button >i{
+    color:black;
+    margin-top:20px;
+    margin-bottom:20px;
+    height: 30px;
+    width:30px;
+}
 
 .footer {
     padding-top: 30px;

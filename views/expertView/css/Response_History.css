@@ -71,7 +71,7 @@ a {
 }
 .header-essme {
     display: flex;
-    width: 1800px;
+    /* width: 1800px; */
     justify-content: center;
     background-color: black;
     position: fixed;
@@ -189,22 +189,7 @@ li {
     background-color: #1363DF;
     margin-bottom: 40px;
 }
-.footer {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #1363DF;
-    color: white;
-    height: 300px;
-}
 
-.sub-item-footer {
-    padding-top: 20px;
-}
-
-.item-footer {
-    padding-top: 30px;
-}
 
 .body {
 
@@ -308,4 +293,27 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
+}
+
+
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1363DF;
+    color: white;
+    height: 300px;
+}
+
+.sub-item-footer {
+    padding-top: 20px;
+}
+
+.item-footer {
+    padding-top: 30px;
+}
+
+.sub-item-footer span i {
+    margin-right: 15px;
 }
