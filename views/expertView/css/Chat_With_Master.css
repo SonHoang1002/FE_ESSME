@@ -244,7 +244,6 @@ li {
     display: flex;
 }
 
-.body_notify_members_view {}
 
 .body_notify_members_link {
     margin: 8px 16px;
@@ -320,7 +319,6 @@ li {
     font-size: 12px;
     line-height: 14px;
     padding-right: 10px;
-    /* padding-left: 48px; */
     color: #000000;
 }
 
@@ -330,6 +328,9 @@ li {
     width: 961px;
     height: 781px;
     border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .body_view_chat_info {
@@ -516,6 +517,23 @@ li {
 
 }
 
+.board-and-send{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.board-and-send input{
+    padding-left:10px;
+    height: 80%;
+    width:100%;
+    border-radius: 20px;
+}
+
+#back_click{
+    display: none;
+}
+
 
 
 .footer {
@@ -546,7 +564,9 @@ li {
         display: none;
     }
     #back_click{
-        display: block;
-        display: flex;align-items: center;justify-content: center;margin-right:10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right:10px;
     }
 }
