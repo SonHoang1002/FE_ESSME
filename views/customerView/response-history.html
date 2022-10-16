@@ -65,18 +65,17 @@
                                     Experts
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="experts.html">Experts</a></li>
-                                    <li><a class="dropdown-item" href="FQAs.html">FQAs</a></li>
-                                    <li><a class="dropdown-item" href="order_expert.html">Order Experts</a></li>
-                                    <li><a class="dropdown-item" href="../expertView/Response_History.html">Response</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="../customerView/experts.html">Experts</a></li>
+                                    <li><a class="dropdown-item" href="../customerView/FQAs.html">FQAs</a></li>
+                                    <li><a class="dropdown-item" href="Response_History.html">Response</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="events.html">Events</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="../customerView/events.html">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="news.html">News</a>
+                                <a class="nav-link active" href="../customerView/news.html">News</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -110,8 +109,8 @@
                                     style="width:80px;">
                                     <li><a class="dropdown-item" href="../sign_Up_sign_In/update-profile.html">Update
                                             profile</a></li>
-                                    <li><a class="dropdown-item" href="../expertView/Chat_With_Master.html">Chat with
-                                            Master</a></li>
+                                    <li><a class="dropdown-item" href="Chat_With_Master.html">Chat with Master</a></li>
+                                    <li><a class="dropdown-item" href="Order_History-con.html">Order History</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -132,19 +131,16 @@
         };
     </script>
 
-
-    <div class="detail-body">
+    <div class="datail-body">
         <div class="bread-crumb">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <div class="icon-home"><i class="fa fa-home"></i></div>
                     <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a>
                     </li>
-                    <li class="breadcrumb-item" aria-current="page"><a href="experts.html"><span
+                    <li class="breadcrumb-item" aria-current="page"><a href="../customerView/experts.html"><span
                                 style="color:black">Expert</span></a></li>
-                    <li class="breadcrumb-item "><a href="../expertView/Response_History.html"><span
-                                style="color:black">Responese History</span></a></li>
-                    <!-- <li class="breadcrumb-item "><span style="color:black">Detail</span></li> -->
+                    <li class="breadcrumb-item "><span style="color:black">Response History</span></li>
                 </ol>
             </nav>
         </div>
@@ -163,52 +159,14 @@
                                 src="../../assets/expertimg.png" alt="">
                         </div>
                     </div>
-                    <div class="down-button">
-                        <!-- <i style=" height: 30px; width:30px;" class="fa-solid fa-angle-down"></i> -->
-                        <img type="button" onclick="openContent(this)" style=" height: 30px; width:30px;"
-                            src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="">
-                    </div>
-                </div>
-                <div class="message">
-                    <div class="question-answer-message">
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="down-button">
-                        <!-- <i style=" height: 30px; width:30px;" class="fa-solid fa-angle-down"></i> -->
-                        <img type="button" onclick="openContent(this)" style=" height: 30px; width:30px;"
-                            src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="">
-                    </div>
-
-                </div>
-                <div class="message">
-                    <div class="question-answer-message">
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="down-button">
-                        <!-- <i style=" height: 30px; width:30px;" class="fa-solid fa-angle-down"></i> -->
-                        <img type="button" onclick="openContent(this)" style=" height: 30px; width:30px;"
-                            src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="">
+                    <div class="see-button">
+                        <span class="see-content" type="button" onclick="openContent(this)">Show more</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div></div>
         <div class="item-footer">
@@ -251,89 +209,113 @@
         </div>
         <div></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
     <script>
-        //https://cdn-icons-png.flaticon.com/512/60/60564.png
+
         var isDown = false;
         function openContent(ele) {
-
-            // ele.parentElement.parentElement.style.backgroundColor="yellow";
             if (isDown) {
-                ele.src = "https://cdn-icons-png.flaticon.com/512/25/25623.png";
+                ele.innerHTML = "Show more"
                 ele.parentElement.parentElement.querySelector(".question-answer-message").style.height = "fit-content";
                 ele.parentElement.parentElement.querySelector(".question-answer-message").innerHTML = "";
-                ele.parentElement.parentElement.querySelector(".question-answer-message").innerHTML += `
-                <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-                `;
                 isDown = false;
             } else {
-                // ele.parentElement.parentElement.style.height="300px";
-                ele.src = "https://cdn-icons-png.flaticon.com/512/60/60564.png";
+                ele.innerHTML = "Show less"
                 ele.parentElement.parentElement.querySelector(".question-answer-message").style.height = "500px";
-                ele.parentElement.parentElement.querySelector(".question-answer-message").style.overflow ="auto"
-                ele.parentElement.parentElement.querySelector(".question-answer-message").innerHTML += `
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
+                ele.parentElement.parentElement.querySelector(".question-answer-message").style.overflow = "auto"
 
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-
-                        <div class="question-message">
-                            <img class="imgLogo1" style="border-radius:20px" src="../../assets/expertimg.png" alt="">
-                            <div class="content-question-message"> <span>Question Content</span>
-                            </div>
-                        </div>
-                        <div class="answer-message">
-                            <span>Answer Content </span> <img class="imgLogo1" style="border-radius:20px"
-                                src="../../assets/expertimg.png" alt="">
-                        </div>
-                    
-            `
                 isDown = true;
             }
 
         }
+
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://fe.luanbt.live:8007/api/homepage",
+                type: "GET"
+            }).done(function (data) {
+                console.log(topevents[0]);
+                $(".event-list").empty();
+                $.each(topevents, function (i, v) {
+                    $(".event-list").append("<div>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html\"'>\n" +
+                        "            <div class=\"img-events\">\n" +
+                        "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"title-events\">\n" +
+                        "              " + v.name_event + "\n" +
+                        "            </div>\n" +
+                        "            <div class=\"detail-events\">\n" +
+                        "             <div style=\" justify-content: center;align-items: center;\">  <i class=\"fa-solid fa-clock\"></i> </div>\n" +
+                        "              <span>" + v.time + "</span>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"detail-events\">\n" +
+                        "            <div style=\" justify-content: center;align-items: center;\">   <i class=\"fa-solid fa-location-dot\"></i> </div>\n" +
+                        "              <span>" + v.location + "</span>\n" +
+                        "            </div>\n" +
+                        "          </div>\n" +
+                        "        </div>");
+                });
+                //__________Footer
+                $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
+                $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
+                $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
+            }).fail(function (xhr, status, errorThrown) {
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
+                $('.uneven').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
+                    nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
+                });
+            });
+
+
+            $.ajax({
+                url: "http://fe.luanbt.live:8007/api/questions?limit=10&sort=createdAt&desc=false",
+                type: "GET"
+            }).done(function (data) {
+                $(".list-message").empty();
+                $.each(data, function (i, v) {
+                    $(".list-message").append(
+                        "        <div class=\"message\"> \n" +
+                        "    <div class=\"question-answer-message\">\n" +
+                        "        <div class=\"question-message\">\n" +
+                        "            <img class=\"imgLogo1\" style=\"border-radius:20px\" src=\"../../assets/expertimg.png\" >\n" +
+                        "            <div class=\"content-question-message\"> <div><span>" + v.Description + "</span></div>\n" +
+                        "            </div>\n" +
+                        "        </div>\n" +
+                        "        <div class=\"answer-message\">\n" +
+                        "<div style=\" margin-bottom:20px;\">" +
+                        v.answers.map((value) => {
+                            return `
+                               <span>${value.answer}</span>  `
+                        }) +
+                        "</div>\n" +
+                        "<img class=\"imgLogo1\" style=\"border-radius:20px\"\n" +
+                        "                src=\"../../assets/expertimg.png\" >\n" +
+                        "        </div>\n" +
+                        "    </div>\n" +
+                        "    <div class=\"see-button\">\n" +
+                        // "        <span class=\"see-content\" type=\"button\" onclick=\"openContent(this)\">Show more</span>\n" +
+                        "    </div>\n" +
+                        "</div>\n"
+                    );
+
+
+                });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
+            });
+
+
+        });
     </script>
 </body>
 

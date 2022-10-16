@@ -223,6 +223,7 @@ li {
 .message {
     padding: 5px;
     background-color: white;
+    /* min-height: 300px; */
     height: fit-content;
     border-radius: 10px;
     margin: 10px;
@@ -238,76 +239,76 @@ li {
     display: flex;
     justify-content: flex-start;
     padding: 15px;
+    height: fit-content;
+    max-width: 700px;
 }
 
 .question-message span {
     background-color: cornflowerblue;
-    height: 40px;
+    height: fit-content;
     text-align: end;
     border-radius: 20px;
     padding: 15px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
-/* .avatar {
-    flex: 1;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    background-color: aqua;
-
-} */
-
 .content-question-message {
-    height: 40px;
+    /* height: 40px; */
     flex: 24;
     margin-left: 5px;
     padding-left: 5px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    width: 30px;
+    text-align: left;
+    justify-content: flex-start;
+}
+.content-question-message div span {
+    text-align: left;
 }
 
 .answer-message {
     display: flex;
-    height: 40px;
+    /* height: 40px; */
     justify-content: flex-end;
-    /* align-items: flex-end; */
     margin-right: 15px;
     padding-right: 10px;
     text-align: end;
     border-radius: 20px;
-    align-items: center;
-
-
 }
 
 .answer-message span {
     background-color: cornflowerblue;
-    height: 40px;
+    /* height: 40px; */
     text-align: end;
     border-radius: 20px;
     padding: 15px;
     display: flex;
     align-items: center;
     margin-right: 10px;
+    max-width: 700px;
 }
 
 
-.down-button {
+.see-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color:black;
     /* background-color: green; */
 }
-.down-button >i{
-    color:black;
-    margin-top:20px;
+
+.see-content{
     margin-bottom:20px;
-    height: 30px;
-    width:30px;
+    margin-top:20px;
+    font-size:20px;
+    color:black;
+}
+.see-content:hover{
+    font-size:21px;
+    text-decoration: underline;
+    color:blue;
 }
 
 .footer {
