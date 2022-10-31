@@ -1256,9 +1256,16 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 .expert-hotnew-text {
-    top: 89px;
+    top: 155px;
     left: 653px;
     color: rgba(0, 0, 0, 1);
     width: 217px;
@@ -1275,6 +1282,13 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9; /* number of lines to show */
+    line-clamp: 9;
+    -webkit-box-orient: vertical;
 }
 .hotnew-item {
     width: 300px;
@@ -1311,7 +1325,7 @@ button {
 }
 .hotnew-item-title {
     top: 9px;
-    left: 16px;
+    left: 8px;
     color: rgba(0, 0, 0, 1);
     width: 268px;
     height: auto;
@@ -1327,6 +1341,13 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .hotnew-item-text {
     top: 33px;
@@ -1335,7 +1356,7 @@ button {
     width: 99px;
     height: auto;
     position: absolute;
-    font-size: 10px;
+    font-size: 12px;
     align-self: auto;
     font-style: Regular;
     text-align: left;
@@ -1346,6 +1367,13 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
 }
 .hot-news-list > div{
     margin-right: 10px;
@@ -1423,6 +1451,13 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .new-item-text {
     top: 52px;
@@ -1442,6 +1477,13 @@ button {
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .searchNewButton {
