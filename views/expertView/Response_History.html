@@ -51,31 +51,32 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse navbar-small" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-small">
                     </ul>
-                    <div class="d-flex">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                    <div class="d-flex" >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="drop-item-small">
+                            <li class="nav-item" id="drop-item-small">
                                 <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" id="drop-item-small">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Experts
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="../customerView/experts.html">Experts</a></li>
-                                    <li><a class="dropdown-item" href="../customerView/FQAs.html">FQAs</a></li>
-                                    <li><a class="dropdown-item" href="Response_History.html">Response</a></li>
+                                <ul class="dropdown-menu" id="drop-item-small">
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="experts.html">Experts</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="FQAs.html">FQAs</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="order_expert.html">Order Experts</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="../expertView/Response_History.html">Response</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../customerView/events.html">Events</a>
+                                <a class="nav-link active" aria-current="page" href="events.html">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../customerView/news.html">News</a>
+                                <a class="nav-link active" href="news.html">News</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -83,8 +84,8 @@
                                     Language
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">English</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">Vietnamese</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -93,7 +94,7 @@
                                     <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M12.9215 26C14.4846 26 15.7635 24.8427 15.7635 23.4283H10.0795C10.0795 24.8427 11.3584 26 12.9215 26ZM22.158 18.2849V11.2128C22.158 7.22669 19.1739 4.01209 15.053 3.112V2.21191C15.053 1.18323 14.0583 0.283142 12.9215 0.283142C11.7847 0.283142 10.79 1.18323 10.79 2.21191V3.112C6.66911 4.01209 3.68502 7.22669 3.68502 11.2128V18.2849L0.843018 20.8566V22.1425H25V20.8566L22.158 18.2849Z"
+                                            d="M12.9215 26C14.4846 26 15.7635 24.8427 15.7635 23.4283H10.0795C10.0795 24.8427 11.3584 26 12.9215 26ZM22.158 18.2849V11.2128C22.158 7.22669 19.1739 4.01209 15.053 3.112V2.21191C15.053 1.18323 14.0583 0.283142 12.9215 0.283142C11.7847 0.283142 10.79 1.18323 10.79 2.21191V3.112C6.66911 4.01209 3.68502 7.22669 3.68502 11.2128V18.2849L0.843018 20.8566V22.1425H35V20.8566L22.158 18.2849Z"
                                             fill="white" />
                                     </svg>
                                 </a>
@@ -109,14 +110,14 @@
                                     style="width:80px;">
                                     <li><a class="dropdown-item" href="../sign_Up_sign_In/update-profile.html">Update
                                             profile</a></li>
-                                    <li><a class="dropdown-item" href="Chat_With_Master.html">Chat with Master</a></li>
-                                    <li><a class="dropdown-item" href="Order_History-con.html">Order History</a></li>
+                                    <li><a class="dropdown-item" href="../expertView/Chat_With_Master.html">Chat with
+                                            Master</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div style=" margin-right:10px"></div>
+                <!-- <div style=" margin-right:10px"></div> -->
             </div>
         </nav>
     </div>
@@ -168,7 +169,7 @@
     </div>
 
     <div class="footer">
-        <div></div>
+        <div id="footer-1"></div>
         <div class="item-footer">
             <div>
                 <h3>Feature</h3>
@@ -207,7 +208,7 @@
             </div>
 
         </div>
-        <div></div>
+        <div id="footer-1"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"

@@ -90,6 +90,9 @@ a {
     background-size: cover;
     /* background-color: black; */
 }
+.question-message div img{
+    padding:auto;
+}
 
 .imgLogo {
     width: 30px;
@@ -99,6 +102,8 @@ a {
 .imgLogo1 {
     width: 40px;
     height: 40px;
+    border-radius:20px;
+   
 }
 
 .container-essme {
@@ -236,11 +241,12 @@ li {
 }
 
 .question-message {
+    margin-left:50px;
     display: flex;
     justify-content: flex-start;
     padding: 15px;
     height: fit-content;
-    max-width: 700px;
+    max-width: 1200px;
 }
 
 .question-message span {
@@ -269,25 +275,39 @@ li {
 }
 
 .answer-message {
+    
+
+    /* new */
+    flex-direction: row-reverse;
+    margin-top:20px;
+    margin-left:90px;
+    /* new */
+
     display: flex;
     /* height: 40px; */
-    justify-content: flex-end;
+    justify-content:flex-end ;
     margin-right: 15px;
     padding-right: 10px;
+    height: fit-content;
     text-align: end;
     border-radius: 20px;
 }
 
 .answer-message span {
+    /* new */
+    padding-right:30px;
+    margin-left:10px ;
+    /* new */
+
     background-color: cornflowerblue;
     /* height: 40px; */
-    text-align: end;
+    text-align: justify;
     border-radius: 20px;
     padding: 15px;
     display: flex;
     align-items: center;
     margin-right: 10px;
-    max-width: 700px;
+    /* max-width: 600px; */
 }
 
 
@@ -330,4 +350,32 @@ li {
 
 .sub-item-footer span i {
     margin-right: 15px;
+}
+
+
+/* new 31/10/22 */
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 628px)  {
+    #footer-1{
+        display:none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-left:100px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        background-color: #1363DF;
+        color: white;
+        height: fit-content;
+    }
 }

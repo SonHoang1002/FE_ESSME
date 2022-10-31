@@ -435,3 +435,31 @@ li {
 .sub-item-footer span i {
     margin-right: 15px;
 }
+
+
+/* new 31/10/22 */
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 628px)  {
+    #footer-1{
+        display:none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-left:100px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        background-color: #1363DF;
+        color: white;
+        height: fit-content;
+    }
+}

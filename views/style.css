@@ -816,7 +816,15 @@ header {
     display: flex;
     flex-direction: row;
 }
-.question-field>span,.answer-field>span{
+.question-field>span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.answer-field>span{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -826,6 +834,8 @@ header {
 }
 .answer-field {
     padding: 20px;
+    padding-top:10px;
+    margin-bottom:10px;
     display: flex;
     flex-direction: row;
 }
@@ -866,7 +876,9 @@ button {
     height: 55px;
 }
 
+
 .footer {
+    padding-top: 30px;
     display: flex;
     justify-content: space-evenly;
     background-color: #1363DF;
@@ -881,6 +893,11 @@ button {
 .item-footer {
     padding-top: 30px;
 }
+
+.sub-item-footer span i {
+    margin-right: 15px;
+}
+
 
 .more-expert {
     width: fit-content;
@@ -901,4 +918,59 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+
+/* new 31/10/22 */
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 628px)  {
+    #footer-1{
+        display:none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-left:100px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        background-color: #1363DF;
+        color: white;
+        height: fit-content;
+    }
+}
+
+
+@media only screen and (max-width: 1260px) {
+    .list-item-news {
+        height: 490px;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .list-item-news {
+        height: 490px;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }

@@ -59,6 +59,17 @@ a {
     z-index: 99;
 }
 
+
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
+
 .nav-active {
     background: rgb(19, 99, 223);
     height: 70px;
@@ -165,6 +176,7 @@ header {
 li {
     padding: 10px;
 }
+
 
 
 .icon-home {
@@ -629,5 +641,20 @@ button {
 @media only screen and (max-width: 886px) and (min-width:670px) {
     .location-profile {
         padding-top: 15px;
+    }
+}
+@media only screen and (max-width: 628px)  {
+    #footer-1{
+        display:none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-left:100px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        background-color: #1363DF;
+        color: white;
+        height: fit-content;
     }
 }
