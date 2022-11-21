@@ -14,7 +14,7 @@ $(document).ready(function () {
     console.log(id);
 
     $.ajax({
-        url: "http://fe.luanbt.live:8007/api/events/"+id,
+        url: "http://101.96.66.219:8005/api/events/"+id,
         type: "GET"
     }).done(function (data) {
         console.log(data);

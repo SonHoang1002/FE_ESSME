@@ -303,7 +303,7 @@
 
         function eventsbyTag(tag){
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events/search?tags="+tag+"&lang=vi&page=0&size=9",
+                url: "http://101.96.66.219:8005/api/events/search?tags="+tag+"&lang=vi&page=0&size=9",
                 type: "GET"
             }).done(function (data) {
                 console.log(data.content);
@@ -337,7 +337,7 @@
 
         function getallevents(){
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events?limit=9",
+                url: "http://101.96.66.219:8005/api/events?limit=9",
                 type: "GET"
             }).done(function (data) {
                 console.log(data);
@@ -372,9 +372,9 @@
         function searchEvents(){
             let what = $(".searchByField").val();
             let where = $(".searchByLocation").val();
-            console.log("http://fe.luanbt.live:8007/api/events/search?what="+what+"&where="+where+"&lang=vi&page=0&size=9")
+            console.log("http://101.96.66.219:8005/api/events/search?what="+what+"&where="+where+"&lang=vi&page=0&size=9")
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events/search?what="+what+"&where="+where+"&lang=vi&page=0&size=9",
+                url: "http://101.96.66.219:8005/api/events/search?what="+what+"&where="+where+"&lang=vi&page=0&size=9",
                 type: "GET"
             }).done(function (data) {
                 console.log(data.content);
@@ -410,7 +410,7 @@
             getallevents();
 
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events/tag?lang=vi",
+                url: "http://101.96.66.219:8005/api/events/tag?lang=vi",
                 type: "GET"
             }).done(function (data) {
                     console.log(data);
