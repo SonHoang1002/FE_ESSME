@@ -312,7 +312,7 @@
         let field = ele.innerText.split(" (")[0]
         console.log(field);
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/experts/suggest?field="+field+"&limit=200",
+            url: "http://101.96.66.219:8005/api/experts/suggest?field="+field+"&limit=200",
             type: "GET"
         }).done(function (data) {
             topexperts = data;
@@ -356,9 +356,9 @@
     function searchExpert(){
         let what = $(".searchByField").val();
         let where = $(".searchByLocation").val();
-        console.log("http://fe.luanbt.live:8007/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true")
+        console.log("http://101.96.66.219:8005/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true")
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true",
+            url: "http://101.96.66.219:8005/api/experts/search?what="+what+"&where="+where+"&size=20&asc=true",
             type: "GET"
         }).done(function (data) {
             topexperts = data.content;
@@ -401,7 +401,7 @@
     }
     $(document).ready(function(){
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/homepage",
+            url: "http://101.96.66.219:8005/api/homepage",
             type: "GET"
         }).done(function (data) {
             console.log(data);
@@ -454,7 +454,7 @@
         });
 
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/experts?limit=200&asc=true",
+            url: "http://101.96.66.219:8005/api/experts?limit=200&asc=true",
             type: "GET"
         }).done(function (data) {
             topexperts = data;
@@ -497,7 +497,7 @@
 
 
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/experts/field?lang=vi",
+            url: "http://101.96.66.219:8005/api/experts/field?lang=vi",
             type: "GET"
         }).done(function (data) {
             //___________Field
@@ -512,7 +512,7 @@
         });
 
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/news?limit=15",
+            url: "http://101.96.66.219:8005/api/news?limit=15",
             type: "GET"
         }).done(function (data) {
             //___________New

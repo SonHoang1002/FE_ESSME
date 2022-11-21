@@ -14,7 +14,7 @@ $(document).ready(function () {
     console.log(id);
 
     $.ajax({
-        url: "http://fe.luanbt.live:8007/api/experts/"+id,
+        url: "http://101.96.66.219:8005/api/experts/"+id,
         type: "GET"
     }).done(function (data) {
         //___________Profile
@@ -77,7 +77,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: "http://fe.luanbt.live:8007/api/experts/"+id+"/related?limit=3&skip=0",
+        url: "http://101.96.66.219:8005/api/experts/"+id+"/related?limit=3&skip=0",
         type: "GET"
     }).done(function (data) {
         //___________Related

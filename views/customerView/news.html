@@ -354,7 +354,7 @@
 
     function newsbyTag(tag) {
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/news/search?tag=" + tag + "&lang=vi&page=0&size=20",
+            url: "http://101.96.66.219:8005/api/news/search?tag=" + tag + "&lang=vi&page=0&size=20",
             type: "GET"
         }).done(function (data) {
             console.log(data.content);
@@ -445,7 +445,7 @@
 
     function getallnews() {
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/news?limit=20",
+            url: "http://101.96.66.219:8005/api/news?limit=20",
             type: "GET"
         }).done(function (data) {
             $(".head-new").empty();
@@ -535,9 +535,9 @@
 
     function searchNews() {
         let what = $("#searchText").val();
-        console.log("http://fe.luanbt.live:8007/api/news/search?what=" + what + "&size=20")
+        console.log("http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20")
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/news/search?what=" + what + "&size=20",
+            url: "http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20",
             type: "GET"
         }).done(function (data) {
             console.log(data.content);
@@ -630,7 +630,7 @@
         getallnews();
 
         $.ajax({
-            url: "http://fe.luanbt.live:8007/api/news/tags",
+            url: "http://101.96.66.219:8005/api/news/tags",
             type: "GET"
         }).done(function (data) {
             console.log(data);
