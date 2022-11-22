@@ -58,7 +58,7 @@
                 <div class="collapse navbar-collapse navbar-small" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-small">
                     </ul>
-                    <div class="d-flex" >
+                    <div class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="drop-item-small">
                             <li class="nav-item" id="drop-item-small">
                                 <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
@@ -69,10 +69,13 @@
                                     Experts
                                 </a>
                                 <ul class="dropdown-menu" id="drop-item-small">
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="experts.html">Experts</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="FQAs.html">FQAs</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="order_expert.html">Order Experts</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="../expertView/Response_History.html">Response</a>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="experts.html">Experts</a>
+                                    </li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="FQAs.html">FQAs</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="order_expert.html">Order
+                                            Experts</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"
+                                            href="../expertView/Response_History.html">Response</a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,8 +91,8 @@
                                     Language
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">English</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">Vietnamese</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">English</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">Vietnamese</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -171,9 +174,7 @@
                                     </span><br>
                                     <span class="expert-hotnew-text">
                                         <span>
-                                            Sáng 1/1, Chủ tịch UBND TP HCM Phan Văn Mãi cho biết, thành phố đã ghi
-                                            nhận 5 ca nghi mắc Covid-19 biến chủng Omicron, các biện pháp phòng
-                                            ngừa liên quan đã được kích hoạt.
+                                            Sáng 1/1, Chủ tịch UBND TP HCM Phan Văn Mãi cho
                                         </span>
                                     </span>
                                 </div>
@@ -338,167 +339,167 @@
     <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
     <script>
         function imgErr(e, num) {
-        if (num == 0)
-            e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
-        else if (num == 1)
-            e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
-        else if (num == 2)
-            e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
-        e.onerror = null;
-    }
-    function newsbyTag(tag) {
-        $.ajax({
-            url: "http://101.96.66.219:8005/api/news/search?tag=" + tag + "&lang=vi&page=0&size=20",
-            type: "GET"
-        }).done(function (data) {
-            console.log(data.content);
-            $(".head-new").empty();
-            $(".hot-news-list").empty();
-            $(".news-list").empty();
-            $.each(data.content, function (i, v) {
-                if(i<=0){
-                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
-                       
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1638021\"\n" +
-                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
-                        "                        />\n" +
-                        "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
-                        "                        <span class=\"expert-hotnew-title-text\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"expert-hotnew-text\">\n" +
-                        "                            <span>"+v.content+"</span>\n" +
-                        "                        </span>\n" +
-                        "</div>"+
-                        "                    </div>\n" +
-                        "                </div>"
+            if (num == 0)
+                e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
+            else if (num == 1)
+                e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
+            else if (num == 2)
+                e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
+            e.onerror = null;
+        }
+        function newsbyTag(tag) {
+            $.ajax({
+                url: "http://101.96.66.219:8005/api/news/search?tag=" + tag + "&lang=vi&page=0&size=20",
+                type: "GET"
+            }).done(function (data) {
+                console.log(data.content);
+                $(".head-new").empty();
+                $(".hot-news-list").empty();
+                $(".news-list").empty();
+                $.each(data.content, function (i, v) {
+                    if (i <= 0) {
+                        $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
+
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1638021\"\n" +
+                            "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                            "                        />\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
+                            "                        <span class=\"expert-hotnew-title-text\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"expert-hotnew-text\">\n" +
+                            "                            <span>" + v.content + "</span>\n" +
+                            "                        </span>\n" +
+                            "</div>" +
+                            "                    </div>\n" +
+                            "                </div>"
                         );
-                }
-                else if(i<=3){
-                    $(".hot-news-list").append("<div>\n" +
-                        "                        <div class=\"hotnew-item\" type=\"button\"\n" +
-                        "                             onclick=\"window.location='"+v.url+"'\">\n" +
-                        "                            <img\n" +
-                        "                                    src=\""+v.img+"\"\n" +
-                        "                                    alt=\"Rectangle1618029\"\n" +
-                        "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
-                        "                            />\n" +
-                        "                            <span class=\"hotnew-item-title\">\n" +
-                        "                                <span>"+v.title+"</span>\n" +
-                        "                            </span>\n" +
-                        "                            <span class=\"hotnew-item-text\">\n" +
-                        "                                <span>"+v.content+"</span>\n" +
-                        "                            </span>\n" +
-                        "                        </div>\n" +
-                        "                    </div>");
-                }
-                else {
-                    $(".news-list").append("<div>\n" +
-                        "                    <div class=\"new-items\" type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
-                        
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1718063\"\n" +
-                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
-                        "                        />\n" +
-                        "                        <span class=\"new-item-title\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"new-item-text\">\n" +
-                        "                            <span>\n" +
-                        "                              <span>"+v.content+"</span>\n" +
-                        "                              <br/>\n" +
-                        "                              <span></span>\n" +
-                        "                            </span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
-                        "                    </div>\n" +
-                        "                </div>");
-                }
+                    }
+                    else if (i <= 3) {
+                        $(".hot-news-list").append("<div>\n" +
+                            "                        <div class=\"hotnew-item\" type=\"button\"\n" +
+                            "                             onclick=\"window.location='" + v.url + "'\">\n" +
+                            "                            <img\n" +
+                            "                                    src=\"" + v.img + "\"\n" +
+                            "                                    alt=\"Rectangle1618029\"\n" +
+                            "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
+                            "                            />\n" +
+                            "                            <span class=\"hotnew-item-title\">\n" +
+                            "                                <span>" + v.title + "</span>\n" +
+                            "                            </span>\n" +
+                            "                            <span class=\"hotnew-item-text\">\n" +
+                            "                                <span>" + v.content + "</span>\n" +
+                            "                            </span>\n" +
+                            "                        </div>\n" +
+                            "                    </div>");
+                    }
+                    else {
+                        $(".news-list").append("<div>\n" +
+                            "                    <div class=\"new-items\" type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
+
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1718063\"\n" +
+                            "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                            "                        />\n" +
+                            "                        <span class=\"new-item-title\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"new-item-text\">\n" +
+                            "                            <span>\n" +
+                            "                              <span>" + v.content + "</span>\n" +
+                            "                              <br/>\n" +
+                            "                              <span></span>\n" +
+                            "                            </span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"new-item-time\"><span>" + v.tag + "</span></span>\n" +
+                            "                    </div>\n" +
+                            "                </div>");
+                    }
+                });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
             });
-        }).fail(function (xhr, status, errorThrown) {
-            $("#title").html("Sorry, there was a problem!")
-        }).always(function (xhr, status) {
-            console.log("The request is complete!")
-        });
-    }
-    function getallnews() {
-        $.ajax({
-            url: "http://101.96.66.219:8005/api/news?limit=20",
-            type: "GET"
-        }).done(function (data) {
-            $(".head-new").empty();
-            $(".hot-news-list").empty();
-            $(".news-list").empty();
-            $.each(data, function (i, v) {
-                if(i<=0){
-                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
-                       
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1638021\"\n" +
-                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
-                        "                        />\n" +
-                        "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
-                        "                        <span class=\"expert-hotnew-title-text\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
-                        "<div style=\" height:40px\"></div>"+
-                        "                        <span class=\"expert-hotnew-text\">\n" +
-                        "                            <span>"+v.content+"</span>\n" +
-                        "                        </span>\n" +
-                        
-                        "                    </div>\n" +
-                        "                    </div>\n" +
-                        "                </div>");
-                }
-                else if(i<=3){
-                    $(".hot-news-list").append(
-                        "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
-                        "                        <span class=\"hotnew-item-title\"> \n" +
-                        "                            <span>" + v.title + "</span> \n " +
-                        "                        </span> \n " +
-                        "                        <div class=\"hotnew-img-content-item\">\n" +
-                        "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
-                        "                            <span class=\"hotnew-item-text\">\n" +
-                        "                                <span>" + v.content + "</span>\n" +
-                        "                            </span>\n" +
-                        "                        </div>\n" +
-                        "                    </div>\n"
-                    );
-                }
-                else {
-                    $(".news-list").append("<div>\n" +
-                        "                    <div class=\"new-items\" type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+        }
+        function getallnews() {
+            $.ajax({
+                url: "http://101.96.66.219:8005/api/news?limit=20",
+                type: "GET"
+            }).done(function (data) {
+                $(".head-new").empty();
+                $(".hot-news-list").empty();
+                $(".news-list").empty();
+                $.each(data, function (i, v) {
+                    if (i <= 0) {
+                        $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
 
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1718063\"\n" +
-                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
-                        "/>\n" +
-                        "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
-                        "                        <span class=\"new-item-title\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1638021\"\n" +
+                            "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                            "                        />\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
+                            "                        <span class=\"expert-hotnew-title-text\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+                            "<div style=\" height:40px\"></div>" +
+                            "                        <span class=\"expert-hotnew-text\">\n" +
+                            "                            <span>" + v.content + "</span>\n" +
+                            "                        </span>\n" +
 
-                        "                        <span class=\"new-item-text\">\n" +
-                        "                            <span>\n" +
-                        "                              <span>"+v.content+"</span>\n" +
-                        "                              <br/>\n" +
-                        "                              <span></span>\n" +
-                        "                            </span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
-                        "</div>"+
+                            "                    </div>\n" +
+                            "                    </div>\n" +
+                            "                </div>");
+                    }
+                    else if (i <= 3) {
+                        $(".hot-news-list").append(
+                            "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
+                            "                        <span class=\"hotnew-item-title\"> \n" +
+                            "                            <span>" + v.title + "</span> \n " +
+                            "                        </span> \n " +
+                            "                        <div class=\"hotnew-img-content-item\">\n" +
+                            "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
+                            "                            <span class=\"hotnew-item-text\">\n" +
+                            "                                <span>" + v.content + "</span>\n" +
+                            "                            </span>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n"
+                        );
+                    }
+                    else {
+                        $(".news-list").append("<div>\n" +
+                            "                    <div class=\"new-items\" type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
 
-                        "                    </div>\n" +
-                        "                </div>");
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1718063\"\n" +
+                            "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                            "/>\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
+                            "                        <span class=\"new-item-title\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+
+                            "                        <span class=\"new-item-text\">\n" +
+                            "                            <span>\n" +
+                            "                              <span>" + v.content + "</span>\n" +
+                            "                              <br/>\n" +
+                            "                              <span></span>\n" +
+                            "                            </span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"new-item-time\"><span>" + v.tag + "</span></span>\n" +
+                            "</div>" +
+
+                            "                    </div>\n" +
+                            "                </div>");
                         // "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
                         // "                             <div >\n" +
                         // "                                 <span class=\"new-item-title\">" + v.name_event + "</span>\n" +
@@ -507,97 +508,100 @@
                         // "        <div style=\"height: 40px;\"><span class=\"new-item-time\">" + v.time + "</span></div>\n" +
                         // "                         </div>\n" +
                         // "                     </div>\n"
-                        
-                }
-            });
-        }).fail(function (xhr, status, errorThrown) {
-            $("#title").html("Sorry, there was a problem!")
-        }).always(function (xhr, status) {
-            console.log("The request is complete!")
-        });
-    }
 
-    function searchNews() {
-        let what = $("#searchText").val();
-        console.log("http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20")
-        $.ajax({
-            url: "http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20",
-            type: "GET"
-        }).done(function (data) {
-            console.log(data.content);
-            $(".head-new").empty();
-            $(".hot-news-list").empty();
-            $(".news-list").empty();
-            $.each(data.content, function (i, v) {
-                if(i<=0){
-                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
-                       
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1638021\"\n" +
-                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
-                        "                        />\n" +
-                        
-                        "                        <span class=\"expert-hotnew-title-text\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"expert-hotnew-text\">\n" +
-                        "                            <span>"+v.content+"</span>\n" +
-                        "                        </span>\n" +
-                        "                    </div>\n" +
-                        "                </div>"
+                    }
+                });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
+            });
+        }
+
+        function searchNews() {
+            let what = $("#searchText").val();
+            console.log("http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20")
+            $.ajax({
+                url: "http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20",
+                type: "GET"
+            }).done(function (data) {
+                console.log(data.content);
+                $(".head-new").empty();
+                $(".hot-news-list").empty();
+                $(".news-list").empty();
+                $.each(data.content, function (i, v) {
+                    if (i <= 0) {
+                        $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
+
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1638021\"\n" +
+                            "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                            "                        />\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
+                            "                        <span class=\"expert-hotnew-title-text\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"expert-hotnew-text\">\n" +
+                            "                            <span>" + v.content + "</span>\n" +
+                            "                        </span>\n" +
+                            "                    </div>\n" +
+                            "                  </div>" +
+                            "                </div>"
                         );
-                }
-                else if(i<=3){
-                    $(".hot-news-list").append("<div>\n" +
-                        "                        <div class=\"hotnew-item\" type=\"button\"\n" +
-                        "                             onclick=\"window.location='"+v.url+"'\">\n" +
-                        "                            <img\n" +
-                        "                                    src=\""+v.img+"\"\n" +
-                        "                                    alt=\"Rectangle1618029\"\n" +
-                        "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
-                        "                            />\n" +
-                        "                            <span class=\"hotnew-item-title\">\n" +
-                        "                                <span>"+v.title+"</span>\n" +
-                        "                            </span>\n" +
-                        "                            <span class=\"hotnew-item-text\">\n" +
-                        "                                <span>"+v.content+"</span>\n" +
-                        "                            </span>\n" +
-                        "                        </div>\n" +
-                        "                    </div>");
-                }
-                else {
-                    $(".news-list").append("<div>\n" +
-                        "                    <div class=\"new-items\" type=\"button\"\n" +
-                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                    }
+                    else if (i <= 3) {
+                        $(".hot-news-list").append("<div>\n" +
+                            "                        <div class=\"hotnew-item\" type=\"button\"\n" +
+                            "                             onclick=\"window.location='" + v.url + "'\">\n" +
+                            "                            <img\n" +
+                            "                                    src=\"" + v.img + "\"\n" +
+                            "                                    alt=\"Rectangle1618029\"\n" +
+                            "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
+                            "                            />\n" +
+                            "                            <span class=\"hotnew-item-title\">\n" +
+                            "                                <span>" + v.title + "</span>\n" +
+                            "                            </span>\n" +
+                            "                            <span class=\"hotnew-item-text\">\n" +
+                            "                                <span>" + v.content + "</span>\n" +
+                            "                            </span>\n" +
+                            "                        </div>\n" +
+                            "                    </div>"
+                        );
+                    }
+                    else {
+                        $(".news-list").append("<div>\n" +
+                            "                    <div class=\"new-items\" type=\"button\"\n" +
+                            "                         onclick=\"window.location='" + v.url + "'\">\n" +
 
-                        "                        <img\n" +
-                        "                                src=\""+v.img+"\"\n" +
-                        "                                alt=\"Rectangle1718063\"\n" +
-                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
-                        "                        />\n" +
-                        "                        <span class=\"new-item-title\">\n" +
-                        "                            <span>"+v.title+"</span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"new-item-text\">\n" +
-                        "                            <span>\n" +
-                        "                              <span>"+v.content+"</span>\n" +
-                        "                              <br/>\n" +
-                        "                              <span></span>\n" +
-                        "                            </span>\n" +
-                        "                        </span>\n" +
-                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
-                        "                    </div>\n" +
-                        "                </div>");
-                }
+                            "                        <img\n" +
+                            "                                src=\"" + v.img + "\"\n" +
+                            "                                alt=\"Rectangle1718063\"\n" +
+                            "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                            "                        />\n" +
+                            
+                            "                        <span class=\"new-item-title\">\n" +
+                            "                            <span>" + v.title + "</span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"new-item-text\">\n" +
+                            "                            <span>\n" +
+                            "                              <span>" + v.content + "</span>\n" +
+                            "                              <br/>\n" +
+                            "                              <span></span>\n" +
+                            "                            </span>\n" +
+                            "                        </span>\n" +
+                            "                        <span class=\"new-item-time\"><span>" + v.tag + "</span></span>\n" +
+                            "                    </div>\n" +
+                            "                </div>");
+                    }
+                });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
             });
-        }).fail(function (xhr, status, errorThrown) {
-            $("#title").html("Sorry, there was a problem!")
-        }).always(function (xhr, status) {
-            console.log("The request is complete!")
-        });
-    }
+        }
 
         // $(document).ready(function () {
         //     $.ajax({
@@ -752,59 +756,59 @@
         //         console.log("The request is complete!")
         //     });
 
-           
+
 
         // });
-$(document).ready(function () {
-        getallnews();
+        $(document).ready(function () {
+            getallnews();
 
-        $.ajax({
-            url: "http://101.96.66.219:8005/api/news/tags",
-            type: "GET"
-        }).done(function (data) {
-            console.log(data);
-            $(".field-items").empty();
-            $.each(data, function (i, v) {
-                $(".field-items").append("<div class=\"fields-choose-events\">\n" +
-                    "                        <input type='radio' id='"+v+"' name=\"field-radio\" style=\"width:20px;height: 20px;\">\n" +
-                    "                        <span style=\"margin-left:10px;\">"+v+"</span>\n" +
-                    "                    </div>");
-            });
-        }).fail(function (xhr, status, errorThrown) {
-            $("#title").html("Sorry, there was a problem!")
-        }).always(function (xhr, status) {
-            console.log("The request is complete!")
-            $("input[type='radio']").change(function () {
-                $("input[type='radio']").each(function (i, obj) {
-                    if (obj.checked) {
-                        if (obj.id == "*") {
-                            getallnews();
-                        } else {
-                            console.log(obj.id);
-                            newsbyTag(obj.id);
-                        }
-                    }
+            $.ajax({
+                url: "http://101.96.66.219:8005/api/news/tags",
+                type: "GET"
+            }).done(function (data) {
+                console.log(data);
+                $(".field-items").empty();
+                $.each(data, function (i, v) {
+                    $(".field-items").append("<div class=\"fields-choose-events\">\n" +
+                        "                        <input type='radio' id='" + v + "' name=\"field-radio\" style=\"width:20px;height: 20px;\">\n" +
+                        "                        <span style=\"margin-left:10px;\">" + v + "</span>\n" +
+                        "                    </div>");
                 });
-            })
-        });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
+                $("input[type='radio']").change(function () {
+                    $("input[type='radio']").each(function (i, obj) {
+                        if (obj.checked) {
+                            if (obj.id == "*") {
+                                getallnews();
+                            } else {
+                                console.log(obj.id);
+                                newsbyTag(obj.id);
+                            }
+                        }
+                    });
+                })
+            });
 
-        $('#field-filter').on("input", function () {
-            var dInput = this.value;
-            console.log(dInput);
-            let filter = dInput.toUpperCase();
-            $(".field-items div span").each(function (i) {
-                if ($(this).text().toUpperCase().indexOf(filter) > -1) {
-                    $(this).parent().css('display', '')
-                } else {
-                    $(this).parent().css('display', 'none')
-                }
-            })
-        });
+            $('#field-filter').on("input", function () {
+                var dInput = this.value;
+                console.log(dInput);
+                let filter = dInput.toUpperCase();
+                $(".field-items div span").each(function (i) {
+                    if ($(this).text().toUpperCase().indexOf(filter) > -1) {
+                        $(this).parent().css('display', '')
+                    } else {
+                        $(this).parent().css('display', 'none')
+                    }
+                })
+            });
 
-        $('#searchButton').click(function () {
-            searchNews();
+            $('#searchButton').click(function () {
+                searchNews();
+            });
         });
-    });
 
     </script>
 </body>
