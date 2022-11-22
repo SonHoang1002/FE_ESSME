@@ -165,6 +165,7 @@ li {
 
 .bread-crumb {
     padding-top: 100px;
+    margin-left:20px;
 }
 
 .detail-body {
@@ -189,23 +190,6 @@ li {
     background-color: #1363DF;
     margin-bottom: 40px;
 }
-.footer {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #1363DF;
-    color: white;
-    height: 300px;
-    margin-top: 40px;
-}
-
-.sub-item-footer {
-    padding-top: 20px;
-}
-
-.item-footer {
-    padding-top: 30px;
-}
 
 .order-history-container {
     background-color: transparent;
@@ -214,6 +198,7 @@ li {
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-bottom:40px;
     border-radius: 5px;
 }
 
@@ -257,7 +242,6 @@ li {
 .order-history-item {
     height: 115px;
     display: flex;
-    overflow: hidden;
     position: relative;
     box-sizing: border-box;
     align-items: flex-start;
@@ -265,7 +249,7 @@ li {
     border-color: rgba(0, 0, 0, 1);
     border-style: solid;
     border-width: 1px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
@@ -427,4 +411,56 @@ li {
 }
 .pending-btn{
     background-color: #3693A8;
+}
+
+
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1363DF;
+    color: white;
+    height: 300px;
+}
+
+.sub-item-footer {
+    padding-top: 20px;
+}
+
+.item-footer {
+    padding-top: 30px;
+}
+
+.sub-item-footer span i {
+    margin-right: 15px;
+}
+
+
+/* new 31/10/22 */
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    
+    #drop-item-small{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 628px)  {
+    #footer-1{
+        display:none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-left:100px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        background-color: #1363DF;
+        color: white;
+        height: fit-content;
+    }
 }

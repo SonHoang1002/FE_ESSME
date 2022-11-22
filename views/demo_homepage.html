@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- git add .
+git commit -m 'add footer'
+git push -->
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESSME</title>
     <link rel="icon" href="../../assets/essme.png" type="image/x-icon">
+    <link rel="stylesheet" href="./demo_homepage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,9 +25,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/expertDetail.css">
     <style>
-        a {
+        a:hover {
             text-decoration: none;
         }
     </style>
@@ -58,7 +61,7 @@
                 <div class="collapse navbar-collapse navbar-small" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-small">
                     </ul>
-                    <div class="d-flex" >
+                    <div class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="drop-item-small">
                             <li class="nav-item" id="drop-item-small">
                                 <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
@@ -69,10 +72,13 @@
                                     Experts
                                 </a>
                                 <ul class="dropdown-menu" id="drop-item-small">
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="experts.html">Experts</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="FQAs.html">FQAs</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="order_expert.html">Order Experts</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="../expertView/Response_History.html">Response</a>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="experts.html">Experts</a>
+                                    </li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="FQAs.html">FQAs</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="order_expert.html">Order
+                                            Experts</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"
+                                            href="../expertView/Response_History.html">Response</a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,8 +94,8 @@
                                     Language
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">English</a></li>
-                                    <li><a class="dropdown-item " id="drop-item-small"  href="#">Vietnamese</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">English</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">Vietnamese</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -135,425 +141,453 @@
             }
         };
     </script>
-
-    <div class="detail-body">
-        <div style="height:90px">
-        </div>
-        <div class="bread-crumb">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <div class="icon-home"><i class="fa fa-home"></i></div>
-                    <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a>
-                    </li>
-                    <li class="breadcrumb-item" aria-current="page"><a href="experts.html"><span
-                                style="color:black">Expert</span></a></li>
-
-                    <li class="breadcrumb-item "><span style="color:black">Nguyen Lan</span></li>
-
-                </ol>
-            </nav>
-        </div>
-        <div class="line"></div>
-        <div class="profile">
-            <div class="image-profile">
-                <div class="img-item-profile">
-                    <img src="../../assets/bgImg.png" alt="" style="width:300px;height:300px">
+    <div class="header-background">
+        <span class="essme">
+            ESSME
+        </span>
+        <form action="customerView/field-result.html" method="get">
+            <div style="width: 100%; display: flex;justify-content: center;">
+                <div class="searchForm">
+                    <!-- <div class="searchByField"></div>
+          <div class="searchByLocation"></div>
+          <div class="searchButton"></div> -->
+                    <input class="searchByField form-control" placeholder="Search By Fields" />
+                    <input class="searchByLocation form-control" placeholder="Search By Locations" />
+                    <button class="searchButton btn btn-primary">
+                        <img src="../assets/search_white.png" style="width: 27px" alt="">
+                    </button>
                 </div>
-                <div class="name-item-profile">
-                    <span> Trinh Van Quyet</span>
-                </div>
-                <div class="job-item-profile">
-                    <span style=" -webkit-line-clamp: 2;">Research assistant professor of computer </span>
-                </div>
-                <div class="professor-location-email-item-profile">
-                    <!-- <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png" alt=""> <span
-                        style="padding-right:5px"> -->
-                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M27.5 1.25H2.5C1.11979 1.25 0 2.08984 0 3.125V16.875C0 17.9102 1.11979 18.75 2.5 18.75H27.5C28.8802 18.75 30 17.9102 30 16.875V3.125C30 2.08984 28.8802 1.25 27.5 1.25ZM9.16667 5C11.0052 5 12.5 6.12109 12.5 7.5C12.5 8.87891 11.0052 10 9.16667 10C7.32812 10 5.83333 8.87891 5.83333 7.5C5.83333 6.12109 7.32812 5 9.16667 5ZM15 14.25C15 14.6641 14.4792 15 13.8333 15H4.5C3.85417 15 3.33333 14.6641 3.33333 14.25V13.5C3.33333 12.2578 4.90104 11.25 6.83333 11.25H7.09375C7.73437 11.4492 8.43229 11.5625 9.16667 11.5625C9.90104 11.5625 10.6042 11.4492 11.2396 11.25H11.5C13.4323 11.25 15 12.2578 15 13.5V14.25ZM26.6667 12.1875C26.6667 12.3594 26.4792 12.5 26.25 12.5H18.75C18.5208 12.5 18.3333 12.3594 18.3333 12.1875V11.5625C18.3333 11.3906 18.5208 11.25 18.75 11.25H26.25C26.4792 11.25 26.6667 11.3906 26.6667 11.5625V12.1875ZM26.6667 9.6875C26.6667 9.85938 26.4792 10 26.25 10H18.75C18.5208 10 18.3333 9.85938 18.3333 9.6875V9.0625C18.3333 8.89062 18.5208 8.75 18.75 8.75H26.25C26.4792 8.75 26.6667 8.89062 26.6667 9.0625V9.6875ZM26.6667 7.1875C26.6667 7.35938 26.4792 7.5 26.25 7.5H18.75C18.5208 7.5 18.3333 7.35938 18.3333 7.1875V6.5625C18.3333 6.39062 18.5208 6.25 18.75 6.25H26.25C26.4792 6.25 26.6667 6.39062 26.6667 6.5625V7.1875Z"
-                            fill="black" />
-                    </svg>
-
-                    <span style=" padding-left:10px" class="professor">Professor</span>
-                </div>
-                <div class="professor-location-email-item-profile">
-                    <!-- <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png" alt=""> <span
-                        style="padding-right:5px"> -->
-                    <svg width="35" min-height="20" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.52368 24.9438C1.33445 16.0301 0 15.1152 0 11.8393C0 7.35197 4.25328 3.71429 9.5 3.71429C14.7467 3.71429 19 7.35197 19 11.8393C19 15.1152 17.6655 16.0301 10.4763 24.9438C10.0045 25.5267 8.99541 25.5267 8.52368 24.9438ZM9.5 15.2247C11.6861 15.2247 13.4583 13.709 13.4583 11.8393C13.4583 9.96957 11.6861 8.45388 9.5 8.45388C7.31386 8.45388 5.54167 9.96957 5.54167 11.8393C5.54167 13.709 7.31386 15.2247 9.5 15.2247Z"
-                            fill="black" />
-                    </svg>
-
-                    <span style="padding-left:10px " class="location-profile">Center for Urban Science + Progress, New
-                        York University, United
-                        States</span>
-                </div>
-                <div class="professor-location-email-item-profile">
-                    <!-- <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png" alt=""> <span
-                        style="padding-right:5px"> -->
-                    <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M29.4316 9.31641C29.6602 9.16504 30 9.30664 30 9.5459V19.5312C30 20.8252 28.7402 21.875 27.1875 21.875H2.8125C1.25977 21.875 0 20.8252 0 19.5312V9.55078C0 9.30664 0.333984 9.16992 0.568359 9.32129C1.88086 10.1709 3.62109 11.25 9.59766 14.8682C10.834 15.6201 12.9199 17.2021 15 17.1924C17.0918 17.207 19.2188 15.5908 20.4082 14.8682C26.3848 11.25 28.1191 10.166 29.4316 9.31641ZM15 15.625C16.3594 15.6445 18.3164 14.1992 19.3008 13.6035C27.0762 8.90137 27.668 8.49121 29.4609 7.31934C29.8008 7.09961 30 6.75781 30 6.39648V5.46875C30 4.1748 28.7402 3.125 27.1875 3.125H2.8125C1.25977 3.125 0 4.1748 0 5.46875V6.39648C0 6.75781 0.199219 7.09473 0.539062 7.31934C2.33203 8.48633 2.92383 8.90137 10.6992 13.6035C11.6836 14.1992 13.6406 15.6445 15 15.625Z"
-                            fill="black" />
-                    </svg>
-
-                    <span style="padding-left:10px" class="gmail">Professor@gmail.com</span>
-                </div>
-
             </div>
-            <div class="detail-profile">
-                <div class="intro-social-profile">
-                    <div class="button-intro-profile" onclick="console.log('Back')" type="button">
-                        <img src="../../assets/icon/back.png" alt="">
+        </form>
+    </div>
+
+
+    </div>
+    <div class="Experts">
+        <div class="expertsTitle">
+            <span>Find your suitable experts with us</span>
+        </div>
+        <div class="expertsIntro">
+            <div style=" display: flex;padding-top: 50px;padding-bottom:120px; justify-content: space-evenly;">
+                <div>
+                    <div class="introTitle">Easy</div>
+                    <div class="introSubTitle">to Search</div>
+                </div>
+                <div>
+                    <div class="introTitle">3M+</div>
+                    <div class="introSubTitle">experts in database+</div>
+                </div>
+                <div>
+                    <div class="introTitle">260+</div>
+                    <div class="introSubTitle">fields</div>
+                </div>
+            </div>
+        </div>
+        <div class="leading-experts-title-out">
+            <div class="leading-experts-title">
+                <span style="padding-top:2px;padding-left: 70px;padding-bottom: 60px;">LEADING EXPERTS</span>
+            </div>
+        </div>
+        <!-- <div class="expertsDemo"> -->
+            <div class="demo-experts">
+                <div class="leading-experts-container">
+                    <div class="leading-list">
+                        <div>
+                            <a href="customerView/expertDetail.html">
+                                <div>
+                                    <div class="expert-item">
+                                        <span class="expert-experts-item-title-text">
+                                            <span>Trinh Van Quyet</span>
+                                        </span>
+                                        <span class="expert-experts-position-text">
+                                            <span>Professional, Doctor</span>
+                                        </span>
+                                        <span class="expert-experts-work-space-text">
+                                            <span>Harvard University, Cambridge university, 清华大学</span>
+                                        </span>
+                                        <img alt="image42056" src="../../assets/expertimg.png"
+                                            class="expert-experts-item-image" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+
+        <div class="intro-before-field">
+            <div class="become-experts-title">
+                Want to become an Expert ?
+            </div>
+            <a href="sign_Up_sign_In/update-profile.html" style="text-decoration: none">
+                <button class="become-experts-button">
+                    <span>Become An Expert</span>
+                </button>
+            </a>
+            <div class="become-experts-sub-title">
+                Click right here and fill your profile to become one!
+            </div>
+        </div>
+
+        <div class="fields-events">
+            <div class="htitle">
+                <span class="fields-title">Fields</span>
+                <a class="morelink" href="customerView/experts.html">
+                    <button class="more-expert">
+                        View all fields
+                    </button>
+                </a>
+            </div>
+            <div class="fields-container">
+                <div class="fields-list uneven">
+                    <!--        <div>-->
+                    <!--          <div class="field-item" type="button" onclick='window.location="customerView/field-result.html"'>-->
+                    <!--            <div>-->
+                    <!--              <img src="../assets/business.png" class="field-images" alt="">-->
+                    <!--            </div>-->
+                    <!--            <div class="field-name">-->
+                    <!--              <div>Business</div>-->
+                    <!--            </div>-->
+                    <!--          </div>-->
+                    <!--        </div>-->
+                </div>
+            </div>
+            <div class="htitle">
+                <span class="event-title">Join events with experts</span>
+                <a href="customerView/events.html" class="morelink">
+                    <button class="more-expert">
+                        View all events
+                    </button>
+                </a>
+            </div>
+            <div class="events">
+                <div class="event-list uneven">
                     <div>
-                        <div class="intro-profile">
-                            <div class="title-detail-profile">
-                                <span>INTRODUCTION</span>
+                        <div class="item-events" type="button"
+                            onclick='window.location="customerView/eventDetail.html"'>
+                            <div class="img-events">
+                                <img src="../../assets/eventimg.png" alt="">
                             </div>
-                            <div class="detail-intro-profile">
-                                <div class="sub-title-intro-profile">
-                                    <span>Appelation</span>
-                                </div>
-                                <div class="sub-content-intro-profile appelation">
-                                    <span>Research assistant professor of computer</span>
-                                </div>
+                            <div class="title-events">
+                                Title
                             </div>
-                            <div class="detail-intro-profile">
-                                <div class="sub-title-intro-profile">
-                                    <span>Position</span>
-                                </div>
-                                <div class="sub-content-intro-profile position">
-                                    <span>Assistant Professor</span>
-                                </div>
+                            <div class="detail-events">
+                                <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+                                <span>Time of events</span>
                             </div>
-                            <div class="detail-intro-profile">
-                                <div class="sub-title-intro-profile">
-                                    <span>Affliate</span>
-                                </div>
-                                <div class="sub-content-intro-profile affliate">
-                                    <span>New York University</span>
-                                </div>
-                            </div>
-                            <div class="detail-intro-profile">
-                                <div class="sub-title-intro-profile">
-                                    <span>Expertise</span>
-                                </div>
-                                <div class="sub-content-intro-profile expertise">
-                                    <span>Researcher</span>
-                                </div>
+                            <div class="detail-events">
+                                <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+                                <span>location</span>
                             </div>
                         </div>
-                        <!-- <div class="line"></div> -->
-                        <div class="social-profile">
-                            <div class="title-detail-profile">
-                                <span>SOCIAL MEDIA</span>
-                            </div>
-                            <div class="detail-social-profile">
-                                <div class="sub-content-social-profile">
-                                    <div style="width:35px">
-                                        <!-- <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png"
-                                            alt=""> -->
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_2127_676)">
-                                                <path
-                                                    d="M15 0.46875C6.71552 0.46875 0 6.97441 0 15C0 23.0256 6.71552 29.5312 15 29.5312C23.2845 29.5312 30 23.0256 30 15C30 6.97441 23.2845 0.46875 15 0.46875ZM14.3141 14.5447C14.1393 14.8271 13.8242 15 13.4843 15H13.4655C13.2091 15 12.9629 15.099 12.7815 15.2748L12.4391 15.6064C12.2504 15.7893 12.2504 16.0863 12.4391 16.2691L12.7815 16.6008C12.9629 16.7766 13.0651 17.015 13.0651 17.2635V17.8125C13.0651 18.3305 12.6321 18.75 12.0974 18.75H11.7278C11.3613 18.75 11.0262 18.5496 10.8623 18.2314L9.49415 15.5813C9.34657 15.2953 8.95282 15.2332 8.71935 15.4594L7.54173 16.5996C7.36028 16.7754 7.11411 16.8744 6.85766 16.8744H3.07319C2.97097 16.2627 2.90323 15.6398 2.90323 15C2.90323 8.53828 8.32984 3.28125 15 3.28125C16.301 3.28125 17.5524 3.48691 18.7276 3.85664L15.6937 6.11426C15.3847 6.31406 15.4137 6.7623 15.7458 6.92344L16.4008 7.24043C16.7286 7.39922 16.9355 7.72383 16.9355 8.07891V12.6562C16.9355 12.9152 16.719 13.125 16.4516 13.125H16.2665C16.0833 13.125 15.9157 13.0248 15.8341 12.866C15.7397 12.6832 15.4736 12.6732 15.3647 12.8484L14.3141 14.5447ZM24.6774 21.0018C24.6774 21.2502 24.5752 21.4887 24.3937 21.6645L23.8149 22.2252C23.6335 22.401 23.3873 22.5 23.1308 22.5H22.2139C21.9575 22.5 21.7113 22.401 21.5298 22.2252L20.7429 21.4629C20.5452 21.2714 20.2997 21.1327 20.0303 21.0604C19.7608 20.9881 19.4767 20.9847 19.2054 21.0504L17.919 21.3621C17.8421 21.3809 17.7635 21.3902 17.6843 21.3902H17.0589C16.8024 21.3902 16.5562 21.2912 16.3748 21.1154L15.6544 20.4176C15.5638 20.3296 15.5129 20.2103 15.5129 20.0859V19.4883C15.5129 19.2967 15.6333 19.1244 15.8171 19.0529L18.1966 18.1307C18.3163 18.0844 18.43 18.024 18.5347 17.952L19.9687 16.9623C20.0507 16.9058 20.1488 16.8754 20.2494 16.8756H20.9806C21.176 16.8756 21.3526 16.9893 21.4276 17.1645L21.7512 17.9174C21.7696 17.9601 21.8006 17.9965 21.8403 18.0222C21.88 18.0478 21.9267 18.0615 21.9744 18.0615H22.2042C22.3119 18.0615 22.4069 17.9924 22.4365 17.8928L22.6905 17.0449C22.7208 16.9447 22.8151 16.8762 22.9228 16.8762H23.2893C23.423 16.8762 23.5312 16.9811 23.5312 17.1105V17.8682C23.5312 17.9924 23.5821 18.1119 23.6728 18.1998L24.3931 18.8977C24.5746 19.0734 24.6768 19.3119 24.6768 19.5604V21.0018H24.6774Z"
-                                                    fill="black" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_2127_676">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
-                                        <span style="padding-right:5px">
-                                    </div>
-                                    <span>Website</span>
-                                </div>
-                            </div>
-                            <div class="detail-social-profile">
-                                <div class="sub-content-social-profile">
-                                    <div style="width:35px">
-                                        <img style="width: 25px;height: 25px; " src="../../assets/icon/facebook.png"
-                                            alt="">
-                                        <span style="padding-right:5px">
-                                    </div>
-                                    <span>Facebook</span>
-                                </div>
-                            </div>
-                            <div class="detail-social-profile">
-                                <div class="sub-content-social-profile">
-                                    <div style="width:35px">
-                                        <img style="width: 25px;height: 25px; " src="../../assets/icon/twitter.png"
-                                            alt="">
-                                        <span style="padding-right:5px">
-                                    </div>
-                                    <span>Twitter</span>
-                                </div>
-                            </div>
-                            <div class="detail-social-profile info-link">
-                                <div class="sub-content-social-profile">
-                                    <div style="width:35px">
-                                        <img style="width: 25px;height: 25px; " src="../../assets/icon/linkedin.png"
-                                            alt="">
-                                        <span style="padding-right:5px">
-                                    </div>
-                                    <span>Info</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-intro-profile" onclick="console.log('Next')" type="button">
-                        <img src="../../assets/icon/next.png" alt="">
-                    </div>
-                </div>
-                <div class="order-profile">
-                    <div class="title-detail-profile">
-                        <span>ORDER EXPERT</span>
-                    </div>
-                    <div style="display:flex; justify-content: center;align-items: center">
-                        <textarea class="form-control" rows="6" cols="50"
-                            placeholder="Enter your requirement ..."></textarea>
-                    </div>
-                    <div style="display:flex; justify-content: center;align-items: center;padding:30px">
-                        <button class="btn btn-primary">SEND</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="related-experts">
-            <div class="title-detail-profile">
-                <span>RELATED EXPERTS</span>
+        <div class="news">
+            <div class="news-title">
+                <span class="behind-title">Daily&nbsp</span><span>HOT</span><span class="behind-title">&nbsp;News
+                    update</span>
             </div>
-            <div class="list-related-experts">
-                <div class="card-wrapper">
-                    <div class="card-related" onclick="window.location='#'" type="button">
-                        <div class="info-related">
-                            <div class="name-related">name</div>
-                            <div class="job-related"> job</div>
-                            <div class="location-related">location</div>
-                        </div>
-                        <div class="img-related"> <img src="../../../assets/bgImg.png" alt=""></div>
+            <div class="news">
+
+                <div class="body-news">
+                    <div class="list-item-news">
+                        <a style="text-decoration: none;color: black"
+                            href="https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html">
+                            <div class="item-news">
+                                <div class="title-item-news"><span>this is title of the news</span></div>
+                                <div class="detail-item-news">
+                                    <img class="img-news" src="../../assets/bgImg.png" alt="">
+                                    <div class="sub-detail-item-news">
+                                        <div class="sub-title-item-news"><span>This is sub title of the news</span>
+                                        </div>
+                                        <div class="time-item-news"><span>03/11/2021</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                </div>
+                <div class="footer-news">
+                    <a href="customerView/news.html">
+                        <span>Show More</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div id="footer-1"></div>
-        <div class="item-footer">
-            <div>
-                <h3>Feature</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div><span><i class="fa-solid fa-magnifying-glass"></i>Find an Expert</span></div><br>
-                <div><span><i class="fa-solid fa-magnifying-glass"></i>Find Events</span></div><br>
+        <div class="questions">
+            <div class="question-title">
+                <span>Send us your question</span>
             </div>
-        </div>
-        <div class="item-footer">
-            <div>
-                <h3>Discover</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div><span><i class="fa-solid fa-shield-halved"></i>Security</span></div><br>
-                <div></div><span><i class="fa-solid fa-people-group"></i>Sponsor</span><br>
-            </div>
-        </div>
-        <div class="item-footer">
-            <div>
-                <h3>Information</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div><span><i class="fa-solid fa-scale-balanced"></i>Rules</span></div><br>
-                <span><i class="fa-regular fa-address-card"></i>About us</span><br>
-            </div>
-        </div>
-        <div class="item-footer">
-            <div>
-                <h3>Community</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div id="facebook"><span><i class="fa-brands fa-square-facebook"></i>Facebook</span></div><br>
-                <div id="twitter"><span><i class="fa-brands fa-square-twitter"></i>Twitter</span></div><br>
-                <div id="linkedin"><span><i class="fa-brands fa-linkedin"></i>Linkedln</span></div><br>
+            <div class="question-FQAs">
+                <div class="title-FQAs">
+                    <span>Question and Answer</span>
+                </div>
+                <div class="questions-list">
+                    <div class="question-answer-card" onclick="window.location='expertView/Answer_Question.html'"
+                        type="button">
+                        <div class="question-field">
+                            <img style="width: 15px;height: 15px;margin:5px" src="../../assets/icon/reset-icon.png"
+                                alt="">
+                            <span>Question</span>
+                        </div>
+                        <div class="answer-field">
+                            <img style="width: 15px;height: 15px;margin:5px" src="../../assets/icon/reset-icon.png"
+                                alt="">
+                            <span>Answer</span>
+                        </div>
+                        <div class="answer-field">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more-FQAs">
+                    <a href="customerView/response-history.html">
+                        <span>See more</span>
+                    </a>
+                </div>
             </div>
 
+            <div class="your-question">
+                <div class="title-FQAs">
+                    <span>Ask your question</span>
+                </div>
+                <h1></h1>
+                <div
+                    style="display:flex; justify-content: center;align-items: center;border-radius: 30px;margin-top: 30px">
+                    <textarea class="form-control" placeholder="Enter your question..." rows="7"></textarea>
+                </div>
+                <div
+                    style="display:flex; justify-content: center;align-items: center;border-radius: 30px;margin-top:20px;">
+                    <textarea class="form-control" placeholder="Choose the field..." rows="1"></textarea>
+                </div>
+                <div
+                    style="display:flex; justify-content: center;align-items: center;padding-top: 30px;padding-bottom: 10px">
+                    <button class="btn btn-primary"><span style="font-size: 18px">SEND</span></button>
+                </div>
+            </div>
         </div>
-        <div id="footer-1"></div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
+        <div class="footer">
+            <div id="footer-1"></div>
+            <div class="item-footer">
+                <div>
+                    <h3>Feature</h3>
+                </div><br>
+                <div class="sub-item-footer">
+                    <div><span><i class="fa-solid fa-magnifying-glass"></i>Find an Expert</span></div><br>
+                    <div><span><i class="fa-solid fa-magnifying-glass"></i>Find Events</span></div><br>
+                </div>
+            </div>
+            <div class="item-footer">
+                <div>
+                    <h3>Discover</h3>
+                </div><br>
+                <div class="sub-item-footer">
+                    <div><span><i class="fa-solid fa-shield-halved"></i>Security</span></div><br>
+                    <div></div><span><i class="fa-solid fa-people-group"></i>Sponsor</span><br>
+                </div>
+            </div>
+            <div class="item-footer">
+                <div>
+                    <h3>Information</h3>
+                </div><br>
+                <div class="sub-item-footer">
+                    <div><span><i class="fa-solid fa-scale-balanced"></i>Rules</span></div><br>
+                    <span><i class="fa-regular fa-address-card"></i>About us</span><br>
+                </div>
+            </div>
+            <div class="item-footer">
+                <div>
+                    <h3>Community</h3>
+                </div><br>
+                <div class="sub-item-footer">
+                    <div id="facebook"><span><i class="fa-brands fa-square-facebook"></i>Facebook</span></div><br>
+                    <div id="twitter"><span><i class="fa-brands fa-square-twitter"></i>Twitter</span></div><br>
+                    <div id="linkedin"><span><i class="fa-brands fa-linkedin"></i>Linkedln</span></div><br>
+                </div>
 
-    <script>
-        function imgErr(e, num) {
-            if (num == 0)
-                e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
-            else if (num == 1)
-                e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
-            else if (num == 2)
-                e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
-            e.onerror = null;
-        }
+            </div>
+            <div id="footer-1"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="../plugin/slick-master/slick-master/slick/slick.js"></script>
+        <script>
+            function imgErr(e, num) {
+                if (num == 0)
+                    e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
+                else if (num == 1)
+                    e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
+                else if (num == 2)
+                    e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
+                e.onerror = null;
+            }
 
-        $(document).ready(function () {
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/homepage",
-                type: "GET"
-            }).done(function (data) {
-                console.log(data);
-                let topexperts = data.top_experts;
-                let topevents = data.top_events;
-                let topnews = data.top_news;
-                let fields = data.fields;
-                let footer = data.footer;
+            $(document).ready(function () {
+                $.ajax({
+                    url: "http://fe.luanbt.live:8007/api/homepage",
+                    type: "GET"
+                }).done(function (data) {
+                    console.log(data);
+                    let topexperts = data.top_experts;
+                    let topevents = data.top_events;
+                    let topnews = data.top_news;
+                    let fields = data.fields;
+                    let footer = data.footer;
 
-                //______________EXPERT
-                console.log(topexperts[0]);
-                $(".leading-list").empty();
-                $.each(topexperts, function (i, v) {
-                    let research_area = "";
-                    $.each(v.research_area, function (i, v) {
-                        research_area += ", " + v;
-                    })
-                    $(".leading-list").append("\n<div>\n" +
-                        "                <a href=\"customerView/expertDetail.html\">\n" +
-                        "                <div>\n" +
-                        "                  <div class=\"expert-item\">\n" +
-                        "                        <span class=\"expert-experts-item-title-text\">\n" +
-                        "                          <span>" + v.name + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-position-text\">\n" +
-                        "                          <span>" + v.degree + research_area + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <span class=\"expert-experts-work-space-text\">\n" +
-                        "                          <span>" + v.company + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <img\n" +
-                        "                            alt=\"image42056\"\n" +
-                        "                            src=\"" + v.img + "\"\n" +
-                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                        "                    />\n" +
-                        "                  </div>\n" +
-                        "                </div>\n" +
-                        "                </a>\n" +
-                        "            </div>")
+                    //______________EXPERT
+                    console.log(topexperts[0]);
+                    $(".leading-list").empty();
+                    $.each(topexperts, function (i, v) {
+                        let research_area = "";
+                        $.each(v.research_area, function (i, v) {
+                            research_area += ", " + v;
+                        })
+                        $(".leading-list").append("\n<div>\n" +
+                            "                <a href=\"customerView/expertDetail.html\">\n" +
+                            // "                <div>\n" +
+                            "                  <div class=\"expert-item\">\n" +
+                            "                        <span class=\"expert-experts-item-title-text\">\n" +
+                            "                          <span>" + v.name + "</span>\n" +
+                            "                        </span>\n" +
+                            "                    <span class=\"expert-experts-position-text\">\n" +
+                            "                          <span>" + v.degree + research_area + "</span>\n" +
+                            "                        </span>\n" +
+                            "                    <span class=\"expert-experts-work-space-text\">\n" +
+                            "                          <span>" + v.company + "</span>\n" +
+                            "                        </span>\n" +
+                            "                    <img\n" +
+                            "                            alt=\"image42056\"\n" +
+                            "                            src=\"" + v.img + "\"\n" +
+                            "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
+                            "                    />\n" +
+                            "                  </div>\n" +
+                            // "                </div>\n" +
+                            "                </a>\n" +
+                            "            </div>")
+                    });
+
+                    //______________Field
+                    console.log(fields);
+                    // $(".fields-list").empty();
+                    $.each(fields, function (i, v) {
+                        $(".fields-list").append("<div>\n" +
+                            "          <div class=\"field-item\" type=\"button\" onclick='window.location=\"customerView/field-result.html\"'>\n" +
+                            "            <div>\n" +
+                            "              <img src=\"" + v.image + "\" class=\"field-images\" alt=\"\" onerror='imgErr(event,1)'>\n" +
+                            "            </div>\n" +
+                            "            <div class=\"field-name\">\n" +
+                            "              <div>" + v.name_vn + "</div>\n" +
+                            "            </div>\n" +
+                            "          </div>\n" +
+                            "        </div>")
+                    });
+
+                    //_____________Event
+                    console.log(topevents[0]);
+                    $(".event-list").empty();
+                    $.each(topevents, function (i, v) {
+                        $(".event-list").append("<div>\n" +
+                            "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html\"'>\n" +
+                            "            <div class=\"img-events\">\n" +
+                            "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
+                            "            </div>\n" +
+                            "            <div class=\"title-events\">\n" +
+                            "              " + v.name_event + "\n" +
+                            "            </div>\n" +
+                            "            <div class=\"detail-events\">\n" +
+                            "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/facebook.png\" alt=\"\">\n" +
+                            "              <span>" + v.time + "</span>\n" +
+                            "            </div>\n" +
+                            "            <div class=\"detail-events\">\n" +
+                            "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/next.png\" alt=\"\">\n" +
+                            "              <span>" + v.location + "</span>\n" +
+                            "            </div>\n" +
+                            "          </div>\n" +
+                            "        </div>");
+                    });
+                    //__________Footer
+                    $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
+                    $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
+                    $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
+                }).fail(function (xhr, status, errorThrown) {
+                }).always(function (xhr, status) {
+                    console.log("The request is complete!")
+                    $('.uneven').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // prev arrow
+                        prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
+
+                        // next arrow
+                        nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
+                    });
                 });
 
 
-
-                //__________Footer
-                $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
-                $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
-                $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
-            }).fail(function (xhr, status, errorThrown) {
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-                $('.uneven').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // prev arrow
-                    prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
-
-                    // next arrow
-                    nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
+                $.ajax({
+                    url: "http://fe.luanbt.live:8007/api/news?limit=15",
+                    type: "GET"
+                }).done(function (data) {
+                    //___________New
+                    console.log(data[0]);
+                    $(".list-item-news").empty();
+                    $.each(data, function (i, v) {
+                        $(".list-item-news").append("<a style=\"text-decoration: none;color: black\" href=\"" + v.url + "\">\n" +
+                            "          <div class=\"item-news\">\n" +
+                            "            <div class=\"title-item-news\"><span>" + v.title + "</span></div>\n" +
+                            "            <div class=\"detail-item-news\">\n" +
+                            "              <img class=\"img-news\" src=\"" + v.img + "\" alt=\"\">\n" +
+                            "              <div class=\"sub-detail-item-news\">\n" +
+                            "                <div class=\"sub-title-item-news\"><span>" + v.content + "</span></div>\n" +
+                            "                <div class=\"time-item-news\"><span>" + v.tag + "</span></div>\n" +
+                            "              </div>\n" +
+                            "            </div>\n" +
+                            "          </div>\n" +
+                            "          </a>")
+                    });
+                }).fail(function (xhr, status, errorThrown) {
+                    $("#title").html("Sorry, there was a problem!")
+                }).always(function (xhr, status) {
+                    console.log("The request is complete!")
                 });
+
+
+                $.ajax({
+                    url: "http://fe.luanbt.live:8007/api/questions?limit=3&sort=createdAt&desc=false",
+                    type: "GET"
+                }).done(function (data) {
+                    //___________Question
+                    console.log(data[0]);
+                    $(".questions-list").empty();
+                    $.each(data, function (i, v) {
+                        $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='expertView/Answer_Question.html'\" type=\"button\">\n" +
+                            "        <div class=\"question-field\">\n" +
+                            "          <img style=\"width: 18px;height: 18px;margin:5px;\" src=\"../../assets/icon/question.png\" alt=\"\">\n" +
+                            "          <span>" + v.Description + "</span>\n" +
+                            "        </div>\n" +
+                            "        <div class=\"answer-field\">\n" +
+                            "          <img style=\"width: 18px;height: 18px;margin:5px;\" src=\"../../assets/icon/answer.png\" alt=\"\">\n" +
+                            "          <span>" + v.answers[0].answer + "</span>\n" +
+                            "        </div>\n" +
+                            "      </div>");
+                    });
+                }).fail(function (xhr, status, errorThrown) {
+                    $("#title").html("Sorry, there was a problem!")
+                }).always(function (xhr, status) {
+                    console.log("The request is complete!")
+                });
+
             });
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/experts?limit=3",
-                type: "GET"
-
-            }).done(function (data) {
-                $(".list-related-experts").empty();
-
-                $.each(data, function (i, v) {
-                    $(".list-related-experts").append("\n<div class=\"card-wrapper\">\n" +
-                        "           <div class=\"card-related\" onclick=\"window.location = 'expertDetail.html'\" type=\"button\">\n" +
-                        "          <div class=\"info-related\">\n" +
-                        "        <div class=\"name-related\">" + v.name + "</div>\n" +
-                        "        <div class=\"job-related\">" + v.research_area[0] + "</div>\n" +
-                        "        <div class=\"location-related\">" + v.company + "</div>\n" +
-                        "          </div>\n" + "  <div class=\"img-related\"> <img src='" + v.img + "' ></div>\n" +
-                        "     </div>\n" + "</div>\n"
-                    );
-
-
-
-                });
-
-            }).fail(function (xhr, status, errorThrown) {
-                $(".list-related-experts").html("Sorry, there was a problem!")
-
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/news?limit=15",
-                type: "GET"
-            }).done(function (data) {
-                //___________New
-                console.log(data[0]);
-                $(".list-item-news").empty();
-                $.each(data, function (i, v) {
-                    $(".list-item-news").append("<a style=\"text-decoration: none;color: black\" href=\"" + v.url + "\">\n" +
-                        "          <div class=\"item-news\">\n" +
-                        "            <div class=\"title-item-news\"><span>" + v.title + "</span></div>\n" +
-                        "            <div class=\"detail-item-news\">\n" +
-                        "              <img class=\"img-news\" src=\"" + v.img + "\" alt=\"\">\n" +
-                        "              <div class=\"sub-detail-item-news\">\n" +
-                        "                <div class=\"sub-title-item-news\"><span>" + v.content + "</span></div>\n" +
-                        "                <div class=\"time-item-news\"><span>" + v.tag + "</span></div>\n" +
-                        "              </div>\n" +
-                        "            </div>\n" +
-                        "          </div>\n" +
-                        "          </a>")
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-
-
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/questions?limit=3&sort=createdAt&desc=false",
-                type: "GET"
-            }).done(function (data) {
-                //___________Question
-                console.log(data[0]);
-                $(".questions-list").empty();
-                $.each(data, function (i, v) {
-                    $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='expertView/Answer_Question.html'\" type=\"button\">\n" +
-                        "        <div class=\"question-field\">\n" +
-                        "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                        "          <span>" + v.Description + "</span>\n" +
-                        "        </div>\n" +
-                        "        <div class=\"answer-field\">\n" +
-                        "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                        "          <span>" + v.answers[0].answer + "</span>\n" +
-                        "        </div>\n" +
-                        "      </div>");
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $("#title").html("Sorry, there was a problem!")
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-        });
-    </script>
-
-<!--     <script src="js/expert-detail.js"></script> -->
+        </script>
 
 </body>
+
 
 </html>

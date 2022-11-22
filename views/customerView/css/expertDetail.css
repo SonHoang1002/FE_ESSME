@@ -59,6 +59,17 @@ a {
     z-index: 99;
 }
 
+
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
+
 .nav-active {
     background: rgb(19, 99, 223);
     height: 70px;
@@ -165,6 +176,7 @@ header {
 li {
     padding: 10px;
 }
+
 
 
 .icon-home {
@@ -635,6 +647,7 @@ button {
     }
 }
 
+
 /*From Expert*/
 .expert-item {
     width: 900px;
@@ -725,3 +738,4 @@ button {
     margin-bottom: 0;
     text-decoration: none;
 }
+
