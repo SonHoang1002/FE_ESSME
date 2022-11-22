@@ -1721,8 +1721,11 @@ button {
     text-align: left;
     font-family: 'Segoe UI';
     font-weight: 100;
+    margin-top:10px;
 }
-
+.new-item-time span{
+    margin-top:20px;
+}
 .new-item-image {
     padding: 10px;
     height: 100%;
@@ -1886,9 +1889,9 @@ button {
         border-radius: 5px;
     }
 
-    .expert-text-content {
+    /* .expert-text-content {
         max-width: 200px;
-    }
+    } */
 
     .expert-hotnew-title-text {
         font-size: 18px;
@@ -1925,9 +1928,6 @@ button {
         max-width: 0px;
     }
 
-
-
-
     .hotnew-item {
         height: 250px;
         width: 80%;
@@ -1961,7 +1961,7 @@ button {
     .expert-text-content {
         /* width: 300px; */
         /* margin:0 auto; */
-        padding-top: 20px;
+        /* padding-top: 20px; */
         margin-left: 5px;
         /* flex: 4; */
         height: 100%;
