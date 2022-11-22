@@ -235,7 +235,7 @@
 
         $(document).ready(function () {
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/homepage",
+                url: "http://101.96.66.219:8005/api/homepage",
                 type: "GET"
             }).done(function (data) {
                 console.log(topevents[0]);
@@ -277,7 +277,7 @@
 
 
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/questions?limit=10&sort=createdAt&desc=false",
+                url: "http://101.96.66.219:8005/api/questions?limit=10&sort=createdAt&desc=false",
                 type: "GET"
             }).done(function (data) {
                 $(".list-message").empty();
@@ -309,7 +309,7 @@
 
 
                 });
-                
+
             }).fail(function (xhr, status, errorThrown) {
                 $("#title").html("Sorry, there was a problem!")
             }).always(function (xhr, status) {
