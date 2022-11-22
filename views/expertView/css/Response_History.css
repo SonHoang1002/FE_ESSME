@@ -340,14 +340,38 @@ li {
         background-color: rgb(19, 99, 223);
     } 
     
-    #drop-item-small{
-        width:100%;
+    .answer-message span {
+        max-width: 500px;
+    }
+    .question-message span {
+        max-width: 500px;
     }
 }
 
 @media only screen and (max-width: 628px)  {
     #footer-1{
         display:none;
+    }
+
+    .answer-message-res {
+        padding: 25px 0;
+    }
+
+    .question-message span {
+        max-width: 210px;
+    }
+
+    .answer-message span {
+        max-width: 210px;
+    }
+
+    .answer-message {
+        display: flex;
+        /* height: 40px; */
+        justify-content: flex-end;
+        /* padding-right: 10px; */
+        text-align: end;
+        border-radius: 20px;
     }
     .footer {
         padding-top: 30px;
