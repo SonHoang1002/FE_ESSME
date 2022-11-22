@@ -643,6 +643,7 @@ button {
         padding-top: 15px;
     }
 }
+
 @media only screen and (max-width: 628px)  {
     #footer-1{
         display:none;

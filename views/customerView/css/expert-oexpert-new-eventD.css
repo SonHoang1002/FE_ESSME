@@ -2442,7 +2442,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 628px)  {
+@media only screen and (max-width: 629px)  {
     #footer-1{
         display:none;
     }
