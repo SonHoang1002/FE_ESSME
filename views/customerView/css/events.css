@@ -381,7 +381,6 @@ header {
 .field-items {
     display: flex;
     flex-direction: column;
-    overflow: auto;
 }
 
 .footer {
@@ -464,3 +463,9 @@ header {
         height: fit-content;
     }
 }
+
+
+.fields-radio {
+    overflow: auto;
+}
+

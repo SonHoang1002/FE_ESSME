@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESSME</title>
-    <link rel="icon" href="../../assets/essme.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/essme.png"
+          type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../plugin/slick-master/slick-master/slick/slick.css">
     <link rel="stylesheet" href="../../plugin/slick-master/slick-master/slick/slick-theme.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/expert-oexpert-new-eventD.css">
     <style>
         a {
@@ -30,6 +28,7 @@
 </head>
 
 <body class="news-body">
+
     <div class="expert-navbar">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid " style="margin-left:55px;margin-right:50px">
@@ -122,9 +121,39 @@
                     </div>
                 </div>
                 <!-- <div style=" margin-right:10px"></div> -->
+
             </div>
+            <div style=" margin-right:10px"></div>
+        </div>
+    </nav>
+</div>
+<script>
+    const navbar = document.querySelector('.expert-navbar');
+    window.onscroll = () => {
+        if (window.scrollY > 10) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
+</script>
+<div class="header-background-news">
+    <span class="essme-new">
+        ESSME <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News
+    </span>
+</div>
+
+<div class="new-page-body">
+    <div class="bread-crumb">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <div class="icon-home"><i class="fa fa-home"></i></div>
+                <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a></li>
+                <li class="breadcrumb-item" aria-current="page"><span style="color:black">News</span></li>
+            </ol>
         </nav>
     </div>
+
     <script>
         const navbar = document.querySelector('.expert-navbar');
         window.onscroll = () => {
@@ -192,102 +221,129 @@
                                 onclick="window.location='https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html'">
                                 <span class="hotnew-item-title">
                                     <span>8 mục tiêu y tế TP HCM năm 2022</span>
+
+<!--     <div class="line"></div> main have this
+    <div class="news-containers">
+        <div class="news-group">
+            <div class="hot-news">
+                <div class="head-new">
+                    <div class="expert-hotnew"  type="button"
+                         onclick="window.location='https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html'">
+                        <img
+                                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/57f68da7-8d1f-4095-acf2-c6762b7afbd0?org_if_sml=1382"
+                                alt="Ellipse48001"
+                                class="expert-hotnew-ellipse"
+                        />
+                        <img
+                                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/c97ff9c7-be10-4893-8c83-b7e9ef298e98?org_if_sml=1337"
+                                alt="Ellipse58002"
+                                class="expert-hotnew-ellipse1"
+                        />
+                        <img
+                                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/0286a7ba-90d0-44e6-aedd-0b051b0478fc?org_if_sml=1382"
+                                alt="Ellipse38001"
+                                class="expert-hot-new-ellipse"
+                        />
+                        <img
+                                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/6f7ada21-f885-4507-9394-a4c9029c0a44?org_if_sml=1275761"
+                                alt="Rectangle1638021"
+                                class="expert-hotnew-image"
+                        />
+                        <span class="expert-hotnew-title-text">
+                            <span>TPHCM ghi nhận 5 ca nhiễm Omicron</span>
+                        </span>
+                        <span class="expert-hotnew-text">
+                            <span>
+                              Sáng 1/1, Chủ tịch UBND TP HCM Phan Văn Mãi cho biết, thành phố đã ghi
+                              nhận 5 ca nghi mắc Covid-19 biến chủng Omicron, các biện pháp phòng
+                              ngừa liên quan đã được kích hoạt.
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="hot-news-list">
+                    <div>
+                        <div class="hotnew-item" type="button"
+                             onclick="window.location='https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html'">
+                            <img
+                                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/9650407b-9111-4284-93c1-a0a8fcf9e050?org_if_sml=146703"
+                                    alt="Rectangle1618029"
+                                    class="hotnew-item-image"
+                            />
+                            <span class="hotnew-item-title">
+                                <span>9 mục tiêu y tế TP HCM năm 2022</span>
+                            </span>
+                            <span class="hotnew-item-text">
+                                <span>
+                                  Đánh giá khó dự báo Covid-19 trong năm 2022, Sở Y tế TP HCM đề ra 9
+                                  mục tiêu, ... -->
+
                                 </span>
-                                <div class="hotnew-img-content-item">
-                                    <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/9650407b-9111-4284-93c1-a0a8fcf9e050?org_if_sml=146703"
-                                        alt="Rectangle1618029" class="hotnew-item-image" />
-                                    <span class="hotnew-item-text">
-                                        <span>
-                                            TTO - Bộ Ngoại giao đang phối hợp với các bộ ngành và chính quyền địa
-                                            phương
-                                            tổ chức các chuyến bay đưa người Việt về nước trong bối cảnh nhu cầu
-                                            đang
-                                            rất lớn do Tết Nguyên đán đang đến gần.
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
+                            </span>
                         </div>
                     </div>
-                    <div class="news-list">
-                        <div class="new-items" type="button"
-                            onclick="window.location='https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html'">
 
-                            <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/8d1fa800-7202-471d-b6fa-29a9c5e4c070?org_if_sml=133026"
-                                alt="Rectangle1718063" class="new-item-image" />
-                            <div
-                                style=" display: flex;flex-direction: column; justify-content:space-between; height: 111px;">
-                                <div>
-                                    <span class="new-item-title">
-                                        Bộ Ngoại giao thông tin kế hoạch đón người Việt trước Tết
-                                    </span>
-                                    <span class="new-item-text">
-                                        TTO - Bộ Ngoại giao đang phối hợp với các bộ ngành và chính quyền
-                                        TTO - Bộ Ngoại giao đang phối hợp với các bộ ngành và chính quyền
-                                        TTO - Bộ Ngoại giao đang phối hợp với các bộ ngành và chính quyền
-                                    </span>
-                                </div>
-                                <div style="height: 40px;"><span class="new-item-time">02/01/2022</span></div>
-                            </div>
-                        </div>
-
+                </div>
+            </div>
+            <div class="news-list">
+                <div>
+                    <div class="new-items" type="button"
+                         onclick="window.location='https://vietnamnews.vn/society/1314811/2-013-new-covid-19-cases-one-death-reported-on-monday.html'">
+                        <span class="new-item-time"><span>02/01/2022</span></span>
+                        <img
+                                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/8d1fa800-7202-471d-b6fa-29a9c5e4c070?org_if_sml=133026"
+                                alt="Rectangle1718063"
+                                class="new-item-image"
+                        />
+                        <span class="new-item-title">
+                            <span>Bộ Ngoại giao thông tin kế hoạch đón người Việt trước Tết</span>
+                        </span>
+                        <span class="new-item-text">
+                            <span>
+                              <span>
+                                TTO - Bộ Ngoại giao đang phối hợp với các bộ ngành và chính quyền
+                                địa phương tổ chức các chuyến bay đưa người Việt về nước trong bối
+                                cảnh nhu cầu đang rất lớn do Tết Nguyên đán đang đến gần.
+                              </span>
+                              <br/>
+                              <span></span>
+                            </span>
+                        </span>
                     </div>
                 </div>
-                <div class="news-fields-container">
-                    <form class="searchNews" action="news.html" method="get">
-                        <input class="form-control" type="text" style="width: 90%" placeholder="Search...">
-                        <button class="btn btn-primary searchNewButton"
-                            style="width: 20%;display:flex;justify-content:center;align-items:center">
-                            <img src="../../assets/search_white.png" style="width: 19px" alt="">
-                        </button>
-                    </form>
-                    <div
-                        style="display:flex;justify-content:center;align-items:center;margin-top:10px;margin-bottom:10px">
-                        <span style="font-size:30px;font-weight: 600;"> BY FIELDS</span>
-                    </div>
-                    <input class="form-control" type="text" placeholder="Enter the field...">
-                    <div class="field-items">
-                        <div class="fields-list">
-                            <span onclick="window.location='experts.html'" type="button">Business</span>
-                            <span onclick="window.location='experts.html'" type="button">Computer Science</span>
-                            <span onclick="window.location='experts.html'" type="button">Data Science</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="fields-container" style="margin-top:30px">
-                    <input id="field-filter" class="form-control" type="text" placeholder="Enter the field...">
-                    <div class="fields-list">
-                        <span onclick="window.location='experts.html'" type="button">Business</span>
-                        <span onclick="window.location='experts.html'" type="button">Computer Science</span>
-                        <span onclick="window.location='experts.html'" type="button">Data Science</span>
-                    </div>
-                </div> -->
+
             </div>
         </div>
-        <nav aria-label="Page navigation example" style="margin: auto; margin-top: 100px">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link" href="#">20</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="news-fields-container">
+            <!--            <div class="searchNews">-->
+            <div class="searchNews">
+                <input class="form-control" id="searchText" type="text" style="width: 90%" placeholder="Search...">
+                <button class="btn btn-primary searchNewButton" id="searchButton" style="width: 17%; height: 35px">
+                    <img src="../../assets/search_white.png" style="width: 19px" alt="">
+                </button>
+            </div>
+            <!--            </div>-->
+            <span>By fields</span>
+            <input class="form-control" id="field-filter" type="text" placeholder="Enter the field...">
+            <div style="overflow: auto">
+                <div class="fields-choose-events">
+                    <input type="radio" id="*" name="field-radio" style="width:20px;height: 20px;" checked="true">
+                    <span style="margin-left:10px;">All</span>
+                </div>
+                <div class="field-items">
+                    <div class="fields-choose-events">
+                        <input type="radio" name="field-radio" style="width:20px;height: 20px;">
+                        <span style="margin-left:10px;">Finance</span>
+                    </div>
+                    <div class="fields-choose-events">
+                        <input type="radio" name="field-radio" style="width:20px;height: 20px;">
+                        <span style="margin-left:10px;">Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <div class="footer">
         <div id="footer-1"></div>
@@ -308,241 +364,443 @@
                 <div><span><i class="fa-solid fa-shield-halved"></i>Security</span></div><br>
                 <div></div><span><i class="fa-solid fa-people-group"></i>Sponsor</span><br>
             </div>
-        </div>
-        <div class="item-footer">
-            <div>
-                <h3>Information</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div><span><i class="fa-solid fa-scale-balanced"></i>Rules</span></div><br>
-                <span><i class="fa-regular fa-address-card"></i>About us</span><br>
-            </div>
-        </div>
-        <div class="item-footer">
-            <div>
-                <h3>Community</h3>
-            </div><br>
-            <div class="sub-item-footer">
-                <div id="facebook"><span><i class="fa-brands fa-square-facebook"></i>Facebook</span></div><br>
-                <div id="twitter"><span><i class="fa-brands fa-square-twitter"></i>Twitter</span></div><br>
-                <div id="linkedin"><span><i class="fa-brands fa-linkedin"></i>Linkedln</span></div><br>
-            </div>
+
+    <nav aria-label="Page navigation example" style="margin: auto; margin-top: 100px">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 
         </div>
-        <div id="footer-1"></div>
     </div>
+    <div class="item-footer">
+        <div><span>Discover</span></div>
+        <br>
+        <div class="sub-item-footer">
+            <div><span>Security</span></div>
+            <br>
+            <div></div>
+            <span>Sponsor</span><br>
+        </div>
+    </div>
+    <div class="item-footer">
+        <div><span>Information</span></div>
+        <br>
+        <div class="sub-item-footer">
+            <div><span>Rules</span></div>
+            <br>
+            <span>About us</span><br>
+        </div>
 
+        <div id="footer-1"></div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    </div>
+    <div class="item-footer">
+        <div><span>Community</span></div>
+        <br>
+        <div class="sub-item-footer">
+            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/facebook.png" alt=""> <span
+                    style="padding-right:5px"></span></i><span>Facebook</span></div>
+            <br>
+            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/twitter.png" alt=""> <span
+                    style="padding-right:5px"></span></i><span>Twitter</span></div>
+            <br>
+            <div><img style="width: 25px;height: 25px;" src="../../assets/icon/linkedin.png" alt=""> <span
+                    style="padding-right:5px"></span></i><span>Linkedln</span></div>
+            <br>
+        </div>
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="../../plugin/slick-master/slick-master/slick/slick.js"></script>
-    <script>
-        function imgErr(e, num) {
-            if (num == 0)
-                e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
-            else if (num == 1)
-                e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
-            else if (num == 2)
-                e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
-            e.onerror = null;
-        }
 
-        $(document).ready(function () {
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/homepage",
-                type: "GET"
-            }).done(function (data) {
-                console.log(data);
-                let topexperts = data.top_experts;
-                let topevents = data.top_events;
-                let topnews = data.top_news;
-                let fields = data.fields;
-                let footer = data.footer;
+<script>
+    function imgErr(e, num) {
+        if (num == 0)
+            e.target.src = "https://scholar.google.com/citations/images/avatar_scholar_56.png";
+        else if (num == 1)
+            e.target.src = "https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg";
+        else if (num == 2)
+            e.target.src = "https://blog.topcv.vn/wp-content/uploads/2019/02/nhan-vien-to-chuc-su-kien.jpg";
+        e.onerror = null;
+    }
 
-                //______________EXPERT
-                console.log(topexperts[0]);
-                $(".leading-list").empty();
-                $.each(topexperts, function (i, v) {
-                    let research_area = "";
-                    $.each(v.research_area, function (i, v) {
-                        research_area += ", " + v;
-                    })
-                    $(".leading-list").append("\n<div>\n" +
-                        "                <a href=\"customerView/expertDetail.html\">\n" +
-                        "                <div>\n" +
-                        "                  <div class=\"expert-item\">\n" +
-                        "                        <span class=\"expert-experts-item-title-text\">\n" +
-                        "                          <span>" + v.name + "</span>\n" +
+    function newsbyTag(tag) {
+        $.ajax({
+            url: "http://101.96.66.219:8005/api/news/search?tag=" + tag + "&lang=vi&page=0&size=20",
+            type: "GET"
+        }).done(function (data) {
+            console.log(data.content);
+            $(".head-new").empty();
+            $(".hot-news-list").empty();
+            $(".news-list").empty();
+            $.each(data.content, function (i, v) {
+                if(i<=0){
+                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/57f68da7-8d1f-4095-acf2-c6762b7afbd0?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse48001\"\n" +
+                        "                                class=\"expert-hotnew-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/c97ff9c7-be10-4893-8c83-b7e9ef298e98?org_if_sml=1337\"\n" +
+                        "                                alt=\"Ellipse58002\"\n" +
+                        "                                class=\"expert-hotnew-ellipse1\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/0286a7ba-90d0-44e6-aedd-0b051b0478fc?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse38001\"\n" +
+                        "                                class=\"expert-hot-new-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1638021\"\n" +
+                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                        "                        />\n" +
+                        "                        <span class=\"expert-hotnew-title-text\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
                         "                        </span>\n" +
-                        "                    <span class=\"expert-experts-position-text\">\n" +
-                        "                          <span>" + v.degree + research_area + "</span>\n" +
+                        "                        <span class=\"expert-hotnew-text\">\n" +
+                        "                            <span>"+v.content+"</span>\n" +
                         "                        </span>\n" +
-                        "                    <span class=\"expert-experts-work-space-text\">\n" +
-                        "                          <span>" + v.company + "</span>\n" +
-                        "                        </span>\n" +
-                        "                    <img\n" +
-                        "                            alt=\"image42056\"\n" +
-                        "                            src=\"" + v.img + "\"\n" +
-                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                        "                    />\n" +
-                        "                  </div>\n" +
-                        "                </div>\n" +
-                        "                </a>\n" +
-                        "            </div>")
-                });
-
-                //__________Footer
-                $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
-                $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
-                $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
-            }).fail(function (xhr, status, errorThrown) {
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-                $('.uneven').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    // prev arrow
-                    prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
-
-                    // next arrow
-                    nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
-                });
-            });
-
-
-            // News List
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events?limit=3",
-                type: "GET"
-
-            }).done(function (data) {
-                $(".news-list").empty();
-                $.each(data, function (i, v) {
-                    $(".news-list").append(
-                        " <div class=\"new-items\" type=\"button\" onclick=\"window.location='" + v.web + " '\">\n" +
-                        // "                        <div style=\"width:300px;height:100% \"> <img src='" + v.img + "' alt=\"img2\" class=\"new-item-image\" /> </div>\n"  +
-                        "                       <img src='" + v.img + "' alt=\"img2\" class=\"new-item-image\" />\n"  +
-                        "                         <div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px; \">\n" +
-                        "                             <div >\n" +
-                        "                                 <span class=\"new-item-title\">" + v.name_event + "</span>\n" +
-                        "                                 <span class=\"new-item-text\">" + v.desc + "</span>\n" +
-                        "                             </div>\n" +
-                        "        <div style=\"height: 40px;\"><span class=\"new-item-time\">" + v.time + "</span></div>\n" +
-                        "                         </div>\n" +
-                        "                     </div>\n"
-                    );
-
-                    //         "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='"+v.url+"'\"> \n "+
-                    // "                        <span class=\"hotnew-item-title\"> \n"+
-                    // "                            <span>"+v.title+"</span> \n "+
-                    // "                        </span> \n "+
-                    // "                        <div class=\"hotnew-img-content-item\">\n"+
-                    // "                            <img src='"+v.img+"' alt=\"img1\" class=\"hotnew-item-image\" />\n"+
-                    // "                            <span class=\"hotnew-item-text\">\n"+
-                    // "                                <span>"+v.content+"</span>\n"+
-                    // "                            </span>\n"+
-                    // "                        </div>\n"+
-                    // "                    </div>\n"
-                    // );
-
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $(".list-related-experts").html("Sorry, there was a problem!")
-
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
-            });
-
-
-
-
-            // Hot News List
-            $.ajax({
-                url:  $( window ).width() <= 999 ? "http://fe.luanbt.live:8007/api/news?limit=2" : "http://fe.luanbt.live:8007/api/news?limit=3",
-                type: "GET"
-
-            }).done(function (data) {
-                $(".hot-news-list").empty();
-                $.each(data, function (i, v) {
-                    $(".hot-news-list").append(
-                        "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
-                        "                        <span class=\"hotnew-item-title\"> \n" +
-                        "                            <span>" + v.title + "</span> \n " +
-                        "                        </span> \n " +
-                        "                        <div class=\"hotnew-img-content-item\">\n" +
-                        "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
+                else if(i<=3){
+                    $(".hot-news-list").append("<div>\n" +
+                        "                        <div class=\"hotnew-item\" type=\"button\"\n" +
+                        "                             onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                            <img\n" +
+                        "                                    src=\""+v.img+"\"\n" +
+                        "                                    alt=\"Rectangle1618029\"\n" +
+                        "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                            />\n" +
+                        "                            <span class=\"hotnew-item-title\">\n" +
+                        "                                <span>"+v.title+"</span>\n" +
+                        "                            </span>\n" +
                         "                            <span class=\"hotnew-item-text\">\n" +
-                        "                                <span>" + v.content + "</span>\n" +
+                        "                                <span>"+v.content+"</span>\n" +
                         "                            </span>\n" +
                         "                        </div>\n" +
-                        "                    </div>\n"
-                    );
-                    //     "\n<div class=\"card-wrapper\">\n" +
-                    //     "           <div class=\"card-related\" onclick=\"window.location = 'expertDetail.html'\" type=\"button\">\n" +
-                    //     "          <div class=\"info-related\">\n" +
-                    //     "        <div class=\"name-related\">" + v.name + "</div>\n" +
-                    //     "        <div class=\"job-related\">" + v.research_area[0] + "</div>\n" +
-                    //     "        <div class=\"location-related\">" + v.company + "</div>\n" +
-                    //     "          </div>\n" + "  <div class=\"img-related\"> <img src='" + v.img + "' ></div>\n" +
-                    //     "     </div>\n" + "</div>\n"
-                    // );
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $(".list-related-experts").html("Sorry, there was a problem!")
-
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
+                        "                    </div>");
+                }
+                else {
+                    $(".news-list").append("<div>\n" +
+                        "                    <div class=\"new-items\" type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1718063\"\n" +
+                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                        />\n" +
+                        "                        <span class=\"new-item-title\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
+                        "                        </span>\n" +
+                        "                        <span class=\"new-item-text\">\n" +
+                        "                            <span>\n" +
+                        "                              <span>"+v.content+"</span>\n" +
+                        "                              <br/>\n" +
+                        "                              <span></span>\n" +
+                        "                            </span>\n" +
+                        "                        </span>\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
             });
+        }).fail(function (xhr, status, errorThrown) {
+            $("#title").html("Sorry, there was a problem!")
+        }).always(function (xhr, status) {
+            console.log("The request is complete!")
+        });
+    }
 
-
-            // Hot News List Type
-            $.ajax({
-                url: "http://fe.luanbt.live:8007/api/events/type?lang=vi",
-                type: "GET"
-
-            }).done(function (data) {
-                $(".fields-list").empty();
-                $.each(data, function (i, v) {
-                    $(".fields-list").append(
-                        "<span onclick=\"window.location='experts.html'\" type=\"button\">"+v._id +" ("+v.quantity+")</span>\n"
-                    );
-                });
-            }).fail(function (xhr, status, errorThrown) {
-                $(".list-related-experts").html("Sorry, there was a problem!")
-
-            }).always(function (xhr, status) {
-                console.log("The request is complete!")
+    function getallnews() {
+        $.ajax({
+            url: "http://101.96.66.219:8005/api/news?limit=20",
+            type: "GET"
+        }).done(function (data) {
+            $(".head-new").empty();
+            $(".hot-news-list").empty();
+            $(".news-list").empty();
+            $.each(data, function (i, v) {
+                if(i<=0){
+                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/57f68da7-8d1f-4095-acf2-c6762b7afbd0?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse48001\"\n" +
+                        "                                class=\"expert-hotnew-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/c97ff9c7-be10-4893-8c83-b7e9ef298e98?org_if_sml=1337\"\n" +
+                        "                                alt=\"Ellipse58002\"\n" +
+                        "                                class=\"expert-hotnew-ellipse1\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/0286a7ba-90d0-44e6-aedd-0b051b0478fc?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse38001\"\n" +
+                        "                                class=\"expert-hot-new-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1638021\"\n" +
+                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                        "                        />\n" +
+                        "                        <span class=\"expert-hotnew-title-text\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
+                        "                        </span>\n" +
+                        "                        <span class=\"expert-hotnew-text\">\n" +
+                        "                            <span>"+v.content+"</span>\n" +
+                        "                        </span>\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
+                else if(i<=3){
+                    $(".hot-news-list").append("<div>\n" +
+                        "                        <div class=\"hotnew-item\" type=\"button\"\n" +
+                        "                             onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                            <img\n" +
+                        "                                    src=\""+v.img+"\"\n" +
+                        "                                    alt=\"Rectangle1618029\"\n" +
+                        "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                            />\n" +
+                        "                            <span class=\"hotnew-item-title\">\n" +
+                        "                                <span>"+v.title+"</span>\n" +
+                        "                            </span>\n" +
+                        "                            <span class=\"hotnew-item-text\">\n" +
+                        "                                <span>"+v.content+"</span>\n" +
+                        "                            </span>\n" +
+                        "                        </div>\n" +
+                        "                    </div>");
+                }
+                else {
+                    $(".news-list").append("<div>\n" +
+                        "                    <div class=\"new-items\" type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1718063\"\n" +
+                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                        />\n" +
+                        "                        <span class=\"new-item-title\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
+                        "                        </span>\n" +
+                        "                        <span class=\"new-item-text\">\n" +
+                        "                            <span>\n" +
+                        "                              <span>"+v.content+"</span>\n" +
+                        "                              <br/>\n" +
+                        "                              <span></span>\n" +
+                        "                            </span>\n" +
+                        "                        </span>\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
             });
+        }).fail(function (xhr, status, errorThrown) {
+            $("#title").html("Sorry, there was a problem!")
+        }).always(function (xhr, status) {
+            console.log("The request is complete!")
+        });
+    }
 
-            // $.ajax({
-            //     url: "http://fe.luanbt.live:8007/api/news?limit=15",
-            //     type: "GET"
-            // }).done(function (data) {
-            //     //___________New
-            //     console.log(data[0]);
-            //     $(".list-item-news").empty();
-            //     $.each(data, function (i, v) {
-            //         $(".list-item-news").append("<a style=\"text-decoration: none;color: black\" href=\"" + v.url + "\">\n" +
-            //             "          <div class=\"item-news\">\n" +
-            //             "            <div class=\"title-item-news\"><span>" + v.title + "</span></div>\n" +
-            //             "            <div class=\"detail-item-news\">\n" +
-            //             "              <img class=\"img-news\" src=\"" + v.img + "\" alt=\"\">\n" +
-            //             "              <div class=\"sub-detail-item-news\">\n" +
-            //             "                <div class=\"sub-title-item-news\"><span>" + v.content + "</span></div>\n" +
-            //             "                <div class=\"time-item-news\"><span>" + v.tag + "</span></div>\n" +
-            //             "              </div>\n" +
-            //             "            </div>\n" +
-            //             "          </div>\n" +
-            //             "          </a>")
-            //     });
-            // }).fail(function (xhr, status, errorThrown) {
-            //     $("#title").html("Sorry, there was a problem!")
-            // }).always(function (xhr, status) {
-            //     console.log("The request is complete!")
-            // });
+    function searchNews() {
+        let what = $("#searchText").val();
+        console.log("http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20")
+        $.ajax({
+            url: "http://101.96.66.219:8005/api/news/search?what=" + what + "&size=20",
+            type: "GET"
+        }).done(function (data) {
+            console.log(data.content);
+            $(".head-new").empty();
+            $(".hot-news-list").empty();
+            $(".news-list").empty();
+            $.each(data.content, function (i, v) {
+                if(i<=0){
+                    $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/57f68da7-8d1f-4095-acf2-c6762b7afbd0?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse48001\"\n" +
+                        "                                class=\"expert-hotnew-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/c97ff9c7-be10-4893-8c83-b7e9ef298e98?org_if_sml=1337\"\n" +
+                        "                                alt=\"Ellipse58002\"\n" +
+                        "                                class=\"expert-hotnew-ellipse1\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\"https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/f37037e4-db0c-4d11-b522-440659e7fb2c/0286a7ba-90d0-44e6-aedd-0b051b0478fc?org_if_sml=1382\"\n" +
+                        "                                alt=\"Ellipse38001\"\n" +
+                        "                                class=\"expert-hot-new-ellipse\"\n" +
+                        "                        />\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1638021\"\n" +
+                        "                                class=\"expert-hotnew-image\"\n onerror='imgErr(event,1)'" +
+                        "                        />\n" +
+                        "                        <span class=\"expert-hotnew-title-text\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
+                        "                        </span>\n" +
+                        "                        <span class=\"expert-hotnew-text\">\n" +
+                        "                            <span>"+v.content+"</span>\n" +
+                        "                        </span>\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
+                else if(i<=3){
+                    $(".hot-news-list").append("<div>\n" +
+                        "                        <div class=\"hotnew-item\" type=\"button\"\n" +
+                        "                             onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                            <img\n" +
+                        "                                    src=\""+v.img+"\"\n" +
+                        "                                    alt=\"Rectangle1618029\"\n" +
+                        "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                            />\n" +
+                        "                            <span class=\"hotnew-item-title\">\n" +
+                        "                                <span>"+v.title+"</span>\n" +
+                        "                            </span>\n" +
+                        "                            <span class=\"hotnew-item-text\">\n" +
+                        "                                <span>"+v.content+"</span>\n" +
+                        "                            </span>\n" +
+                        "                        </div>\n" +
+                        "                    </div>");
+                }
+                else {
+                    $(".news-list").append("<div>\n" +
+                        "                    <div class=\"new-items\" type=\"button\"\n" +
+                        "                         onclick=\"window.location='"+v.url+"'\">\n" +
+                        "                        <span class=\"new-item-time\"><span>"+v.tag+"</span></span>\n" +
+                        "                        <img\n" +
+                        "                                src=\""+v.img+"\"\n" +
+                        "                                alt=\"Rectangle1718063\"\n" +
+                        "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
+                        "                        />\n" +
+                        "                        <span class=\"new-item-title\">\n" +
+                        "                            <span>"+v.title+"</span>\n" +
+                        "                        </span>\n" +
+                        "                        <span class=\"new-item-text\">\n" +
+                        "                            <span>\n" +
+                        "                              <span>"+v.content+"</span>\n" +
+                        "                              <br/>\n" +
+                        "                              <span></span>\n" +
+                        "                            </span>\n" +
+                        "                        </span>\n" +
+                        "                    </div>\n" +
+                        "                </div>");
+                }
+            });
+        }).fail(function (xhr, status, errorThrown) {
+            $("#title").html("Sorry, there was a problem!")
+        }).always(function (xhr, status) {
+            console.log("The request is complete!")
+        });
+    }
+
+    $(document).ready(function () {
+        getallnews();
+
+        $.ajax({
+            url: "http://101.96.66.219:8005/api/news/tags",
+            type: "GET"
+        }).done(function (data) {
+            console.log(data);
+            $(".field-items").empty();
+            $.each(data, function (i, v) {
+                $(".field-items").append("<div class=\"fields-choose-events\">\n" +
+                    "                        <input type='radio' id='"+v+"' name=\"field-radio\" style=\"width:20px;height: 20px;\">\n" +
+                    "                        <span style=\"margin-left:10px;\">"+v+"</span>\n" +
+                    "                    </div>");
+            });
+        }).fail(function (xhr, status, errorThrown) {
+            $("#title").html("Sorry, there was a problem!")
+        }).always(function (xhr, status) {
+            console.log("The request is complete!")
+            $("input[type='radio']").change(function () {
+                $("input[type='radio']").each(function (i, obj) {
+                    if (obj.checked) {
+                        if (obj.id == "*") {
+                            getallnews();
+                        } else {
+                            console.log(obj.id);
+                            newsbyTag(obj.id);
+                        }
+                    }
+                });
+            })
+        });
+
+
+//             $.ajax({
+//                 url: "http://fe.luanbt.live:8007/api/news?limit=15",
+//                 type: "GET"
+//             }).done(function (data) {
+//                 //___________New
+//                 console.log(data[0]);
+//                 $(".list-item-news").empty();
+//                 $.each(data, function (i, v) {
+//                     $(".list-item-news").append("<a style=\"text-decoration: none;color: black\" href=\"" + v.url + "\">\n" +
+//                         "          <div class=\"item-news\">\n" +
+//                         "            <div class=\"title-item-news\"><span>" + v.title + "</span></div>\n" +
+//                         "            <div class=\"detail-item-news\">\n" +
+//                         "              <img class=\"img-news\" src=\"" + v.img + "\" alt=\"\">\n" +
+//                         "              <div class=\"sub-detail-item-news\">\n" +
+//                         "                <div class=\"sub-title-item-news\"><span>" + v.content + "</span></div>\n" +
+//                         "                <div class=\"time-item-news\"><span>" + v.tag + "</span></div>\n" +
+//                         "              </div>\n" +
+//                         "            </div>\n" +
+//                         "          </div>\n" +
+//                         "          </a>")
+//                 });
+//             }).fail(function (xhr, status, errorThrown) {
+//                 $("#title").html("Sorry, there was a problem!")
+//             }).always(function (xhr, status) {
+//                 console.log("The request is complete!")
+//             });
+
+
+        $('#field-filter').on("input", function () {
+            var dInput = this.value;
+            console.log(dInput);
+            let filter = dInput.toUpperCase();
+            $(".field-items div span").each(function (i) {
+                if ($(this).text().toUpperCase().indexOf(filter) > -1) {
+                    $(this).parent().css('display', '')
+                } else {
+                    $(this).parent().css('display', 'none')
+                }
+            })
+        });
+
+        $('#searchButton').click(function () {
+            searchNews();
 
         });
-    </script>
+    });
+</script>
 </body>
 
 </html>

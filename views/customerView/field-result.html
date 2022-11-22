@@ -407,7 +407,7 @@
 
         $(document).ready(function () {
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/homepage",
+                url: "http://101.96.66.219:8005/api/homepage",
                 type: "GET"
             }).done(function (data) {
                 console.log(data);
@@ -456,7 +456,7 @@
                 $(".event-list").empty();
                 $.each(topevents, function (i, v) {
                     $(".event-list").append("<div>\n" +
-                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html\"'>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html?id="+v._id+"\"'>\n" +
                         "            <div class=\"img-events\">\n" +
                         "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                         "            </div>\n" +
@@ -498,7 +498,7 @@
 
 
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/experts?limit=3",
+                url: "http://101.96.66.219:8005/api/experts?limit=3",
                 type: "GET"
 
             }).done(function (data) {
@@ -528,7 +528,7 @@
 
 
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/news?limit=15",
+                url: "http://101.96.66.219:8005/api/news?limit=15",
                 type: "GET"
             }).done(function (data) {
                 //___________New
@@ -560,7 +560,7 @@
 
 
             $.ajax({
-                url: "http://fe.luanbt.live:8007/api/questions?limit=3&sort=createdAt&desc=false",
+                url: "http://101.96.66.219:8005/api/questions?limit=3&sort=createdAt&desc=false",
                 type: "GET"
             }).done(function (data) {
                 //___________Question

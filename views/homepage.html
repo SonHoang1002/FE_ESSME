@@ -419,7 +419,7 @@ git push -->
 
       $(document).ready(function () {
         $.ajax({
-          url: "http://fe.luanbt.live:8007/api/homepage",
+          url: "http://101.96.66.219:8005/api/homepage",
           type: "GET"
         }).done(function (data) {
           console.log(data);
@@ -438,6 +438,7 @@ git push -->
               research_area += ", " + v;
             })
             $(".leading-list").append("\n<div>\n" +
+
               "                <a href=\"customerView/expertDetail.html\">\n" +
               "                <div>\n" +
               "                  <div class=\"expert-item\">\n" +
@@ -459,6 +460,30 @@ git push -->
               "                </div>\n" +
               "                </a>\n" +
               "            </div>")
+
+              //main have this
+//                     "                <a href=\"customerView/expertDetail.html?id=" + v._id+"\">\n"+
+//                     "                <div>\n" +
+//                     "                  <div class=\"expert-item\">\n" +
+//                     "                        <span class=\"expert-experts-item-title-text\">\n" +
+//                     "                          <span>"+v.name+"</span>\n" +
+//                     "                        </span>\n" +
+//                     "                    <span class=\"expert-experts-position-text\">\n" +
+//                     "                          <span>"+v.degree+research_area+"</span>\n" +
+//                     "                        </span>\n" +
+//                     "                    <span class=\"expert-experts-work-space-text\">\n" +
+//                     "                          <span>"+v.company+"</span>\n" +
+//                     "                        </span>\n" +
+//                     "                    <img\n" +
+//                     "                            alt=\"image42056\"\n" +
+//                     "                            src=\""+v.img+"\"\n" +
+//                     "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
+//                     "                    />\n" +
+//                     "                  </div>\n" +
+//                     "                </div>\n" +
+//                     "                </a>\n" +
+//                     "            </div>")
+
           });
 
           //______________Field
@@ -499,6 +524,26 @@ git push -->
               "            </div>\n" +
               "          </div>\n" +
               "        </div>");
+
+  // main have this
+//                     "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html?id="+v._id+"\"'>\n" +
+//                     "            <div class=\"img-events\">\n" +
+//                     "              <img src=\""+v.img+"\" alt=\"\" onerror='imgErr(event,2)'>\n" +
+//                     "            </div>\n" +
+//                     "            <div class=\"title-events\">\n" +
+//                     "              "+v.name_event+"\n" +
+//                     "            </div>\n" +
+//                     "            <div class=\"detail-events\">\n" +
+//                     "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/facebook.png\" alt=\"\">\n" +
+//                     "              <span>"+v.time+"</span>\n" +
+//                     "            </div>\n" +
+//                     "            <div class=\"detail-events\">\n" +
+//                     "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/next.png\" alt=\"\">\n" +
+//                     "              <span>"+v.location+"</span>\n" +
+//                     "            </div>\n" +
+//                     "          </div>\n" +
+//                     "        </div>");
+
           });
           //__________Footer
           $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
@@ -520,7 +565,7 @@ git push -->
 
 
         $.ajax({
-          url: "http://fe.luanbt.live:8007/api/news?limit=15",
+          url: "http://101.96.66.219:8005/api/news?limit=15",
           type: "GET"
         }).done(function (data) {
           //___________New
@@ -548,7 +593,7 @@ git push -->
 
 
         $.ajax({
-          url: "http://fe.luanbt.live:8007/api/questions?limit=3&sort=createdAt&desc=false",
+          url: "http://101.96.66.219:8005/api/questions?limit=3&sort=createdAt&desc=false",
           type: "GET"
         }).done(function (data) {
           //___________Question
