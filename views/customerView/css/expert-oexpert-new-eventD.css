@@ -380,6 +380,7 @@ button {
 }
 
 
+
 .footer {
     padding-top: 30px;
     display: flex;
@@ -396,6 +397,11 @@ button {
 .item-footer {
     padding-top: 30px;
 }
+
+.sub-item-footer span i {
+    margin-right: 15px;
+}
+
 
 
 

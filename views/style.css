@@ -866,7 +866,9 @@ button {
     height: 55px;
 }
 
+
 .footer {
+    padding-top: 30px;
     display: flex;
     justify-content: space-evenly;
     background-color: #1363DF;
@@ -881,6 +883,11 @@ button {
 .item-footer {
     padding-top: 30px;
 }
+
+.sub-item-footer span i {
+    margin-right: 15px;
+}
+
 
 .more-expert {
     width: fit-content;
