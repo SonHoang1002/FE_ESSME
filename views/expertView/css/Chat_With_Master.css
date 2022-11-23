@@ -225,6 +225,7 @@ li {
     align-items: center;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 18px;
 }
 
 .body_chats_search_text {
@@ -588,6 +589,33 @@ li {
     #footer-1{
         display:none;
     }
+    .answer-message-res {
+        padding: 25px 0;
+    }
+
+
+    .answer-message span {
+        background-color: cornflowerblue;
+        height: fit-content;
+        text-align: justify;
+        border-radius: 30px;
+        padding: 10px;
+        display: flexbox;
+        align-items: center;
+        /* margin-bottom: 20px; */
+        margin-right: 10px;
+        max-width: 200px;
+    }
+    .question-message {
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    /* .imgLogo1 {
+        width: ;
+    } */
+
     .footer {
         padding-top: 30px;
         padding-left:100px;
