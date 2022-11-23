@@ -453,6 +453,19 @@ li {
     #footer-1{
         display:none;
     }
+
+    .btn {
+        right: 5px;
+        top: 50px;
+        width: 77px;    
+    }
+
+    .btn-primary {
+        right: 5px;
+        top: 50px;
+        width: 77px; 
+    }
+    
     .footer {
         padding-top: 30px;
         padding-left:100px;
