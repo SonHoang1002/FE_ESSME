@@ -306,11 +306,15 @@ li {
     line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-
+.question-field span{
+    margin-left:10px
+}
 .answer-field {
     padding: 20px;
 }
-
+.answer-field span{
+    margin-left:10px
+}
 .see-more-FQAs {
     margin-top: 20px;
     font-size: 20px;
