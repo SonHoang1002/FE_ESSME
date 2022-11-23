@@ -139,9 +139,9 @@
         };
     </script>
     <div class="header-background-news">
-        <span class="essme-new">
+        <!-- <span class="essme-new">
             ESSME <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News
-        </span>
+        </span> -->
     </div>
 
     <div class="new-page-body">
@@ -379,22 +379,19 @@
                         );
                     }
                     else if (i <= 3) {
-                        $(".hot-news-list").append("<div>\n" +
-                            "                        <div class=\"hotnew-item\" type=\"button\"\n" +
-                            "                             onclick=\"window.location='" + v.url + "'\">\n" +
-                            "                            <img\n" +
-                            "                                    src=\"" + v.img + "\"\n" +
-                            "                                    alt=\"Rectangle1618029\"\n" +
-                            "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
-                            "                            />\n" +
-                            "                            <span class=\"hotnew-item-title\">\n" +
-                            "                                <span>" + v.title + "</span>\n" +
-                            "                            </span>\n" +
+                        $(".hot-news-list").append(
+                            "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
+                            "                        <span class=\"hotnew-item-title\"> \n" +
+                            "                            <span>" + v.title + "</span> \n " +
+                            "                        </span> \n " +
+                            "                        <div class=\"hotnew-img-content-item\">\n" +
+                            "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
                             "                            <span class=\"hotnew-item-text\">\n" +
                             "                                <span>" + v.content + "</span>\n" +
                             "                            </span>\n" +
                             "                        </div>\n" +
-                            "                    </div>");
+                            "                    </div>\n"
+                        );
                     }
                     else {
                         $(".news-list").append("<div>\n" +
@@ -405,10 +402,12 @@
                             "                                src=\"" + v.img + "\"\n" +
                             "                                alt=\"Rectangle1718063\"\n" +
                             "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
-                            "                        />\n" +
+                            "/>\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
                             "                        <span class=\"new-item-title\">\n" +
                             "                            <span>" + v.title + "</span>\n" +
                             "                        </span>\n" +
+
                             "                        <span class=\"new-item-text\">\n" +
                             "                            <span>\n" +
                             "                              <span>" + v.content + "</span>\n" +
@@ -417,6 +416,8 @@
                             "                            </span>\n" +
                             "                        </span>\n" +
                             "                        <span class=\"new-item-time\"><span>" + v.tag + "</span></span>\n" +
+                            "</div>" +
+
                             "                    </div>\n" +
                             "                </div>");
                     }
@@ -439,7 +440,6 @@
                     if (i <= 0) {
                         $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
                             "                         onclick=\"window.location='" + v.url + "'\">\n" +
-
                             "                        <img\n" +
                             "                                src=\"" + v.img + "\"\n" +
                             "                                alt=\"Rectangle1638021\"\n" +
@@ -529,11 +529,10 @@
                 $(".head-new").empty();
                 $(".hot-news-list").empty();
                 $(".news-list").empty();
-                $.each(data.content, function (i, v) {
+                $.each(data, function (i, v) {
                     if (i <= 0) {
                         $(".head-new").append("<div class=\"expert-hotnew\"  type=\"button\"\n" +
                             "                         onclick=\"window.location='" + v.url + "'\">\n" +
-
                             "                        <img\n" +
                             "                                src=\"" + v.img + "\"\n" +
                             "                                alt=\"Rectangle1638021\"\n" +
@@ -543,31 +542,28 @@
                             "                        <span class=\"expert-hotnew-title-text\">\n" +
                             "                            <span>" + v.title + "</span>\n" +
                             "                        </span>\n" +
+                            "<div style=\" height:40px\"></div>" +
                             "                        <span class=\"expert-hotnew-text\">\n" +
                             "                            <span>" + v.content + "</span>\n" +
                             "                        </span>\n" +
+
                             "                    </div>\n" +
-                            "                  </div>" +
-                            "                </div>"
-                        );
+                            "                    </div>\n" +
+                            "                </div>");
                     }
                     else if (i <= 3) {
-                        $(".hot-news-list").append("<div>\n" +
-                            "                        <div class=\"hotnew-item\" type=\"button\"\n" +
-                            "                             onclick=\"window.location='" + v.url + "'\">\n" +
-                            "                            <img\n" +
-                            "                                    src=\"" + v.img + "\"\n" +
-                            "                                    alt=\"Rectangle1618029\"\n" +
-                            "                                    class=\"hotnew-item-image\" onerror='imgErr(event,1)'\n" +
-                            "                            />\n" +
-                            "                            <span class=\"hotnew-item-title\">\n" +
-                            "                                <span>" + v.title + "</span>\n" +
-                            "                            </span>\n" +
+                        $(".hot-news-list").append(
+                            "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
+                            "                        <span class=\"hotnew-item-title\"> \n" +
+                            "                            <span>" + v.title + "</span> \n " +
+                            "                        </span> \n " +
+                            "                        <div class=\"hotnew-img-content-item\">\n" +
+                            "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
                             "                            <span class=\"hotnew-item-text\">\n" +
                             "                                <span>" + v.content + "</span>\n" +
                             "                            </span>\n" +
                             "                        </div>\n" +
-                            "                    </div>"
+                            "                    </div>\n"
                         );
                     }
                     else {
@@ -579,11 +575,12 @@
                             "                                src=\"" + v.img + "\"\n" +
                             "                                alt=\"Rectangle1718063\"\n" +
                             "                                class=\"new-item-image\" onerror='imgErr(event,1)'\n" +
-                            "                        />\n" +
-                            
+                            "/>\n" +
+                            "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
                             "                        <span class=\"new-item-title\">\n" +
                             "                            <span>" + v.title + "</span>\n" +
                             "                        </span>\n" +
+
                             "                        <span class=\"new-item-text\">\n" +
                             "                            <span>\n" +
                             "                              <span>" + v.content + "</span>\n" +
@@ -592,8 +589,18 @@
                             "                            </span>\n" +
                             "                        </span>\n" +
                             "                        <span class=\"new-item-time\"><span>" + v.tag + "</span></span>\n" +
+                            "</div>" +
                             "                    </div>\n" +
                             "                </div>");
+                        // "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
+                        // "                             <div >\n" +
+                        // "                                 <span class=\"new-item-title\">" + v.name_event + "</span>\n" +
+                        // "                                 <span class=\"new-item-text\">" + v.desc + "</span>\n" +
+                        // "                             </div>\n" +
+                        // "        <div style=\"height: 40px;\"><span class=\"new-item-time\">" + v.time + "</span></div>\n" +
+                        // "                         </div>\n" +
+                        // "                     </div>\n"
+
                     }
                 });
             }).fail(function (xhr, status, errorThrown) {
@@ -603,162 +610,7 @@
             });
         }
 
-        // $(document).ready(function () {
-        //     $.ajax({
-        //         url: "http://fe.luanbt.live:8007/api/homepage",
-        //         type: "GET"
-        //     }).done(function (data) {
-        //         console.log(data);
-        //         let topexperts = data.top_experts;
-        //         let topevents = data.top_events;
-        //         let topnews = data.top_news;
-        //         let fields = data.fields;
-        //         let footer = data.footer;
-
-        //         //______________EXPERT
-        //         console.log(topexperts[0]);
-        //         $(".leading-list").empty();
-        //         $.each(topexperts, function (i, v) {
-        //             let research_area = "";
-        //             $.each(v.research_area, function (i, v) {
-        //                 research_area += ", " + v;
-        //             })
-        //             $(".leading-list").append("\n<div>\n" +
-        //                 "                <a href=\"customerView/expertDetail.html\">\n" +
-        //                 "                <div>\n" +
-        //                 "                  <div class=\"expert-item\">\n" +
-        //                 "                        <span class=\"expert-experts-item-title-text\">\n" +
-        //                 "                          <span>" + v.name + "</span>\n" +
-        //                 "                        </span>\n" +
-        //                 "                    <span class=\"expert-experts-position-text\">\n" +
-        //                 "                          <span>" + v.degree + research_area + "</span>\n" +
-        //                 "                        </span>\n" +
-        //                 "                    <span class=\"expert-experts-work-space-text\">\n" +
-        //                 "                          <span>" + v.company + "</span>\n" +
-        //                 "                        </span>\n" +
-        //                 "                    <img\n" +
-        //                 "                            alt=\"image42056\"\n" +
-        //                 "                            src=\"" + v.img + "\"\n" +
-        //                 "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-        //                 "                    />\n" +
-        //                 "                  </div>\n" +
-        //                 "                </div>\n" +
-        //                 "                </a>\n" +
-        //                 "            </div>")
-        //         });
-
-        //         //__________Footer
-        //         $("#facebook").wrap("<a href='" + footer.facebook + "' style='text-decoration: none; color: white;'></a>");
-        //         $("#twitter").wrap("<a href='" + footer.twitter + "' style='text-decoration: none; color: white;'></a>");
-        //         $("#linkedin").wrap("<a href='" + footer.linkedin + "' style='text-decoration: none; color: white;'></a>");
-        //     }).fail(function (xhr, status, errorThrown) {
-        //     }).always(function (xhr, status) {
-        //         console.log("The request is complete!")
-        //         $('.uneven').slick({
-        //             slidesToShow: 3,
-        //             slidesToScroll: 1,
-        //             // prev arrow
-        //             prevArrow: '<button type="button" data-role="none" class="slick-prev"> Previous </button>',
-
-        //             // next arrow
-        //             nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
-        //         });
-        //     });
-
-
-        //     // News List
-        //     $.ajax({
-        //         url: "http://fe.luanbt.live:8007/api/events?limit=3",
-        //         type: "GET"
-
-        //     }).done(function (data) {
-        //         $(".news-list").empty();
-        //         $.each(data, function (i, v) {
-        //             $(".news-list").append(
-        //                 " <div class=\"new-items\" type=\"button\" onclick=\"window.location='" + v.web + " '\">\n" +
-        //                 "<img src='" + v.img + "' alt=\"img2\" class=\"new-item-image\" />\n"  +
-        //                 "<div style=\" display: flex;flex-direction: column;justify-content:space-between;padding-right:10px;margin-left:10px; \">\n" +
-        //                 "                             <div >\n" +
-        //                 "                                 <span class=\"new-item-title\">" + v.name_event + "</span>\n" +
-        //                 "                                 <span class=\"new-item-text\">" + v.desc + "</span>\n" +
-        //                 "                             </div>\n" +
-        //                 "        <div style=\"height: 40px;\"><span class=\"new-item-time\">" + v.time + "</span></div>\n" +
-        //                 "                         </div>\n" +
-        //                 "                     </div>\n"
-        //             );
-
-        //         });
-        //     }).fail(function (xhr, status, errorThrown) {
-        //         $(".list-related-experts").html("Sorry, there was a problem!")
-
-        //     }).always(function (xhr, status) {
-        //         console.log("The request is complete!")
-        //     });
-
-
-
-
-        //     // Hot News List
-        //     $.ajax({
-        //         url:  $( window ).width() <= 999 ? "http://fe.luanbt.live:8007/api/news?limit=2" : "http://fe.luanbt.live:8007/api/news?limit=3",
-        //         type: "GET"
-
-        //     }).done(function (data) {
-        //         $(".hot-news-list").empty();
-        //         $.each(data, function (i, v) {
-        //             $(".hot-news-list").append(
-        //                 "\n<div class=\"hotnew-item\" type=\"button\" onclick=\"window.location='" + v.url + "'\"> \n " +
-        //                 "                        <span class=\"hotnew-item-title\"> \n" +
-        //                 "                            <span>" + v.title + "</span> \n " +
-        //                 "                        </span> \n " +
-        //                 "                        <div class=\"hotnew-img-content-item\">\n" +
-        //                 "                            <img src='" + v.img + "' alt=\"img1\" class=\"hotnew-item-image\" />\n" +
-        //                 "                            <span class=\"hotnew-item-text\">\n" +
-        //                 "                                <span>" + v.content + "</span>\n" +
-        //                 "                            </span>\n" +
-        //                 "                        </div>\n" +
-        //                 "                    </div>\n"
-        //             );
-        //             //     "\n<div class=\"card-wrapper\">\n" +
-        //             //     "           <div class=\"card-related\" onclick=\"window.location = 'expertDetail.html'\" type=\"button\">\n" +
-        //             //     "          <div class=\"info-related\">\n" +
-        //             //     "        <div class=\"name-related\">" + v.name + "</div>\n" +
-        //             //     "        <div class=\"job-related\">" + v.research_area[0] + "</div>\n" +
-        //             //     "        <div class=\"location-related\">" + v.company + "</div>\n" +
-        //             //     "          </div>\n" + "  <div class=\"img-related\"> <img src='" + v.img + "' ></div>\n" +
-        //             //     "     </div>\n" + "</div>\n"
-        //             // );
-        //         });
-        //     }).fail(function (xhr, status, errorThrown) {
-        //         $(".list-related-experts").html("Sorry, there was a problem!")
-
-        //     }).always(function (xhr, status) {
-        //         console.log("The request is complete!")
-        //     });
-
-
-        //     // Hot News List Type
-        //     $.ajax({
-        //         url: "http://fe.luanbt.live:8007/api/events/type?lang=vi",
-        //         type: "GET"
-
-        //     }).done(function (data) {
-        //         $(".fields-list").empty();
-        //         $.each(data, function (i, v) {
-        //             $(".fields-list").append(
-        //                 "<span onclick=\"window.location='experts.html'\" type=\"button\">"+v._id +" ("+v.quantity+")</span>\n"
-        //             );
-        //         });
-        //     }).fail(function (xhr, status, errorThrown) {
-        //         $(".list-related-experts").html("Sorry, there was a problem!")
-
-        //     }).always(function (xhr, status) {
-        //         console.log("The request is complete!")
-        //     });
-
-
-
-        // });
+       
         $(document).ready(function () {
             getallnews();
 
