@@ -198,7 +198,7 @@
         <div class="result">
             <div class="htitle" >
                 <span class="event-title">Result</span>
-                <button class="more-expert">
+                <button class="more-expert" onclick="window.location='experts.html'">
                     View All Result
                 </button>
 
@@ -397,7 +397,7 @@
                         "                                <span>"+address+"</span>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"button-detail-result\"><button\n" +
-                        "                                    onclick=\"window.location='expertDetail.html'\">Detail</button>\n" +
+                        "                                    onclick=\"window.location='expertDetail.html?id="+v._id+"'\">Detail</button>\n" +
                         "                            </div>\n" +
                         "                        </div>\n" +
                         "                    </div>");
@@ -458,7 +458,7 @@
                 $(".event-list").empty();
                 $.each(topevents, function (i, v) {
                     $(".event-list").append("<div>\n" +
-                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"customerView/eventDetail.html?id="+v._id+"\"'>\n" +
+                        "          <div class=\"item-events\" type=\"button\" onclick='window.location=\"eventDetail.html?id="+v._id+"\"'>\n" +
                         "            <div class=\"img-events\">\n" +
                         "              <img src=\"" + v.img + "\" alt=\"\" onerror='imgErr(event,2)'>\n" +
                         "            </div>\n" +
