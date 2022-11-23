@@ -145,9 +145,9 @@
         <div style="width:90%;justify-content: center;align-items: center;margin:auto;">
             <form action="field-result.html" method="get">
                 <div class="searchForm">
-                    <input class="searchByField form-control" placeholder="Search By Fields" />
-                    <input class="searchByLocation form-control" placeholder="Search By Locations" />
-                    <button class=" btn btn-primary " id="searchButton">
+                    <input class="searchByField form-control" name="what" placeholder="Search By Fields" />
+                    <input class="searchByLocation form-control" name="where" placeholder="Search By Locations" />
+                    <button class=" btn btn-primary " type="submit" id="searchButton">
                         <svg style="margin: auto; width: 25px" width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.75" clip-path="url(#clip0_2056_431)">
@@ -228,54 +228,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="item-result">
-                        <div class="img-result">
-                            <img style="width: 100px;height: 80px;" src="../../assets/architect.png" alt="">
-                        </div>
-                        <div class="detail-result">
-                            <div class="title-detail-result">
-                                <span>Order Name</span><br>
-                                <span>Position</span><br>
-                                <span>Field</span><br>
-                                <span>Address</span>
-                            </div>
-                            <div class="content-result">
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span>
-                            </div>
-                            <div class="button-detail-result"><button
-                                    onclick="window.location='expertDetail.html'">Detail</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-result">
-                        <div class="img-result">
-                            <img style="width: 100px;height: 80px;" src="../../assets/architect.png" alt="">
-                        </div>
-                        <div class="detail-result">
-                            <div class="title-detail-result">
-                                <span>Order Name</span> <br>
-                                <span>Position</span><br>
-                                <span>Field</span><br>
-                                <span>Address</span>
-                            </div>
-                            <div class="content-result">
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span><br>
-                                <span>Lorem ipsum dolor, sit amet.</span>
-                            </div>
-                            <div class="button-detail-result"><button
-                                    onclick="window.location='expertDetail.html'">Detail</button>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -403,6 +355,59 @@
         }
 
         $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const what = urlParams.get('what');
+            const where = urlParams.get('where');
+
+            $.ajax({
+                url: "http://101.96.66.219:8005/api/experts/search?what="+what+"&where="+where+"&page=0&size=10&asc=true",
+                type: "GET"
+            }).done(function (data) {
+                //___________Question
+                console.log(data.content);
+
+                $(".list-item-result").empty();
+                $.each(data.content, function (i, v) {
+                    let research_area = "";
+                    $.each(v.research_area, function(i,v){
+                        research_area += ", "+v;
+                    })
+                    research_area = research_area.substring(2)
+
+                    let address = "";
+                    $.each(v.address, function(i,v){
+                        address += ", "+v;
+                    })
+                    address = address.substring(2)
+                    $(".list-item-result").append("                    <div class=\"item-result\">\n" +
+                        "                        <div class=\"img-result\">\n" +
+                        "                            <img style=\"width: 100px;height: 80px; object-fit: contain\" src=\""+v.img+"\" alt=\"\" onerror='imgErr(event,0)'>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"detail-result\">\n" +
+                        "                            <div class=\"title-detail-result\">\n" +
+                        "                                <span>Order Name</span><br>\n" +
+                        "                                <span>Position</span><br>\n" +
+                        "                                <span>Field</span><br>\n" +
+                        "                                <span>Address</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"content-result\">\n" +
+                        "                                <span>"+v.name+"</span><br>\n" +
+                        "                                <span>"+v.degree+"</span><br>\n" +
+                        "                                <span>"+research_area+"</span><br>\n" +
+                        "                                <span>"+address+"</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"button-detail-result\"><button\n" +
+                        "                                    onclick=\"window.location='expertDetail.html'\">Detail</button>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                    </div>");
+                });
+            }).fail(function (xhr, status, errorThrown) {
+                $("#title").html("Sorry, there was a problem!")
+            }).always(function (xhr, status) {
+                console.log("The request is complete!")
+            });
+
             $.ajax({
                 url: "http://101.96.66.219:8005/api/homepage",
                 type: "GET"
