@@ -231,17 +231,11 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Other1</a></li>
                         <li><a class="dropdown-item" href="#">Other2</a></li>
-                        <li><a class="dropdown-item" href="#">Other3</a></li>
-                        <li><a class="dropdown-item" href="#">Other4</a></li>
-                        <li><a class="dropdown-item" href="#">Other5</a></li>
+                        
                     </ul>
-
                 </span>
-                <!-- <div class="icon-filter"><img style="width: 15px;height: 15px;" src="../../assets/icon/go-down.png"
-                        alt=""></div> -->
             </div>
-
-            <div class="field"><span>Reset</span>
+            <div class="field"onclick="reset()"><span>Reset</span>
                 <div class="icon-filter"><img style="width: 15px;height: 15px;" src="../../assets/icon/reset-icon.png"
                         alt=""></div>
             </div>
@@ -463,8 +457,21 @@
 
         function search() {
 
+        //search any fields
+
+        //     let search=""
+        //    if(field !== ""){
+        //      search += field +","
+        //    } else if(occupation !== ""){
+        //     search += occupation +","
+        //    }else if(country !== ""){
+        //     search += country +","
+        //    }else if(other !== ""){
+        //     search += other +","
+        //    }
+        //    search = search.slice(0, -1); 
             $.ajax({
-                url: "http://101.96.66.219:8005/api/questions/search?what=" + field + "," + occupation + "," + country + "," + other + "&page=0&size=20",
+                url: "http://101.96.66.219:8005/api/questions/search?what=" + field + "&page=0&size=20",
                 type: "GET"
             }).done(function (data) {
                 alert("search ok")
@@ -475,7 +482,6 @@
                         "<span>Question and Answer</span> </div>"
                     );
                     $.each(data, function (i, v) {
-                        
                         $(".question-FQAs").append(
                             "<div class=\"question-answer-card\" onclick=\"window.location='./response-history.html'\" type=\"button\">" +
                             "<div class=\"question-field\">" +
@@ -490,7 +496,7 @@
                             "</div>"
                         );
                     });
-                }else{
+                } else {
 
                 }
 
@@ -507,6 +513,13 @@
                     nextArrow: '<button type="button" data-role="none" class="slick-next"> Next </button>',
                 });
             });
+        }
+
+        function reset(){
+            document.getElementById("idFields").innerText = "Fields";
+            document.getElementById("idOccupation").innerText = "Occupation";
+            field =""
+            occupation=""
         }
         $(document).ready(function () {
             getFieldsForSearch();
