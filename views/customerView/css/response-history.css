@@ -241,7 +241,7 @@ li {
 }
 
 .question-message {
-    margin-left:50px;
+    margin-left:20px;
     display: flex;
     justify-content: flex-start;
     padding: 15px;
@@ -280,7 +280,7 @@ li {
     /* new */
     flex-direction: row-reverse;
     margin-top:20px;
-    margin-left:90px;
+    margin-left:60px;
     /* new */
 
     display: flex;
