@@ -177,13 +177,13 @@ li {
 }
 
 .bread-crumb {
-    padding-top: 100px;
+
+    padding-top: 20px;
 }
 
 .detail-body {
-    width: 1240px;
+    width: 100%;
     margin: auto;
-
 }
 
 .icon-home {
@@ -215,17 +215,23 @@ li {
 
 .list-message {
     height: fit-content;
-    width: 90%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .message {
     padding: 5px;
     background-color: white;
-    /* min-height: 300px; */
+
+    width:100%;
+
     height: fit-content;
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 20px;
+    padding-left:30px;
     color: #f8fdff;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -241,6 +247,7 @@ li {
     padding: 15px;
     height: fit-content;
     max-width: 700px;
+
 }
 
 .question-message span {
@@ -255,6 +262,8 @@ li {
 
 .content-question-message {
     /* height: 40px; */
+    max-width: 900px;
+
     flex: 24;
     margin-left: 5px;
     padding-left: 5px;
@@ -271,8 +280,11 @@ li {
 .answer-message {
     display: flex;
     /* height: 40px; */
+
+    flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-right: 15px;
+    margin-left: 30px;
+
     padding-right: 10px;
     text-align: end;
     border-radius: 20px;
@@ -281,15 +293,38 @@ li {
 .answer-message span {
     background-color: cornflowerblue;
     /* height: 40px; */
-    text-align: end;
+
+    text-align: start;
+
     border-radius: 20px;
     padding: 15px;
     display: flex;
     align-items: center;
-    margin-right: 10px;
-    max-width: 700px;
+
+    margin-left: 10px;
 }
 
+
+.see-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    /* background-color: green; */
+
+}
+
+.see-content{
+    margin-bottom:20px;
+    margin-top:20px;
+    font-size:20px;
+    color:black;
+}
+.see-content:hover{
+    font-size:21px;
+    text-decoration: underline;
+    color:blue;
+}
 
 .see-button {
     display: flex;

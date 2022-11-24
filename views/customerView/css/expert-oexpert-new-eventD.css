@@ -1886,6 +1886,14 @@ button {
     margin: auto;
 }
 
-.order-expert-body {
-    padding-top: 80px;
-}
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+    }
+
+
