@@ -177,13 +177,13 @@ li {
 }
 
 .bread-crumb {
+
     padding-top: 20px;
 }
 
 .detail-body {
     width: 100%;
     margin: auto;
-
 }
 
 .icon-home {
@@ -218,12 +218,15 @@ li {
     width: 70%;
     justify-content: center;
     align-items: center;
+
 }
 
 .message {
     padding: 5px;
     background-color: white;
+
     width:100%;
+
     height: fit-content;
     border-radius: 10px;
     margin: 10px;
@@ -243,7 +246,8 @@ li {
     justify-content: flex-start;
     padding: 15px;
     height: fit-content;
-    /* max-width: 900px; */
+    max-width: 700px;
+
 }
 
 .question-message span {
@@ -259,6 +263,7 @@ li {
 .content-question-message {
     /* height: 40px; */
     max-width: 900px;
+
     flex: 24;
     margin-left: 5px;
     padding-left: 5px;
@@ -275,9 +280,11 @@ li {
 .answer-message {
     display: flex;
     /* height: 40px; */
+
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-left: 30px;
+
     padding-right: 10px;
     text-align: end;
     border-radius: 20px;
@@ -286,14 +293,38 @@ li {
 .answer-message span {
     background-color: cornflowerblue;
     /* height: 40px; */
+
     text-align: start;
+
     border-radius: 20px;
     padding: 15px;
     display: flex;
     align-items: center;
+
     margin-left: 10px;
 }
 
+
+.see-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    /* background-color: green; */
+
+}
+
+.see-content{
+    margin-bottom:20px;
+    margin-top:20px;
+    font-size:20px;
+    color:black;
+}
+.see-content:hover{
+    font-size:21px;
+    text-decoration: underline;
+    color:blue;
+}
 
 .see-button {
     display: flex;

@@ -1885,6 +1885,7 @@ button {
     width: 95%;
     margin: auto;
 }
+
 @media only screen and (max-width: 990px)  {
     .navbar-small{
         margin-top:10px;
@@ -1893,4 +1894,6 @@ button {
     #drop-item-small{
         width:100%;
     }
-}
+    }
+
+
