@@ -404,7 +404,15 @@ header {
     margin-right: 15px;
 }
 
-
+@media only screen and (max-width: 990px)  {
+    .navbar-small{
+        margin-top:10px;
+        background-color: rgb(19, 99, 223);
+    } 
+    #drop-item-small{
+        width:100%;
+    }
+}
 
 @media only screen and (max-width: 1068px) {
     /* .item-footer {
