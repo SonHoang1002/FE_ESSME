@@ -39,7 +39,7 @@ body {
     padding-left: 450px;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -72,7 +72,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -385,7 +385,7 @@ li {
 }
 
 .field-name>span {
-    /* font-family: 'Roboto'; */
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
@@ -560,7 +560,7 @@ li {
 }
 
 .title-item-news {
-    font-family: "Segoe UI";
+    font-family: 'Arial';
     font-weight: 500;
     margin-bottom: 10px;
     overflow: hidden;
@@ -607,7 +607,7 @@ li {
 }
 
 .footer-news {
-    /* font-family: 'Roboto'; */
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -628,7 +628,7 @@ li {
 }
 
 .behind-title {
-    font-family: 'Merriweather';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
