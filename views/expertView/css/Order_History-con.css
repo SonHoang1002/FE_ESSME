@@ -293,6 +293,9 @@ li {
     margin-bottom: 0;
     text-decoration: none;
 }
+.dropdown-toggle {
+    color: white !important;
+}
 .order-history-item-field {
     top: 26px;
     left: 126px;

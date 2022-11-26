@@ -1270,6 +1270,9 @@ button {
     line-clamp: 4;
     -webkit-box-orient: vertical;
 }
+.dropdown-toggle {
+    color: white !important;
+}
 .expert-hotnew-text {
     top: 155px;
     left: 653px;

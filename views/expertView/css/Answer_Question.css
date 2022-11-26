@@ -352,7 +352,9 @@ header {
     line-height: 42px;
 
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 .answer_question_questions_name {
     width: 147px;
     height: 42px;

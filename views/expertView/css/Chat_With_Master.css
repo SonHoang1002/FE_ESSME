@@ -311,7 +311,9 @@ li {
     line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 .body_notify_members_time {
     display: block;
     /* font-family: 'Roboto'; */

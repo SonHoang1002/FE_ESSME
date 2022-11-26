@@ -48,7 +48,9 @@
 
     color: rgb(255, 255, 255);
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 a {
     text-decoration: none;
     color: blue;

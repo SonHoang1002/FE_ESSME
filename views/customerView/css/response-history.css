@@ -79,7 +79,9 @@ a {
     background-color: black;
     position: fixed;
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 .header-background {
     height: 640px;
     background-image: url("../../../assets/homepage-bg.jpg");

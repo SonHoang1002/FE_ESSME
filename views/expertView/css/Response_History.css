@@ -72,6 +72,9 @@ a {
     font-weight: 400;
     font-size: 22px;
 }
+.dropdown-toggle {
+    color: white !important;
+}
 .header-essme {
     display: flex;
     /* width: 1800px; */

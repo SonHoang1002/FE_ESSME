@@ -468,4 +468,7 @@ li {
             font-size: 40px;
             margin:auto;
         }
+    .dropdown-toggle {
+        color: white !important;
+    }
 }

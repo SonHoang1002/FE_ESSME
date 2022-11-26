@@ -62,6 +62,9 @@ a {
     height: 90px;
     z-index: 99;
 }
+.dropdown-toggle {
+    color: white !important;
+}
 .nav-active {
     background: rgb(19, 99, 223);
     height: 70px;
