@@ -554,7 +554,7 @@ git push -->
           console.log(data[0]);
           $(".questions-list").empty();
           $.each(data, function( i, v ) {
-            $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='./response-history.html'\" type=\"button\">" +
+            $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='customerView/response-history.html'\" type=\"button\">" +
                 "<div class=\"question-field\">" +
                 " <img style=\"width: 25px;height: 25px;border-radius: 50%;\" src=\"../assets/expertimg.png\" alt=\"\">" +
                 "<span>" + v.Description + "</span>" +
