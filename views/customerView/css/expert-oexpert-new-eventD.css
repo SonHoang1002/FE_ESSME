@@ -940,14 +940,14 @@ button {
 }
 .leading-list{
     height: 690px;
-    width: 1000px;
+    width: fit-content;
     background: transparent;
-    padding: 10px;
     margin-right: 20px;
     flex-direction: column;
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     overflow: auto;
+    overflow-x: hidden;
 }
 .leading-list > div{
     margin: 10px 10px;
@@ -1570,8 +1570,8 @@ button {
 .img-events > img{
     width: 260px;
     height: 180px;
-    border-radius: 20px;
-    object-fit: contain;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .title-events {
