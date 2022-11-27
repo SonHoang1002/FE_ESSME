@@ -953,7 +953,6 @@ button {
     margin: 10px 10px;
 }
 .fields-container{
-    width: 450px;
     max-height: 700px;
     height: fit-content;
     padding: 10px;

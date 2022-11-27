@@ -462,7 +462,7 @@
         });
 
         $.ajax({
-            url: "http://101.96.66.219:8005/api/experts?limit=200&asc=true",
+            url: "http://101.96.66.219:8005/api/experts?limit=400&asc=true",
             type: "GET"
         }).done(function (data) {
             topexperts = data;
@@ -470,32 +470,34 @@
             console.log(topexperts[0]);
             $(".leading-list").empty();
             $.each(topexperts, function( i, v ) {
-                let research_area = "";
-                $.each(v.research_area, function(i,v){
-                    research_area += ", "+v;
-                })
-                $(".leading-list").append("\n<div>\n" +
-                    "                <a href=\"expertDetail.html?id=" + v._id+"\">\n"+
-                    "                <div>\n" +
-                    "                  <div class=\"expert-item\">\n" +
-                    "                        <span class=\"expert-experts-item-title-text\">\n" +
-                    "                          <span>"+v.name+"</span>\n" +
-                    "                        </span>\n" +
-                    "                    <span class=\"expert-experts-position-text\">\n" +
-                    "                          <span>"+v.degree+research_area+"</span>\n" +
-                    "                        </span>\n" +
-                    "                    <span class=\"expert-experts-work-space-text\">\n" +
-                    "                          <span>"+v.company+"</span>\n" +
-                    "                        </span>\n" +
-                    "                    <img\n" +
-                    "                            alt=\"image42056\"\n" +
-                    "                            src=\""+v.img+"\"\n" +
-                    "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
-                    "                    />\n" +
-                    "                  </div>\n" +
-                    "                </div>\n" +
-                    "                </a>\n" +
-                    "            </div>")
+                if(v.img.trim()!="https://scholar.google.com/citations/images/avatar_scholar_56.png"&&v.img.trim()!="https://bsneu.neu.edu.vn/wp-content/uploads/2020/02/woocommerce-placeholder.png") {
+                    let research_area = "";
+                    $.each(v.research_area, function (i, v) {
+                        research_area += ", " + v;
+                    })
+                    $(".leading-list").append("\n<div>\n" +
+                        "                <a href=\"expertDetail.html?id=" + v._id + "\">\n" +
+                        "                <div>\n" +
+                        "                  <div class=\"expert-item\">\n" +
+                        "                        <span class=\"expert-experts-item-title-text\">\n" +
+                        "                          <span>" + v.name + "</span>\n" +
+                        "                        </span>\n" +
+                        "                    <span class=\"expert-experts-position-text\">\n" +
+                        "                          <span>" + v.degree + research_area + "</span>\n" +
+                        "                        </span>\n" +
+                        "                    <span class=\"expert-experts-work-space-text\">\n" +
+                        "                          <span>" + v.company + "</span>\n" +
+                        "                        </span>\n" +
+                        "                    <img\n" +
+                        "                            alt=\"image42056\"\n" +
+                        "                            src=\"" + v.img + "\"\n" +
+                        "                            class=\"expert-experts-item-image\" onerror='imgErr(event,0)' \n" +
+                        "                    />\n" +
+                        "                  </div>\n" +
+                        "                </div>\n" +
+                        "                </a>\n" +
+                        "            </div>")
+                }
             });
         }).fail(function (xhr, status, errorThrown) {
             $("#title").html("Sorry, there was a problem!")
