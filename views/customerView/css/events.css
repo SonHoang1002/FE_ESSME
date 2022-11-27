@@ -37,7 +37,7 @@
     padding-left: 440px;
     padding-top: 250px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -48,7 +48,9 @@
 
     color: rgb(255, 255, 255);
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 a {
     text-decoration: none;
     color: blue;
@@ -74,7 +76,7 @@ input:hover {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -366,7 +368,7 @@ header {
 
 
 .news-fields-container>span {
-    font-family: 'Roboto';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 22px;

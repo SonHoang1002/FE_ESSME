@@ -71,7 +71,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -194,7 +194,7 @@ li {
 }
 
 .pro-title {
-    font-family: "Segoe UI";
+    font-family: 'Arial';
     font-weight: 500;
     font-size: 20px;
     margin-left: 80px;
@@ -463,9 +463,12 @@ li {
         flex-direction: row;
     }
         .pro-title {
-            font-family: "Segoe UI";
+            font-family: 'Arial';
             font-weight: 500;
             font-size: 40px;
             margin:auto;
         }
+    .dropdown-toggle {
+        color: white !important;
+    }
 }

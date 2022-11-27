@@ -23,7 +23,9 @@ textarea:hover {
 .news-body {
     background-color: #f1f2f5;
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 11px;

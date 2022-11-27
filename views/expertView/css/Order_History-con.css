@@ -31,7 +31,7 @@
     padding-left: 450px;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -64,7 +64,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -224,7 +224,7 @@ li {
     margin-right: 45px;
 }
 .filter > div{
-    font-family: 'Roboto';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -266,7 +266,7 @@ li {
     align-self: auto;
     font-style: Regular;
     text-align: left;
-    font-family: Roboto;
+    font-family: 'Arial';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -285,13 +285,16 @@ li {
     align-self: auto;
     font-style: Medium;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Arial';
     font-weight: 800;
     line-height: normal;
     font-stretch: normal;
     margin-right: 0;
     margin-bottom: 0;
     text-decoration: none;
+}
+.dropdown-toggle {
+    color: white !important;
 }
 .order-history-item-field {
     top: 26px;
@@ -303,7 +306,7 @@ li {
     align-self: auto;
     font-style: Regular;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Arial';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -321,7 +324,7 @@ li {
     align-self: auto;
     font-style: Regular;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Arial';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -400,7 +403,7 @@ li {
     font-size: 14px;
     align-self: auto;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Arial';
     font-weight: 700;
 }
 .rejected-btn{

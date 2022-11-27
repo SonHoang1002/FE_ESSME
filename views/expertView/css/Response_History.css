@@ -34,7 +34,7 @@ body {
     padding-left: 450px;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -67,10 +67,13 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
+}
+.dropdown-toggle {
+    color: white !important;
 }
 .header-essme {
     display: flex;

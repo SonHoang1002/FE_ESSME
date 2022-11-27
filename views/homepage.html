@@ -9,7 +9,7 @@ git push -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESSME</title>
-  <link rel = "icon" href ="../../assets/essme.png"
+  <link rel = "icon" href ="../assets/essme.png"
         type = "image/x-icon">
   <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -203,7 +203,7 @@ git push -->
                         </span>
                   <img
                           alt="image42056"
-                          src="../../assets/expertimg.png"
+                          src="../assets/expertimg.png"
                           class="expert-experts-item-image"
                   />
                 </div>
@@ -266,17 +266,17 @@ git push -->
         <div>
           <div class="item-events" type="button" onclick='window.location="customerView/eventDetail.html"'>
             <div class="img-events">
-              <img src="../../assets/eventimg.png" alt="">
+              <img src="../assets/eventimg.png" alt="">
             </div>
             <div class="title-events">
               Title
             </div>
             <div class="detail-events">
-              <img style="width: 20px;height: 20px;" src="../../assets/icon/facebook.png" alt="">
+              <img style="width: 20px;height: 20px;" src="../assets/icon/facebook.png" alt="">
               <span>Time of events</span>
             </div>
             <div class="detail-events">
-              <img style="width: 20px;height: 20px;" src="../../assets/icon/next.png" alt="">
+              <img style="width: 20px;height: 20px;" src="../assets/icon/next.png" alt="">
               <span>location</span>
             </div>
           </div>
@@ -297,7 +297,7 @@ git push -->
             <div class="item-news">
               <div class="title-item-news"><span>this is title of the news</span></div>
               <div class="detail-item-news">
-                <img class="img-news" src="../../assets/bgImg.png" alt="">
+                <img class="img-news" src="../assets/bgImg.png" alt="">
                 <div class="sub-detail-item-news">
                   <div class="sub-title-item-news"><span>This is sub title of the news</span></div>
                   <div class="time-item-news"><span>03/11/2021</span></div>
@@ -326,11 +326,11 @@ git push -->
       <div class="questions-list">
         <div class="question-answer-card" onclick="window.location='expertView/Answer_Question.html'" type="button">
           <div class="question-field">
-            <img style="width: 15px;height: 15px;margin:5px" src="../../assets/icon/reset-icon.png" alt="">
+            <img style="width: 15px;height: 15px;margin:5px" src="../assets/icon/reset-icon.png" alt="">
             <span>Question</span>
           </div>
           <div class="answer-field">
-            <img style="width: 15px;height: 15px;margin:5px" src="../../assets/icon/reset-icon.png" alt="">
+            <img style="width: 15px;height: 15px;margin:5px" src="../assets/icon/reset-icon.png" alt="">
             <span>Answer</span>
           </div>
           <div class="answer-field">
@@ -489,11 +489,11 @@ git push -->
                     "              "+v.name_event+"\n" +
                     "            </div>\n" +
                     "            <div class=\"detail-events\">\n" +
-                    "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/facebook.png\" alt=\"\">\n" +
+                    "              <img style=\"width: 20px;height: 20px;\" src=\"../assets/icon/facebook.png\" alt=\"\">\n" +
                     "              <span>"+v.time+"</span>\n" +
                     "            </div>\n" +
                     "            <div class=\"detail-events\">\n" +
-                    "              <img style=\"width: 20px;height: 20px;\" src=\"../../assets/icon/next.png\" alt=\"\">\n" +
+                    "              <img style=\"width: 20px;height: 20px;\" src=\"../assets/icon/next.png\" alt=\"\">\n" +
                     "              <span>"+v.location+"</span>\n" +
                     "            </div>\n" +
                     "          </div>\n" +
@@ -556,11 +556,11 @@ git push -->
           $.each(data, function( i, v ) {
             $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='expertView/Answer_Question.html'\" type=\"button\">\n" +
                     "        <div class=\"question-field\">\n" +
-                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
+                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../assets/icon/reset-icon.png\" alt=\"\">\n" +
                     "          <span>"+v.Description+"</span>\n" +
                     "        </div>\n" +
                     "        <div class=\"answer-field\">\n" +
-                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../../assets/icon/reset-icon.png\" alt=\"\">\n" +
+                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../assets/icon/reset-icon.png\" alt=\"\">\n" +
                     "          <span>"+v.answers[0].answer+"</span>\n" +
                     "        </div>\n" +
                     "      </div>");

@@ -40,7 +40,7 @@ textarea:hover{
     margin: auto;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -62,6 +62,9 @@ a {
     height: 90px;
     z-index: 99;
 }
+.dropdown-toggle {
+    color: white !important;
+}
 .nav-active {
     background: rgb(19, 99, 223);
     height: 70px;
@@ -70,7 +73,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -220,7 +223,7 @@ header {
     position: static;
     padding-top: 28px;
     width: 100%;
-    font-family: 'Helvetica';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -234,7 +237,7 @@ header {
 
 .introTitle {
     height: 80px;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 120px;
@@ -243,7 +246,7 @@ header {
 
 .introSubTitle {
     padding-top: 60px;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: italic;
     font-weight: 700;
     font-size: 30px;
@@ -274,7 +277,7 @@ header {
     background-color: #D3E5FF;
 }
 .leading-experts-title > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -354,7 +357,7 @@ header {
     font-size: 18px;
     align-self: auto;
     text-align: left;
-    font-family: Segoe UI;
+    font-family: 'Arial';
     font-weight: 600;
     line-height: normal;
     font-stretch: normal;
@@ -372,7 +375,7 @@ header {
     font-size: 14px;
     align-self: auto;
     text-align: left;
-    font-family: Segoe UI;
+    font-family: 'Arial';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -390,7 +393,7 @@ header {
     font-size: 14px;
     align-self: auto;
     text-align: left;
-    font-family: Segoe UI;
+    font-family: 'Arial';
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -411,7 +414,7 @@ header {
 
 .become-experts-title {
     height: 80px;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-size: 64px;
     display: flex;
@@ -459,7 +462,7 @@ header {
     font-size: 32.5px;
 }
 .become-experts-button > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -473,7 +476,7 @@ header {
 
 .become-experts-sub-title {
     height: 80px;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-size: 45px;
     display: flex;
@@ -490,7 +493,7 @@ header {
 }
 
 .fields-title{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
@@ -522,7 +525,7 @@ header {
     width: 100%;
 }
 .field-name > div {
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
@@ -543,7 +546,7 @@ header {
     padding-bottom: 20px;
 }
 .event-title{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
@@ -643,7 +646,7 @@ header {
     width: fit-content;
     height: 80px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -685,7 +688,7 @@ header {
 }
 
 .title-item-news {
-    font-family: "Segoe UI";
+    font-family: 'Arial';
     font-weight: 500;
     margin-bottom: 10px;
     overflow: hidden;
@@ -731,7 +734,7 @@ header {
 }
 
 .footer-news {
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -750,7 +753,7 @@ header {
 }
 
 .behind-title{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -773,7 +776,7 @@ header {
 
 .question-title {
     margin: 20px;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -794,7 +797,7 @@ header {
 
 .title-FQAs {
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -831,7 +834,7 @@ header {
 }
 .see-more-FQAs{
     width: fit-content;
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

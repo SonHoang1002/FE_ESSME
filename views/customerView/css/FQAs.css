@@ -31,7 +31,7 @@ body {
     padding-left: 450px;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -42,7 +42,9 @@ body {
 
     color: #67d1ff;
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 a {
     text-decoration: none;
     color: blue;
@@ -64,7 +66,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -280,7 +282,7 @@ li {
 
 .title-FQAs {
     text-align: center;
-    /* font-family: 'Roboto'; */
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;

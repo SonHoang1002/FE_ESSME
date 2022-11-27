@@ -34,7 +34,7 @@ body {
     padding-left: 450px;
     padding-top: 200px;
 
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -67,7 +67,7 @@ a {
     margin-top: -5px;
 }
 .navbar-brand > span{
-    font-family: 'Segoe UI';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -79,7 +79,9 @@ a {
     background-color: black;
     position: fixed;
 }
-
+.dropdown-toggle {
+    color: white !important;
+}
 .header-background {
     height: 640px;
     background-image: url("../../../assets/homepage-bg.jpg");
