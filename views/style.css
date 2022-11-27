@@ -590,8 +590,8 @@ header {
 .img-events > img{
     width: 260px;
     height: 180px;
-    border-radius: 20px;
-    object-fit: contain;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .title-events {

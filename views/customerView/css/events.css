@@ -293,7 +293,7 @@ header {
     margin-bottom: 10px;
 }
 .img-events > img{
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .img-events img {
