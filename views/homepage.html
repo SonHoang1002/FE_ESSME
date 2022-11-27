@@ -554,16 +554,17 @@ git push -->
           console.log(data[0]);
           $(".questions-list").empty();
           $.each(data, function( i, v ) {
-            $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='expertView/Answer_Question.html'\" type=\"button\">\n" +
-                    "        <div class=\"question-field\">\n" +
-                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                    "          <span>"+v.Description+"</span>\n" +
-                    "        </div>\n" +
-                    "        <div class=\"answer-field\">\n" +
-                    "          <img style=\"width: 15px;height: 15px;margin:5px\" src=\"../assets/icon/reset-icon.png\" alt=\"\">\n" +
-                    "          <span>"+v.answers[0].answer+"</span>\n" +
-                    "        </div>\n" +
-                    "      </div>");
+            $(".questions-list").append("<div class=\"question-answer-card\" onclick=\"window.location='./response-history.html'\" type=\"button\">" +
+                "<div class=\"question-field\">" +
+                " <img style=\"width: 25px;height: 25px;border-radius: 50%;\" src=\"../assets/expertimg.png\" alt=\"\">" +
+                "<span>" + v.Description + "</span>" +
+                "</div>" +
+                " <div class=\"answer-field\">" +
+                " <img style=\"width: 25px;height: 25px;border-radius: 50%;\" src=\"../assets/expertimg1.png\" alt=\"\">" +
+                "<span>" + v.answers[0].answer + "</span>" +
+                "</div>" +
+                "<div class=\"answer-field\"></div>" +
+                "</div>");
           });
         }).fail(function (xhr, status, errorThrown) {
           $("#title").html("Sorry, there was a problem!")
