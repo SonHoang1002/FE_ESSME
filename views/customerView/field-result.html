@@ -361,16 +361,23 @@
             const urlParams = new URLSearchParams(window.location.search);
             const what = urlParams.get('what');
             const where = urlParams.get('where');
-
+            const field = urlParams.get('field');
+            let url = "http://101.96.66.219:8005/api/experts/";
+            if(what!=null||where!=null){
+                url+="search?what="+what+"&where="+where+"&page=0&size=10&asc=true";
+            }
+            else if(field!=null){
+                url+="suggest?field="+field+"&limit=10";
+            }
             $.ajax({
-                url: "http://101.96.66.219:8005/api/experts/search?what="+what+"&where="+where+"&page=0&size=10&asc=true",
+                url: url,
                 type: "GET"
             }).done(function (data) {
                 //___________Question
-                console.log(data.content);
+                console.log(data);
 
                 $(".list-item-result").empty();
-                $.each(data.content, function (i, v) {
+                $.each(data, function (i, v) {
                     let research_area = "";
                     $.each(v.research_area, function(i,v){
                         research_area += ", "+v;

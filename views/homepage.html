@@ -109,7 +109,7 @@ git push -->
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="imgLogo" style="border-radius:30px" src="../../assets/expertimg.png"
+                                <img class="imgLogo" style="border-radius:30px" src="../assets/expertimg.png"
                                     alt="">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
@@ -465,7 +465,7 @@ git push -->
           // $(".fields-list").empty();
           $.each(fields, function( i, v ) {
             $(".fields-list").append("<div>\n" +
-                    "          <div class=\"field-item\" type=\"button\" onclick='window.location=\"customerView/field-result.html\"'>\n" +
+                    "          <div class=\"field-item\" type=\"button\" onclick='window.location=\"customerView/field-result.html?field="+v.name_vn+"\"'>\n" +
                     "            <div>\n" +
                     "              <img src=\""+v.image+"\" class=\"field-images\" alt=\"\" onerror='imgErr(event,1)'>\n" +
                     "            </div>\n" +
