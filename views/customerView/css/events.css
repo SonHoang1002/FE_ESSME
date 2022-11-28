@@ -21,9 +21,9 @@
 }
 
 .header-background {
-    height: 640px;
+    height: 550px;
     background-image: url("../../../assets/event-bg.jpg");
-    /* background-position: 0px -150px; */
+     background-position: 0px -150px;
     background-repeat: no-repeat;
     display: flex;
     background-size: cover;

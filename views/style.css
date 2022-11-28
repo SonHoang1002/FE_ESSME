@@ -87,7 +87,7 @@ a {
 }
 
 .header-background {
-    height: 640px;
+    height: 550px;
     background-image: url("../assets/homepage-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,7 +171,7 @@ header {
 
 .searchForm {
     position: static;
-    margin-top: 230px;
+    margin-top: 120px;
     width: 1208px;
     height: 110px;
     background: rgba(19, 99, 223, 0.75);
@@ -221,7 +221,7 @@ header {
 
 .expertsTitle {
     position: static;
-    padding-top: 28px;
+    padding-top: 80px;
     width: 100%;
     font-family: 'Arial';
     font-style: normal;
@@ -406,7 +406,6 @@ header {
     background-image: url("../assets/become-expert.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -70px;
     position: static;
     height: 395px;
     padding-top: 50px;

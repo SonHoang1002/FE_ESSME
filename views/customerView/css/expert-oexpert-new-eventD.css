@@ -70,20 +70,20 @@ a {
     position: fixed;
 }
 .header-background {
-    height: 640px;
+    height: 550px;
     background-image: url("../../../assets/homepage-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: black; */
 }
 .header-background-experts{
-    height: 640px;
+    height: 550px;
     background-image: url("../../../assets/expert-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .header-background-news{
-    height: 640px;
+    height: 550px;
     background-image: url("../../../assets/news-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -436,7 +436,7 @@ button {
     width: fit-content;
     height: 97px;
     padding-left: 60px;
-    padding-top: 312px;
+    padding-top: 290px;
 
     font-family: 'Arial';
     font-style: normal;
