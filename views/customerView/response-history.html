@@ -51,24 +51,27 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse navbar-small" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-small">
                     </ul>
                     <div class="d-flex">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="drop-item-small">
+                            <li class="nav-item" id="drop-item-small">
                                 <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" id="drop-item-small">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Experts
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="experts.html">Experts</a></li>
-                                    <li><a class="dropdown-item" href="FQAs.html">FQAs</a></li>
-                                    <li><a class="dropdown-item" href="order_expert.html">Order Experts</a></li>
-                                    <li><a class="dropdown-item" href="../expertView/Response_History.html">Response</a>
+                                <ul class="dropdown-menu" id="drop-item-small">
+                                    <li><a class="dropdown-item " id="drop-item-small" href="experts.html">Experts</a>
+                                    </li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="FQAs.html">FQAs</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="order_expert.html">Order
+                                            Experts</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small"
+                                            href="../expertView/Response_History.html">Response</a>
                                     </li>
                                 </ul>
                             </li>
@@ -84,8 +87,8 @@
                                     Language
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">English</a></li>
+                                    <li><a class="dropdown-item " id="drop-item-small" href="#">Vietnamese</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -94,7 +97,7 @@
                                     <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M12.9215 26C14.4846 26 15.7635 24.8427 15.7635 23.4283H10.0795C10.0795 24.8427 11.3584 26 12.9215 26ZM22.158 18.2849V11.2128C22.158 7.22669 19.1739 4.01209 15.053 3.112V2.21191C15.053 1.18323 14.0583 0.283142 12.9215 0.283142C11.7847 0.283142 10.79 1.18323 10.79 2.21191V3.112C6.66911 4.01209 3.68502 7.22669 3.68502 11.2128V18.2849L0.843018 20.8566V22.1425H25V20.8566L22.158 18.2849Z"
+                                            d="M12.9215 26C14.4846 26 15.7635 24.8427 15.7635 23.4283H10.0795C10.0795 24.8427 11.3584 26 12.9215 26ZM22.158 18.2849V11.2128C22.158 7.22669 19.1739 4.01209 15.053 3.112V2.21191C15.053 1.18323 14.0583 0.283142 12.9215 0.283142C11.7847 0.283142 10.79 1.18323 10.79 2.21191V3.112C6.66911 4.01209 3.68502 7.22669 3.68502 11.2128V18.2849L0.843018 20.8566V22.1425H35V20.8566L22.158 18.2849Z"
                                             fill="white" />
                                     </svg>
                                 </a>
@@ -117,7 +120,7 @@
                         </ul>
                     </div>
                 </div>
-                <div style=" margin-right:10px"></div>
+                <!-- <div style=" margin-right:10px"></div> -->
             </div>
         </nav>
     </div>
@@ -140,8 +143,8 @@
                     <div class="icon-home"><i class="fa fa-home"></i></div>
                     <li class="breadcrumb-item"><a href="../homepage.html"><span style="color:black">Home</span></a>
                     </li>
-                    <li class="breadcrumb-item" aria-current="page"><a href="FQAs.html"><span
-                                style="color:black">FQAs</span></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="experts.html"><span
+                                style="color:black">Expert</span></a></li>
                     <li class="breadcrumb-item "><a href="../expertView/Response_History.html"><span
                                 style="color:black">Responese History</span></a></li>
                     <!-- <li class="breadcrumb-item "><span style="color:black">Detail</span></li> -->
@@ -249,6 +252,51 @@
 
                 }
 
+                function likeEmotion(ele) {
+                    const arr = Array.from(ele.querySelector("#like-id").classList)
+                    let like_vote = ele.parentElement.querySelector(".like-vote").innerHTML;
+                    if (arr.includes("fas")) {
+                        ele.parentElement.querySelector(".like-vote").innerHTML = `${parseInt(like_vote) - 1}`;
+                        ele.querySelector("#like-id").classList.remove("fas")
+                        ele.querySelector("#like-id").classList.add("far")
+                    } else {
+                        ele.parentElement.querySelector(".like-vote").innerHTML = `${parseInt(like_vote) + 1}`;
+                        ele.querySelector("#like-id").classList.remove("far")
+                        ele.querySelector("#like-id").classList.add("fas")
+                    }
+                }
+                function dislikeEmotion(ele) {
+                    const arr = Array.from(ele.querySelector("#dislike-id").classList)
+                    let dislike_vote = ele.parentElement.querySelector(".dislike-vote").innerHTML;
+                    if (arr.includes("fas")) {
+                        ele.parentElement.querySelector(".dislike-vote").innerHTML = `${parseInt(dislike_vote) - 1}`;
+                        ele.querySelector("#dislike-id").classList.remove("fas")
+                        ele.querySelector("#dislike-id").classList.add("far")
+                    } else {
+                        ele.parentElement.querySelector(".dislike-vote").innerHTML = `${parseInt(dislike_vote) + 1}`;
+                        ele.querySelector("#dislike-id").classList.remove("far")
+                        ele.querySelector("#dislike-id").classList.add("fas")
+                    }
+
+                }
+                
+                function searchExpert(_uid){
+                    let name="name of expert";
+                    $.ajax({
+                        url: `http://101.96.66.219:8005/api/experts/uid/${_uid}`,
+                        type: "GET"
+                    }).done(function (data) {
+                        $.each(data, function (i, v) {
+                            name = v.name;
+                        });
+                    }).fail(function (xhr, status, errorThrown) {
+                    }).always(function (xhr, status) {
+                        console.log("don't have expert")
+                    });
+
+                    return name
+                }
+                
                 $(document).ready(function () {
                     $.ajax({
                         url: "http://101.96.66.219:8005/api/homepage",
@@ -291,13 +339,13 @@
                         });
                     });
 
-
                     $.ajax({
                         url: "http://101.96.66.219:8005/api/questions?limit=10&sort=createdAt&desc=false",
                         type: "GET"
                     }).done(function (data) {
                         $(".list-message").empty();
                         $.each(data, function (i, v) {
+                            let check;
                             $(".list-message").append(
                                 "<div style=\" font-size:30px;display:flex;justify-content:center;font-style:italic;align-items:center; \">" + v.Topic + "</div>" +
                                 "<div class=\"message\"> \n" +
@@ -306,18 +354,40 @@
                                 "           <div style=\" flex-direction: column;display:flex;justify-content:center;align-items:center\"> <img class=\"imgLogo1\" style=\"border-radius:20px\" src=\"../../assets/expertimg.png\" > <div style=\" color:blue;\">customer</div>  </div>\n" +
                                 "            <div class=\"content-question-message\"> <div><span>" + v.Description + "</span></div>\n" +
                                 "            </div>\n" +
+
                                 "        </div>\n" +
-                                "<div style=\"display:flex;justify-content:center;align-items:center;margin-bottom:15px\"><span style='color:red;font-size:20px'>--------   "+v.answers.length+" answers   --------</span></div>"+
-                                
+                                "<div style=\"display:flex;justify-content:center;align-items:center;margin-bottom:15px\"><span style='color:red;font-size:20px'>--------   " + v.answers.length + " answers   --------</span></div>" +
+
                                 "        <div class=\"answer-message\">\n" +
-                                "<div style=\" margin-bottom:20px;\">" +
+                                // "<div class=\"star-button\">" +
+                                //     "5 <i class=\"far fa-thumbs-up\"></i>"+
+                                // "</div>" +
+                                "<div style=\"display:block;\">" +
                                 v.answers.map((value) => {
                                     return `
-                               <span>${value.answer}</span>  `
+                               <div>
+                                    <div style="display: flex;align-items: center;color:black">
+                                        <span>${value.answer} </span> 
+                                        <div style="display: flex;margin-left:10px"> 
+                                            <div class="like-vote">${value.vote}</div>
+                                            <div style="margin-left:5px" class="like-button" onclick="likeEmotion(this)"><i id="like-id" class="far fa-thumbs-up"></i> </div>
+                                            <div style="margin-left:5px" class="dislike-vote" >${value.vote}</div>
+                                            <div style="margin-left:5px" class="dislike-button" onclick="dislikeEmotion(this)"> <i id="dislike-id" class="far fa-thumbs-down"></i> </div>
+                                            </div>
+                                    </div>
+                                    <div class="time-to-create">
+                                        <div style="font-size:10px">
+                                            <i class="fa-solid fa-plus">
+                                                </i> ${new Date(v.created_at).toLocaleString()} --- 
+                                                <i class="fa-sharp fa-solid fa-wrench">
+                                                    </i> ${new Date(v.updated_at).toLocaleString()}</div>
+                                        <div style="font-size:10px;margin-right:50px;"> ${searchExpert(value.uid)}</div>
+                                    </div>
+                                </div>  `
                                 }) +
                                 "</div>\n" +
-                                "  <div style=\" flex-direction: column;display:flex;align-items:center;\"> <img class=\"imgLogo1\" style=\"border-radius:20px\"\n" +
-                                "                src=\"../../assets/expertimg.png\" >  <div style=\" color:blue;\"><div>expert</div></div>  </div> \n" +
+                                // "  <div style=\" flex-direction: column;display:flex;align-items:center;\"> <img class=\"imgLogo1\" style=\"border-radius:20px\"\n" +
+                                // "                src=\"../../assets/expertimg.png\" >  <div style=\" color:blue;\"><div>expert</div></div>  </div> \n" +
                                 "        </div>\n" +
                                 "    </div>\n" +
                                 "    <div class=\"see-button\">\n" +
@@ -331,7 +401,6 @@
                     }).always(function (xhr, status) {
                         console.log("The request is complete!")
                     });
-
 
                 });
             </script>
